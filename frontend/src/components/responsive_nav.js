@@ -15,15 +15,17 @@ import {
     useColorModeValue,
     useDisclosure,
     HStack
-  } from '@chakra-ui/react';
-  import {
-    HamburgerIcon,
-    CloseIcon,
-    ChevronDownIcon,
-    ChevronRightIcon,
-  } from '@chakra-ui/icons';
+} from '@chakra-ui/react';
 
-  
+import {
+  FaBars,
+  FaTimes,
+  FaAngleDown,
+  FaAngleRight,
+} from 'react-icons/fa'
+
+import Image from 'next/image';
+
   
 
   export default function WithSubnavigation() {
@@ -41,10 +43,10 @@ import {
             display={{ base: 'flex', md: 'none' }}>
 
             <IconButton
-              className=' text-white ml-4'
+              className=' text-white ml-6'
               onClick={onToggle}
               icon={
-                isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+                isOpen ? <FaTimes w={5} h={5} /> : <FaBars w={5} h={5} />
               }
               variant='unstyled'
               aria-label={'Toggle Navigation'}
@@ -52,13 +54,12 @@ import {
           </Flex>
 
           <Flex className="flex flex-1 justify-between">
-            <Link href="/" className="nav-items"><img src="/asset/ICT_logo_monowhite.svg" className="pl-6 pt-2 h-14 drop-shadow-md"></img></Link>
-  
+            <Link href="/" className="nav-items"><Image width={930} height={576} src="/asset/ICT_logo_monowhite.svg" className="h-14 pt-2 w-40 drop-shadow-md"></Image></Link>
             <Flex className="hidden md:flex mr-4">
               <DesktopNav />
             </Flex>
           </Flex>
-          <Link href="/meet-our-team" className="nav-items"><img src="/asset/meet_our_team.svg" className="pt-4 drop-shadow-md h-16 pr-6"></img></Link>
+          <Link href="/meet-our-team" className="nav-items"><Image width={536} height={171} src="/asset/meet_our_team.svg" className="h-14 pt-4 w-40 drop-shadow-md"></Image></Link>
         </Flex>
   
         <Collapse in={isOpen} animateOpacity className='text-white'>
@@ -144,7 +145,7 @@ import {
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'#000000'} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={'#000000'} w={5} h={5} as={FaAngleRight} />
           </Flex>
         </Stack>
       </Link>
@@ -183,11 +184,11 @@ import {
         </Flex>
           {children && (
             <Icon
-              as={ChevronDownIcon}
+              as={FaAngleDown}
               transition={'all .25s ease-in-out'}
               transform={isOpen ? 'rotate(180deg)' : ''}
-              w={6}
-              h={6}
+              w={4}
+              h={4}
               onClick={onToggle}
             />
           )}

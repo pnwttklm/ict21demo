@@ -19,11 +19,19 @@ export default function RootLayout({ children }) {
   })
 
   return (
-    <html>
-      <body lang='en' className={IBM_Thai.className}>
+    <html lang='en'>
+      <body className={IBM_Thai.className}>
           <Providers>
             <ResNav/>
-            <motion.div className=' z-10 bg-[#00FF66] rounded-full top-16 left-0 right-0 h-1 fixed' style={{ scaleX }} />  
+            <motion.div className='
+            z-10 
+            bg-[#00FF66] 
+            rounded-full 
+            top-16 
+            left-0 
+            right-0 h-1 
+            fixed' 
+            style={{ scaleX }} />  
             {children}
           </Providers>
       </body>
