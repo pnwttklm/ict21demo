@@ -52,12 +52,12 @@ export default function Home() {
           <h1 className=' -m-16  font-semibold bg-black text-center
           text-4xl
           md:text-5xl
-          xl:text-6xl'>Freshy go round.</h1>
+          xl:text-6xl'>Snapshot Test</h1>
           <p className='mt-24 font-medium
           text-lg
           md:text-xl
           xl:text-2xl
-          '>Your new journey begins!</p>
+          '>of Jun 8</p>
           <div className='flex flex-col font-normal gap-10
           text-sm
           md:text-base
