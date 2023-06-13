@@ -1,23 +1,19 @@
 'use client'
-import GallerySlider2 from '../components/galleryslider2'
-import MsgSlider2 from '../components/msgslider2'
-import Question from '../components/questionsection'
-import Allcards1 from '../components/allcards1'
-import Footer from '../components/footer'
 
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
+// import GallerySlider2 from '../components/galleryslider2'
+// import MsgSlider2 from '../components/msgslider2'
+// import Question from '../components/questionsection'
+// import Allcards1 from '../components/allcards1'
+// import Footer from '../components/footer'
+// import Timeline from '../components/timeline_main'
 
 // ChakraUI
 import { 
   Button, 
   Icon, 
   SimpleGrid,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverBody,
-  PopoverArrow,
-  Portal,
 } from '@chakra-ui/react';
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -29,13 +25,19 @@ const fadeInUp = {
   show: { opacity:[0.5,1], y:0 },
 }
 
+const GallerySlider2 = dynamic(() => import('../components/galleryslider2'))
+const MsgSlider2 = dynamic(() => import('../components/msgslider2'))
+const Question = dynamic(() => import('../components/questionsection'))
+const Allcards1 = dynamic(() => import('../components/allcards1'))
+const Footer = dynamic(() => import('../components/footer'))
+const Timeline = dynamic(() => import( '../components/timeline_main'))
+
 
 export default function Home() {
 
   return (
     <>
       <div id='freshy-go-round' className='flex flex-col w-screen justify-center items-center'>
-
         <motion.iframe 
         variants={fadeInUp} 
         initial='hidden'
@@ -57,7 +59,7 @@ export default function Home() {
           text-lg
           md:text-xl
           xl:text-2xl
-          '>of Jun 8</p>
+          '>of Jun 13</p>
           <div className='flex flex-col font-normal gap-10
           text-sm
           md:text-base
@@ -87,7 +89,7 @@ export default function Home() {
         md:flex-row
         md:outline-4
         md:text-left'>
-          <Image width={112} height={112} className=' h-14' alt='PLGT23 Logo' src='Star1.svg'/>
+          <Image width={112} height={112} className='w-14 h-14' alt='PLGT23 Logo' src='Star1.svg'/>
           <div className='flex flex-col gap-4 
           items-center
           md:items-start'>
@@ -125,7 +127,7 @@ export default function Home() {
         md:flex-row
         md:outline-4
         md:text-left'>
-          <Image width={134} height={134} alt='Welcome Freshy Logo' className='h-14' src='Ellipse 5.svg'/>
+          <Image width={134} height={134} alt='Welcome Freshy Logo' className='w-14 h-14' src='Ellipse 5.svg'/>
           <div className='flex flex-col gap-4
           items-center
           md:items-start'>
@@ -150,7 +152,7 @@ export default function Home() {
         md:flex-row
         md:outline-4
         md:text-left'>
-          <Image width={148} height={132} alt='Sairahus logo' className=' h-14' src='Polygon 8.svg'/>
+          <Image width={148} height={132} alt='Sairahus logo' className='w-14 h-14' src='Polygon 8.svg'/>
           <div className='flex flex-col gap-4
           items-center
           md:items-start'>
@@ -182,7 +184,7 @@ export default function Home() {
           md:flex-row
           md:outline-4
           md:text-left'>
-            <Image width={172} height={172} alt='guide book logo' className='h-14' src='Rectangle56.svg'/>
+            <Image width={172} height={172} alt='guide book logo' className='w-14 h-14' src='Rectangle56.svg'/>
             <div className='flex flex-col gap-4
             items-center
             md:items-start'>
@@ -205,7 +207,7 @@ export default function Home() {
           md:flex-row
           md:outline-4
           md:text-left'>
-            <Image width={204} height={150} alt='meet our team logo' className=' h-14' src='meet20.svg'/>
+            <Image width={204} height={150} alt='meet our team logo' className='w-14 h-14' src='meet20.svg'/>
             <div className='flex flex-col gap-4
             items-center
             md:items-start'>
@@ -227,20 +229,24 @@ export default function Home() {
           text-2xl
           md:text-4xl'>TIMELINE</h1>
         </div>
-        <Timeline1/>
+        <Timeline/>
       </div>
 
       <div id='gallery' className='h-24'/>
-      <div className='flex flex-col h-full justify-center gap-10'>
-        <h1 className=' text-white font-extrabold text-4xl text-center'>GALLERY</h1>
-        <GallerySlider2/>
+      <div className='flex w-screen justify-center'>
+        <div className='flex flex-col h-full w-11/12 items-center justify-center gap-10'>
+          <h1 className=' text-white font-extrabold text-4xl text-center'>GALLERY</h1>
+          <GallerySlider2/>
+        </div>
       </div>
       {/* <GallerySlider/> keen-slider have problem with nextJs */}
 
       <div id='msg-from-senpai' className='h-24'/>
-      <div className='flex flex-col h-full justify-center gap-10'>
-        <h1 className=' text-white font-extrabold text-4xl text-center'>MESSAGE FROM SENPAIS</h1>
-        <MsgSlider2/>
+      <div className='flex w-screen justify-center'>
+        <div className='flex flex-col h-full w-11/12 justify-center gap-10'>
+          <h1 className=' text-white font-extrabold text-4xl text-center'>MESSAGE FROM SENPAIS</h1>
+          <MsgSlider2/>
+        </div>
       </div>
       {/* <MsgSlider/> keen-slider have problem with nextJs*/}
 
@@ -259,151 +265,3 @@ export default function Home() {
     </>
   )
 }
-
-
-const Timeline1 = function() {
-  return (
-    <div>
-      <div className='flex flex-col h-full items-center'>
-        <SimpleGrid className='p-20' columns={[1,1,2,4]} spacing={24}>
-          {timeline_elements.map((timeline, index) => (
-            <div key={index}>
-              <Popover trigger='hover'>
-                <PopoverTrigger>
-                  <div className='flex flex-col items-center'>
-                    <p className='bg-white rounded-full pt-1 pb-1 pl-3 pr-3 font-medium 
-                    text-xs
-                    sm:text-sm
-                    md:text-base'>{timeline.event_name}</p>
-                    <p className='mt-2 text-white font-semibold
-                    text-xs
-                    sm:text-sm
-                    md:text-base'>{timeline.day}</p>
-                  </div>
-                </PopoverTrigger>
-                <Portal>
-                  <PopoverContent className=' rounded-3xl'>
-                    <PopoverArrow />
-                    <PopoverBody>
-                      <div className='flex justify-between'>
-                        {/* <img src='path/to/image.png' alt='Image' /> */}
-                        <Button variant='unstyled' className='h-14'>
-                          <Image width={56} height={56} src='Add_to_Calendar_btn.svg' alt='Add to Calendar' />
-                        </Button>
-                      </div>
-                      <div className='flex flex-col'>
-                        <h1 className='font-bold text-xl text-black'>{timeline.event_name}</h1>
-                        <p>
-                          Say hi to senpais, Ajarns, and staffs. Start your own legendary journey at Faculty of ICT.
-                        </p>
-                      </div>
-                    </PopoverBody>
-                  </PopoverContent>
-                </Portal>
-              </Popover>
-            </div>
-          ))}
-        </SimpleGrid>
-        <Popover trigger='hover'>
-          <PopoverTrigger>
-            <div className='flex flex-col items-center'>
-              <p className='bg-white rounded-full pt-1 pb-1 pl-3 pr-3 font-medium 
-              text-xs
-              sm:text-sm
-              md:text-base'>Semester Begins 🎉</p>
-              <p className='mt-2 text-white font-semibold
-              text-xs
-              sm:text-sm
-              md:text-base'>Aug 7</p>
-            </div>
-          </PopoverTrigger>
-          <Portal>
-            <PopoverContent>
-              <PopoverArrow />
-              <PopoverBody>
-                <div className='flex justify-between'>
-                  <img src='path/to/image.png' alt='Image' />
-                  <Button variant='unstyled' className='h-14'>
-                    <img className='h-14' src='Add_to_Calendar_btn.svg' alt='Add to Calendar' />
-                  </Button>
-                </div>
-                <div className='flex flex-col'>
-                  <p className='bg-white rounded-full pt-1 pb-1 pl-3 pr-3 font-normal 
-                  text-xs
-                  sm:text-sm
-                  md:text-base'>Semester Begins 🎉</p>
-                  <p>
-                    Say hi to senpais, Ajarns, and staffs. Start your own legendary journey at Faculty of ICT.
-                  </p>
-                </div>
-              </PopoverBody>
-            </PopoverContent>
-          </Portal>
-        </Popover>
-      </div>
-    </div>
-  );
-};
-
-const timeline_elements = [
-  {
-    img_url: 'bruh',
-    event_name: 'PLGT23 Day 1 at Salaya',
-    day: 'Jul 4'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'PLGT23 Day 2 at Amphawa',
-    day: 'Jul 5'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'Fire Prevention and Control',
-    day: 'Jul 6'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'PDPA Training',
-    day: 'Jul 7'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'TOEFL ITP',
-    day: 'Jul 7'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'Prepartory Program',
-    day: 'Jul 10-25'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'MU-ELT',
-    day: 'Jul 22-23'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'ICT Orientation',
-    day: 'Jul 27'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'Rak Nong',
-    day: 'Jul 31'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'Mahidol Orientation',
-    day: 'Aug 1'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'Welcome Freshy',
-    day: 'Aug 4'
-  },
-  {
-    img_url: 'bruh1',
-    event_name: 'Sairahus',
-    day: 'Aug 4'
-  },
-]

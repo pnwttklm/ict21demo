@@ -11,8 +11,8 @@ export const IBM_Thai = IBM_Plex_Sans_Thai_Looped({
 
 
 // TEST FONT
-export const Roboto_mono = Roboto_Mono({
-  weight: ['100','700'],
-  subsets: ['latin'],
-  display: 'swap'
-})
+// export const Roboto_mono = Roboto_Mono({
+//   weight: ['100','700'],
+//   subsets: ['latin'],
+//   display: 'swap'
+// })

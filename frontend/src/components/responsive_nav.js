@@ -14,7 +14,7 @@ import {
     PopoverContent,
     useColorModeValue,
     useDisclosure,
-    HStack
+    HStack,
 } from '@chakra-ui/react';
 
 import {
@@ -54,12 +54,12 @@ import Image from 'next/image';
           </Flex>
 
           <Flex className="flex flex-1 justify-between">
-            <Link href="/" className="nav-items"><Image width={930} height={576} src="/asset/ICT_logo_monowhite.svg" className="h-14 pt-2 w-40 drop-shadow-md"></Image></Link>
+            <Link href="/" className="nav-items"><Image width={930} height={576} src="/asset/ICT_logo_monowhite.svg" className="h-14 pt-2 w-40 drop-shadow-md" alt='ICT21-logo-navber'></Image></Link>
             <Flex className="hidden md:flex mr-4">
               <DesktopNav />
             </Flex>
           </Flex>
-          <Link href="/meet-our-team" className="nav-items"><Image width={536} height={171} src="/asset/meet_our_team.svg" className="h-14 pt-4 w-40 drop-shadow-md"></Image></Link>
+          <Link href="/meet-our-team" className="nav-items"><Image priority width={536} height={171} src="/asset/meet_our_team.svg" className=" h-14 pt-4 w-40 drop-shadow-md" alt='meetOurTeamLogo-navbar'></Image></Link>
         </Flex>
   
         <Collapse in={isOpen} animateOpacity className='text-white'>
@@ -75,7 +75,7 @@ import Image from 'next/image';
     const popoverContentBgColor = useColorModeValue('#EDEDED', 'white');
   
     return (
-      <Stack direction={'row'} spacing={4} alignItems='center'>
+      <Stack direction={'row'} spacing={{base:'0.5' , lg:'4'}} alignItems='center'>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-end'}>
