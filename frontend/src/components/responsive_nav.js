@@ -33,9 +33,7 @@ import Image from 'next/image';
   
     return (
       <Box className='z-20 top-0 fixed'>
-        <Flex className='bg-black-opacity
-                          w-screen h-16
-                          drop-shadow-md'>
+        <Flex className=' w-screen h-16 drop-shadow-md backdrop-blur-[56px] bg-[#00000052]'>
           <Flex
             className=' items-center'
             flex={{ base: 1, md: 'auto' }}

@@ -4,7 +4,7 @@ const nextConfig = {}
 //module.exports = nextConfig
 module.exports = {
     images: {
-      domains: ['tools.applemediaservices.com','play.google.com'],
+      domains: ['tools.applemediaservices.com','play.google.com','firebasestorage.googleapis.com'],
     },
     // ...
     // Add a configuration object for the 'publicRuntimeConfig' property

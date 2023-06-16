@@ -1,7 +1,8 @@
 'use client'
+
 import './globals.css'
 import ResNav from '../components/responsive_nav'
-import { Providers } from "./providers";
+import { Providers } from "./providers"
 import { IBM_Thai } from './fonts'
 import { 
   motion,
