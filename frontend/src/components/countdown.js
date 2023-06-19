@@ -47,7 +47,7 @@ const ExpiredNotice = () => {
         variants={fadeInUp} 
         initial='hidden'
         whileInView='show'
-        className='flex w-screen text-white text-center justify-center items-center'
+        className='flex text-white text-center justify-center items-center'
         >
           <DateTimeDisplay value={days} type={'DAYS'} isDanger={false} />
           <DateTimeDisplay value={hours} type={'HOURS'} isDanger={false} />
@@ -83,7 +83,7 @@ export default function CountdownTimer({ targetDate }) {
       
       <div className={isDanger ? 'countdown danger' : 'countdown'}>
         <div className='p-16'>
-          <Text fontSize='6xl' className='p-6 rounded-3xl font-bold size-3xl outline outline-6'>
+          <Text fontSize='6xl' className='p-6 rounded-3xl font-bold size-3xl outline outline-4'>
             {value}
           </Text>
           <h1 className='mt-3 font-semibold size-3xl'>{type}</h1>

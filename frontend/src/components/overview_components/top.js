@@ -39,7 +39,7 @@ export default function TopElement() {
                 xl:text-2xl
                 "
             >
-              Of June 15.
+              of June 19.
             </p>
             <div
               className="flex flex-col font-normal gap-10

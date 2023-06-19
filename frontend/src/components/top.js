@@ -8,7 +8,7 @@ const fadeInUp = {
     show: { opacity:[0.5,1], y:0 },
 }
 
-export default function TopElement() {
+export default function TopElement({ event_name , date, description}) {
     return (
       <>
         <motion.iframe
@@ -32,7 +32,7 @@ export default function TopElement() {
                 md:text-5xl
                 xl:text-6xl"
           >
-            PLGT23
+            {event_name}
           </h1>
           <p
             className="mt-24 font-medium
@@ -40,7 +40,7 @@ export default function TopElement() {
                 md:text-3xl
                 xl:text-4xl"
           >
-            July 4-5
+            {date}
           </p>
           <div
             className="flex flex-col font-normal gap-10
@@ -49,13 +49,7 @@ export default function TopElement() {
                   xl:text-lg"
           >
             <p>
-              Play, learn, and grow together by Chittapanya team with activities
-              designed specifically for ICT freshy in order to get to know each
-              other. These activities are thoughtfully crafted to facilitate
-              interaction and enable the freshies to get to know each other. By
-              engaging in these activities, the participants can not only have fun
-              but also learn from one another and grow both personally and
-              professionally.
+              {description}
             </p>
           </div>
           <div>

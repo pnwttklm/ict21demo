@@ -24,6 +24,8 @@ import {
   BsYoutube,
   BsDiscord,
   BsLine,
+  BsTiktok,
+  BsLinkedin,
   BsFillXCircleFill,
 } from "react-icons/bs";
 import React, { useState } from "react";
@@ -31,6 +33,9 @@ import React, { useState } from "react";
 export default function () {
   return (
     <div className="bg-[#1D1D1D]">
+
+      
+
       <div className="flex flex-col p-10 justify-center items-center gap-10">
         <h1
           className=" text-white font-bold
@@ -55,7 +60,16 @@ export default function () {
         </div>
         <div className="flex flex-row gap-4 md:gap-10  justify-center items-center">
           {/* <Button className=' w-fit rounded-xl font-semibold hover:text-black' size='lg' variant='outline'><Icon as={BsInstagram}></Icon></Button> */}
-          <Link href="https://www.instagram.com/muict_studentactivities/">
+          <Link href="https://www.linkedin.com/company/muict/" target='_blank'>
+            <Icon
+              w={{ base: 8, md: 16 }}
+              h={16}
+              m="1"
+              as={BsLinkedin}
+              className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500"
+            ></Icon>
+          </Link>
+          <Link href="https://www.instagram.com/muict_studentactivities/" target='_blank'>
             <Icon
               w={{ base: 8, md: 16 }}
               h={16}
@@ -64,7 +78,7 @@ export default function () {
               className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500"
             ></Icon>
           </Link>
-          <Link href="https://www.facebook.com/ict.mahidol.university">
+          <Link href="https://www.facebook.com/ict.mahidol.university" target='_blank'>
             <Icon
               w={{ base: 8, md: 16 }}
               h={16}
@@ -73,7 +87,7 @@ export default function () {
               className="text-[#FFFFFF] hover:text-[#00FF66]  transition-colors duration-500"
             ></Icon>
           </Link>
-          <Link href="https://twitter.com/ict_mahidol">
+          <Link href="https://twitter.com/ict_mahidol" target='_blank'>
             <Icon
               w={{ base: 8, md: 16 }}
               h={16}
@@ -82,7 +96,7 @@ export default function () {
               className="text-[#FFFFFF] hover:text-[#00FF66]  transition-colors duration-500"
             ></Icon>
           </Link>
-          <Link href="https://www.youtube.com/@ICTMahidol">
+          <Link href="https://www.youtube.com/@ICTMahidol"  target='_blank'>
             <Icon
               w={{ base: 8, md: 16 }}
               h={16}
@@ -91,15 +105,24 @@ export default function () {
               className="text-[#FFFFFF] hover:text-[#00FF66]  transition-colors duration-500"
             ></Icon>
           </Link>
+          <Link href="https://www.tiktok.com/@ict_mahidol"  target='_blank'>
+            <Icon
+              w={{ base: 8, md: 16 }}
+              h={16}
+              m="1"
+              as={BsTiktok}
+              className="text-[#FFFFFF] hover:text-[#00FF66]  transition-colors duration-500"
+            ></Icon>
+          </Link>
         </div>
 
         <div className="flex flex-col p-2 md:p-10 justify-center items-center">
-          <h1 className=" text-2xl md:text-4xl text-white font-bold ">
+          <h1 className=" text-xl md:text-4xl text-white font-bold ">
             Join ICT21 Community
           </h1>
         </div>
         <div className="flex flex-row gap-4 md:gap-10  justify-center items-center">
-          <Link href="#">
+          <Link href="#" target='_blank'>
             <Icon
               w={{ base: 8, md: 16 }}
               h={16}
@@ -108,7 +131,7 @@ export default function () {
               className="text-[#FFFFFF] hover:text-[#00FF66]  transition-colors duration-500"
             ></Icon>
           </Link>
-          <Link href="#">
+          <Link href="https://t.co/4mEoSDuxmc"  target='_blank'>
             <Icon
               w={{ base: 8, md: 16 }}
               h={16}
@@ -121,6 +144,11 @@ export default function () {
 
         {/* Feedback goes here. */}
         <FeedbackPopover />
+        <div className="text-[#00FF66] font-medium">
+          <a href='/acknowledgement'>
+           <h1>Acknowledgemnt</h1>
+         </a>
+        </div>
         <Image
           width={1}
           height={1}
@@ -206,7 +234,7 @@ function FeedbackPopover() {
         <>
           <PopoverTrigger>
             <Button
-              className="mt-16 rounded-full bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
+              className="mt-8 rounded-full bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
               size={{ base: "sm", md: "lg" }}
             >
               Give Us Some Feedback

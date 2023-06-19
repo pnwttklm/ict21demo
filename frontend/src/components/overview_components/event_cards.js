@@ -19,11 +19,12 @@ export default function ({ topic, info, link, img, date1, date2, type }) {
       initial="hidden"
       whileInView="show"
       href={link}
-      className="flex p-6 w-7/12 outline outline-2 text-white text-center justify-center items-center rounded-[56px] gap-6
+      className="flex p-6 w-9/12 outline outline-2 text-white text-center justify-center items-center rounded-[56px] gap-6
         flex-col
         md:flex-row
         md:outline-4
-        md:text-left"
+        md:text-left
+        md:w-7/12"
     >
       <Image
         width={112}

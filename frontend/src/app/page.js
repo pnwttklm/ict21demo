@@ -1,12 +1,4 @@
-
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
-// import GallerySlider2 from '../components/galleryslider2'
-// import MsgSlider2 from '../components/msgslider2'
-// import Question from '../components/questionsection'
-// import Allcards1 from '../components/allcards1'
-// import Footer from '../components/footer'
-// import Timeline from '../components/timeline_main'
 
 const GallerySlider2 = dynamic(() => import('../components/overview_components/galleryslider2'))
 const MsgSlider2 = dynamic(() => import('../components/overview_components/msgslider2'))
@@ -83,7 +75,7 @@ export default function Home() {
 
       <div id='timeline' className='h-24 '/>
       <div className='bg-gradient-to-b from-[#00FF66]'>
-        <div className='flex flex-col h-32  justify-center'>
+        <div className='flex flex-col pt-10 justify-center'>
           <h1 className=' text-white font-bold text-center
           text-2xl
           md:text-4xl'>TIMELINE</h1>

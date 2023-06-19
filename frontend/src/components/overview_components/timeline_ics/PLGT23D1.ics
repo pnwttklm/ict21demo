@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Spatie calendar-links
+BEGIN:VEVENT
+UID:dc084cde8bc812c782c68f7e13622b49
+SUMMARY:PLGT23 Day 1
+DTSTAMP:20230704T020000Z
+DTSTART:20230704T020000Z
+DTEND:20230704T100000Z
+DESCRIPTION:Play\, learn\, and grow together by Chittapanya team with activities designed specifically for ICT freshy in order to get to know each other. These activities are thoughtfully crafted to facilitate interaction and enable the freshies to get to know each other. By engaging in these activities\, the participants can not only have fun but also learn from one another and grow both personally and professionally.
+LOCATION:Faculty of ICT\, Mahidol University
+END:VEVENT
+END:VCALENDAR

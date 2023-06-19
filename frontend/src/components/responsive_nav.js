@@ -33,7 +33,7 @@ import Image from 'next/image';
   
     return (
       <Box className='z-20 top-0 fixed'>
-        <Flex className=' w-screen h-16 drop-shadow-md backdrop-blur-[56px] bg-[#00000052]'>
+        <Flex className=' w-screen h-16 drop-shadow-md backdrop-blur-[56px] bg-black/20'>
           <Flex
             className=' items-center'
             flex={{ base: 1, md: 'auto' }}
@@ -52,12 +52,12 @@ import Image from 'next/image';
           </Flex>
 
           <Flex className="flex flex-1 justify-between">
-            <Link href="/" className="nav-items"><Image width={930} height={576} src="/asset/ICT_logo_monowhite.svg" className="h-14 pt-2 w-40 drop-shadow-md" alt='ICT21-logo-navber'></Image></Link>
+            <Link href="/" className="nav-items"><Image width={930} height={576} src="/asset/ICT_logo_monowhite.svg" className="h-14 pt-2 w-28 drop-shadow-md" alt='ICT21-logo-navber'/></Link>
             <Flex className="hidden md:flex mr-4">
               <DesktopNav />
             </Flex>
           </Flex>
-          <Link href="/meet-our-team" className="nav-items"><Image priority width={536} height={171} src="/asset/meet_our_team.svg" className=" h-14 pt-4 w-40 drop-shadow-md" alt='meetOurTeamLogo-navbar'></Image></Link>
+          <Link href="/meet-our-team" className="nav-items"><Image priority width={536} height={171} src="/asset/meet_our_team.svg" className=" h-14 pt-4 w-44 drop-shadow-md" alt='meetOurTeamLogo-navbar'></Image></Link>
         </Flex>
   
         <Collapse in={isOpen} animateOpacity className='text-white'>
@@ -73,7 +73,7 @@ import Image from 'next/image';
     const popoverContentBgColor = useColorModeValue('#EDEDED', 'white');
   
     return (
-      <Stack direction={'row'} spacing={{base:'0.5' , lg:'4'}} alignItems='center'>
+      <Stack direction={'row'} spacing={{base:'0.5' , lg:'7'}} alignItems='center'>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-end'}>
@@ -152,7 +152,7 @@ import Image from 'next/image';
   
   const MobileNav = function() {
     return (
-      <Stack className='bg-black-opacity p-4' display={{ md: 'none' }}>
+      <Stack className='backdrop-blur-[56px] bg-black/20 p-4' display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />
         ))}

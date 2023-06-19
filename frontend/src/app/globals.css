@@ -16,6 +16,15 @@ body {
             focus:underline;
   }
 }
+
+.card {
+  padding: 1rem 1.2rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+}
+
 /* .bg-black-opacity {
   background-color: rgba(0, 0, 0, 0.32);
   backdrop-filter: blur(56px);
