@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
-const Top = dynamic(() => import("../../components/top"));
+const Top = dynamic(() => import("../../components/sairahus_components/top"));
 const Countdown = dynamic(() =>import("../../components/countdown"));
 const Place = dynamic(() => import('../../components/place'))
 const Agenda = dynamic(() => import('../../components/agenda'))
@@ -25,10 +25,18 @@ export default function Sairahus() {
             description='Hereditarily cursed passed down from generation to generation.'
         />
         
-        <Countdown targetDate={dateTimeAfterThreeDays} />
+        <div className=" m-4">
+          <Countdown targetDate={dateTimeAfterThreeDays}/>
+        </div>
 
-        <div className="flex flex-col content-center items-center w-full h-fit bg-[#1D1D1F] mt-16 p-16 gap-14">
-          <h1 className=' text-4xl font-bold text-[#F5F5F7] items-center pb-14'>LOCATION</h1>
+        <div className="flex flex-col content-center items-center w-full h-fit bg-[#1D1D1F] mt-16 p-16 gap-7 md:gap-14">
+            <h1 className=' text-2xl font-bold text-[#F5F5F7] items-center 
+                pb-7 
+                md:pb-10
+                md:text-4xl'
+            >
+                LOCATION
+            </h1>
 
           <Place  
             firsthalfName='Faculty of ICT,'

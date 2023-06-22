@@ -13,19 +13,22 @@ export default function TopElement() {
           <motion.iframe
             variants={fadeInUp}
             whileInView="show"
-            className="w-96 h-[600px]"
+            className="w-full h-[600px]"
             src="https://my.spline.design/untitledcopycopy-68a94d1e36b2b2363b738436fefb91a2/"
             frameBorder="0"
+            title='Freshy go round 3D'
+            loading="lazy"
           />
       
           <motion.div
             variants={fadeInUp}
             initial="hidden"
             whileInView="show"
-            className="flex flex-col mb-5 w-1/2 justify-center text-center text-white gap-10"
+            className="flex flex-col mb-5 w-10/12 md:w-1/2 justify-center text-center text-white gap-10"
+            
           >
             <h1
-              className=" -m-16  font-semibold bg-black text-center
+              className=" m-4  font-semibold text-center
                 text-4xl
                 md:text-5xl
                 xl:text-6xl"
@@ -33,13 +36,13 @@ export default function TopElement() {
               Snapshot Test
             </h1>
             <p
-              className="mt-24 font-medium
+              className=" font-medium
                 text-lg
                 md:text-xl
                 xl:text-2xl
                 "
             >
-              of June 19.
+              Of Jun 22.
             </p>
             <div
               className="flex flex-col font-normal gap-10
@@ -48,17 +51,10 @@ export default function TopElement() {
                 xl:text-lg"
             >
               <p>
-                Mark your calendars and be part of this extraordinary opportunity to
-                kickstart your college journey with the Faculty of ICT. As you step
-                into the latest batch of our esteemed faculty, get ready to delve into
-                the world of cutting-edge technologies and enriching education. This
-                is your chance to connect with ICT Ajarns, experienced senpais, and
-                fellow developers.
+                We add many features and fixed many bugs,
               </p>
               <p>
-                Join us onsite events exclusively designed for ICT Freshy. Immerse
-                yourself in a month filled with knowledge, networking, and endless
-                possibilities.
+                including fixed some responsiveness, update timeline and its img, add some accurate information, footer is now be code, some colors changed due to the desire of art team, fixed some performance problems, message from senpais looks better, 3D head figures updated due to art team, update acknowledgement, provide more in ICT21 community, and more.
               </p>
               <p>Stay tuned for more details, and we can't wait to welcome you!</p>
             </div>

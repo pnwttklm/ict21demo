@@ -119,10 +119,10 @@ export default function Question() {
                                 Download Image<Icon className='ml-1' as={BsFillArrowDownCircleFill}></Icon>
                             </Button>
                             </a> */}
-                            <div className="flex flex-col lg:flex-row w-3/6 p-6 mt-4 rounded-3xl bg-[#EDEDED]">
+                            <div className="flex flex-col lg:flex-row w-full sm:w-4/6 md:w-3/6 p-6 mt-4 rounded-3xl bg-[#EDEDED] justify-center items-center">
                                 <Image width={64} height={64} src="pdfIcon.svg" alt="PDF Icon" />
-                                <div className="flex flex-col gap-4 items-left">
-                                    <p className="text-l font-medium">Exemption Policy for Basic and Prerequisite English Classes</p>
+                                <div className="flex flex-col gap-4 items-center">
+                                    <p className=" text-sm md:text-base font-medium">Exemption Policy for Basic and Prerequisite English Classes</p>
                                     <Button onClick={DownloadPDf} className="w-fit rounded-full font-medium hover:text-[#FFFFFF] hover:bg-[#000000] bg-[#FFFFFF]" size="sm" variant="solid">
                                         Download File
                                         <Icon className="ml-1" as={BsFillArrowDownCircleFill} />

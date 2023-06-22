@@ -7,13 +7,13 @@ import {
   Heading,
   Text,
   Container,
-  Image,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { useState } from "react";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
+import Image from "next/image";
 // import styles from '@/app/global.css'
 
 // Settings for the slider
@@ -36,29 +36,26 @@ export default function CaptionCarousel() {
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: "90%", md: "50%" });
-  const side = useBreakpointValue({ base: "30%", md: "40px" });
+  const top = useBreakpointValue({ base: "50%", md: "50%" });
+  const side = useBreakpointValue({ base: "10%", md: "40px" });
 
   // This list contains all the data for carousels
   // This can be static or loaded from a server
 
   const cards = [
     {
-      title: "Design Projects 1",
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      name: "Napatkrit Asavarojpanich",
+      pos: 'Vice President ICT#20',
+      text: 'You’re in the phone with your girlfriend she’s upset she going up about something that you said.',
       image:
-      'https://firebasestorage.googleapis.com/v0/b/ict21webstorage.appspot.com/o/kung.png?alt=media&token=c59b80f4-b432-4982-86d8-d93b1600234e'    },
-    {
-      title: "Design Projects 2",
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image:
-        'https://images.unsplash.com/photo-1438183972690-6d4658e3290e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2274&q=80',
+      'https://firebasestorage.googleapis.com/v0/b/ict21webstorage.appspot.com/o/kung.png?alt=media&token=c59b80f4-b432-4982-86d8-d93b1600234e'    
     },
     {
-      title: "Design Projects 3",
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      name: "Thanachot Onlamoon",
+      pos: 'Rookie ICT#20',
+      text: "I don't know who are you but I'll kill you ",
       image:
-        'https://images.unsplash.com/photo-1507237998874-b4d52d1dd655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+      'https://firebasestorage.googleapis.com/v0/b/ict21webstorage.appspot.com/o/kung.png?alt=media&token=c59b80f4-b432-4982-86d8-d93b1600234e'    
     },
   ];
 
@@ -85,29 +82,27 @@ export default function CaptionCarousel() {
       <IconButton
         aria-label="left-arrow"
         variant="solid"
-        className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
-        // colorScheme='teal'
-        color={"white"}
+        className="rounded-full"
+        colorScheme='whiteAlpha'
         position="absolute"
         left={side}
         top={top}
-        transform={"translate(0%, -50%)"}
+        // transform={"translate(0%, -50%)"}
         zIndex={2}
         onClick={() => slider?.slickPrev()}
       >
         <BsArrowLeftCircle size="40px" />
-      </IconButton>
+      </IconButton> 
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
         variant="solid"
-        className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
-        // colorScheme='teal'
-        color={"white"}
+        className="rounded-full"
+        colorScheme='whiteAlpha'
         position="absolute"
         right={side}
         top={top}
-        transform={"translate(0%, -50%)"}
+        // transform={"translate(0%, -50%)"}
         zIndex={2}
         onClick={() => slider?.slickNext()}
       >
@@ -116,28 +111,76 @@ export default function CaptionCarousel() {
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
-          // .card {
+          <div key={index}>
+            <div className="flex justify-center items-center border-solid border-4 border-[#FFFFFF29] rounded-3xl
+              flex-col
+              md:flex-row"
+            >
+
+            <Image height={200} width={300} className="h-84 w-84 md:h-fit md:w-fit" src={card.image} alt={`${card.name} logo`} loading="lazy"/>
+            <div className="flex flex-col justify-center items-center text-white">
+              <div className="flex justify-start w-full m-4 md:m-16">
+                <Image className="h-5 w-8 md:h-fit md:w-fit" height={72} width={72} src="/quote.opening.svg" alt="quote opening img" loading="lazy" />
+              </div>
+              <div className="flex items-center justify-center text-sm md:text-xl">
+                <h1 className="text-left font-semibold">{card.name}</h1>
+                <h1 className="text-[#FFFFFF80]"> — {card.pos}</h1>
+              </div>
+              <p className="w-1/2 text-center mt-4 text-xs md:text-base">{card.text}</p>
+              <div className="flex justify-end w-full m-4 md:m-16">
+                <Image className="h-5 w-8 md:h-fit md:w-fit" height={72} width={72} src="/quote.closing.svg" alt="quote closing img" loading="lazy"/>
+              </div>
+              {/* <div className="flex items-center justify-center gap-10">
+                <IconButton
+                  aria-label="left-arrow"
+                  variant="solid"
+                  className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
+                  color={"white"}
+                  onClick={() => slider?.slickPrev()}
+                >
+                  <BsArrowLeftCircle size="40px" />
+                </IconButton>
+                <IconButton
+                  aria-label="right-arrow"
+                  variant="solid"
+                  className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
+                  color={"white"}
+                  onClick={() => slider?.slickNext()}
+                >
+                  <BsArrowRightCircle size="40px" />
+                </IconButton>
+              </div> */}
+            </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </Box>
+  );
+}
+
+// .card {
           //   padding: 1rem 1.2rem;
           //   border-radius: var(--border-radius);
           //   background: rgba(var(--card-rgb), 0);
           //   border: 1px solid rgba(var(--card-border-rgb), 0);
           //   transition: background 200ms, border 200ms;
           // }
-          <Box
-            key={index}
-            height={"600px"}
-            width={"1121px"}
-            position="relative"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            backgroundSize={["contain", "cover"]}
-            borderWidth='3px'
-            borderRadius='65px'
+          // <Box
+          //   key={index}
+          //   height={"600px"}
+          //   width={"1121px"}
+          //   position="relative"
+          //   backgroundPosition="center"
+          //   backgroundRepeat="no-repeat"
+          //   backgroundSize={["contain", "contain"]}
+          //   borderWidth='3px'
+          //   borderRadius='65px'
             // backgroundImage={`url(${card.image})`}
             // className='outline-[#FFFFFF]'
-          >
+          // >
             {/* This is the block you need to change, to customize the caption */}
-            <Container size="container.lg" height="full" position="relative">
+            // <Container size="container.lg" height="full" position="relative">
               {/* <Stack
                 spacing={6}
                 w={"full"}
@@ -146,27 +189,20 @@ export default function CaptionCarousel() {
                 top="50%"
                 transform="translate(0, -50%)"
               > */}
-              <div className="flex flex-col">
-                <Image 
-                width='365px'
-                height='365px'
-                src={card.image}></Image>
-                <Text
-                  fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-                  color="white"
-                  className="font-bold text-[#FFFFFF]"
-                >
-                  {card.title}
-                </Text>
-                <Text fontSize={{ base: "md", lg: "lg" }} color="white" className="font-medium text-[#FFFFFF]">
-                  {card.text}
-                </Text>
-                </div>
+                // <Image 
+                // width='365px'
+                // height='365px'
+                // src={card.image}></Image>
+                // <Text
+                //   fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+                //   color="white"
+                //   className="font-bold text-[#FFFFFF]"
+                // >
+                //   {card.title}
+                // </Text>
+                // <Text fontSize={{ base: "md", lg: "lg" }} color="white" className="font-medium text-[#FFFFFF]">
+                //   {card.text}
+                // </Text>
               {/* </Stack> */}
-            </Container>
-          </Box>
-        ))}
-      </Slider>
-    </Box>
-  );
-}
+          //   </Container>
+          // </Box>

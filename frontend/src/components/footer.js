@@ -30,7 +30,9 @@ import {
 } from "react-icons/bs";
 import React, { useState } from "react";
 
+
 export default function () {
+  const year = new Date().getFullYear();
   return (
     <div className="bg-[#1D1D1D]">
 
@@ -122,7 +124,7 @@ export default function () {
           </h1>
         </div>
         <div className="flex flex-row gap-4 md:gap-10  justify-center items-center">
-          <Link href="#" target='_blank'>
+          <Link href="https://discord.gg/BdeSeYAg" target='_blank'>
             <Icon
               w={{ base: 8, md: 16 }}
               h={16}
@@ -131,15 +133,55 @@ export default function () {
               className="text-[#FFFFFF] hover:text-[#00FF66]  transition-colors duration-500"
             ></Icon>
           </Link>
-          <Link href="https://t.co/4mEoSDuxmc"  target='_blank'>
-            <Icon
-              w={{ base: 8, md: 16 }}
-              h={16}
+          
+          
+
+          <Popover trigger='hover'>
+                  <PopoverTrigger>
+                          <Link href="https://line.me/ti/g/P_AK5vTkp1"  target='_blank'>
+                    <Image
+                      width='116'
+                      height='116'
+                      m="1"
+                      src="/asset/forFooter/linewsf.svg"
+                      loading="lazy"
+                      className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500"
+                    ></Image>
+                        </Link>
+                  </PopoverTrigger>
+                    <PopoverContent className=' rounded-3xl items-center'>
+                      
+                      <PopoverBody className='p-6'>
+                        
+                          <Image width={150} height={150} src='/asset/forFooter/qrlinewsf.jpg' />
+    
+                      </PopoverBody>
+                    </PopoverContent>
+                </Popover>
+
+                <Popover trigger='hover'>
+                  <PopoverTrigger>
+                  <Link href="https://line.me/ti/g/dq75BhxwT-"  target='_blank'>
+            <Image
+              width='116'
+              height='116'
               m="1"
-              as={BsLine}
+              src="/asset/forFooter/linewosf.svg"
               className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500"
-            ></Icon>
+            ></Image>
           </Link>
+                  </PopoverTrigger>
+                    <PopoverContent className=' rounded-3xl items-center'>
+                      
+                      <PopoverBody className='p-6'>
+                        
+                          <Image width={150} height={150} src='/asset/forFooter/qrlinewosf.jpg' />
+    
+                      </PopoverBody>
+                    </PopoverContent>
+                </Popover>
+
+
         </div>
 
         {/* Feedback goes here. */}
@@ -149,13 +191,25 @@ export default function () {
            <h1>Acknowledgemnt</h1>
          </a>
         </div>
-        <Image
-          width={1}
-          height={1}
-          className="w-3/4"
-          alt="footer template"
-          src="/asset/footer.svg"
-        />
+
+
+
+        {/* copyright */}
+        <div className="flex flex-col p-8 bg-black w-full md:w-3/4 h-1/2 md:h-full justify-between rounded-3xl gap-20">
+          <div className="flex flex-col gap-7">
+            <Image height={100} width={120} src='/asset/ict21_logo.svg' alt="ICT21 logo color version"/>
+            <h1 className="text-white text-base">Powered by</h1>
+            <div className="flex flex-col md:flex-row w-full gap-1 md:gap-10">
+              <Image height={100} width={200} src='/asset/president_team.svg' alt="ICT President team logo"/>
+              <Link href='https://ict.mahidol.ac.th' target='_blank'><Image height={100} width={100} src='/asset/mu_ict.svg' alt="ICT and mu logo"/></Link>
+              <Image height={100} width={100} src='/asset/ict_badge_black.svg' alt="ICT21 badge"/>
+            </div>
+          </div>
+          <div className="flex items-end justify-between text-white text-[8px] md:text-xs">
+            <h1 >Copyright © {year}. ICT#20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.</h1>
+            <h1 >Apple® and Apple logo® are trademarks of Apple Inc.</h1>
+          </div>
+        </div>
       </div>
     </div>
   );

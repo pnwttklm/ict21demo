@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button, Icon } from "@chakra-ui/react";
 
@@ -27,11 +28,12 @@ export default function ({ topic, info, link, img, date1, date2, type }) {
         md:w-7/12"
     >
       <Image
-        width={112}
-        height={112}
+        width={200}
+        height={200}
         className="w-14 h-14"
         alt={`${topic} logo`}
         src={img}
+        loading="lazy"
       />
       <div
         className="flex flex-col gap-4 

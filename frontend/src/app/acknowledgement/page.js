@@ -18,6 +18,7 @@ export default function acknowledgement() {
                 <p className="font-regular text-[#EDEDED] hover:text-[#00FF66]">Poonyawatt Klumnaim</p>
                 <h1 className="mt-3 font-semibold text-[#F5F5F7]">Special Thanks</h1>
                 <p className="font-regular text-[#EDEDED] hover:text-[#00FF66]">Jarukit Buntheangjai</p>
+                <p className="font-regular text-[#EDEDED] hover:text-[#00FF66]">Pakaporn Chokpiroon</p>
                 <p className="font-regular text-[#EDEDED] hover:text-[#00FF66]">Natchapol Mingmahaphan</p>
                 <p className="font-regular text-[#EDEDED] hover:text-[#00FF66]">Napatkrit Asavarojpanich</p>
                 <p className="font-regular text-[#EDEDED] hover:text-[#00FF66]">Ornjira Korsakpaisarn</p>

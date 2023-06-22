@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 
 const GallerySlider2 = dynamic(() => import('../components/overview_components/galleryslider2'))
 const MsgSlider2 = dynamic(() => import('../components/overview_components/msgslider2'))
@@ -15,6 +16,9 @@ export default function Home() {
 
   return (
     <>
+    <Head>
+        <title>ICT21-Overview</title>
+      </Head>
       <div id='freshy-go-round' className='flex flex-col w-screen justify-center items-center'>
         <Topelement/>
 
@@ -25,7 +29,7 @@ export default function Home() {
           date1={'July 4'}
           date2={'July 5'}
           link={'/PLGT23'}
-          img={'Star1.svg'} 
+          img={'/asset/foroverviewbadge/plgtbadg.png'} 
           type={2}
         />
 
@@ -34,7 +38,7 @@ export default function Home() {
           info={'Let’s explore places around uni including restaurants, entertainments, and more.'} 
           date1={'July 22, 9 a.m.'}
           link={'/welcome-freshy'}
-          img={'Ellipse 5.svg'} 
+          img={'/asset/foroverviewbadge/sairahusbadge.png'} 
           type={1}
         />
 
@@ -43,7 +47,7 @@ export default function Home() {
           info={'Hereditarily cursed passed down from generation to generation.'} 
           date1={'Aug 4, 1 p.m.'}
           link={'/sairahus'}
-          img={'Polygon 8.svg'} 
+          img={'/asset/foroverviewbadge/welcomefreshybadge.png'} 
           type={1}
         />
 
@@ -74,7 +78,7 @@ export default function Home() {
       </div>
 
       <div id='timeline' className='h-24 '/>
-      <div className='bg-gradient-to-b from-[#00FF66]'>
+      <div className='bg-gradient-to-b from-black via-[#480582] to-black '>
         <div className='flex flex-col pt-10 justify-center'>
           <h1 className=' text-white font-bold text-center
           text-2xl

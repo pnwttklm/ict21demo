@@ -137,8 +137,9 @@ export default function CaptionCarousel() {
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize={{ base: "contain", xl: "cover" }}
+            backgroundSize={{ base: "contain", xl: "contain" }}
             backgroundImage={`url(${card.image})`}
+            loading="lazy"
           >
             {" "}
             {/* backgroundImage={`url(${card.image})`} */}
@@ -151,6 +152,7 @@ export default function CaptionCarousel() {
                 position="absolute"
                 top="50%"
                 transform="translate(0, -50%)"
+                
               >
                 <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
                   {card.title}

@@ -6,7 +6,7 @@ import {
 export default function() {
     return (
         <>
-            <div className='rounded-3xl bg-[#1D1D1F] p-6
+            <div className='rounded-3xl bg-gradient-to-br from-[#1B6C73] to-transparent p-6
                 w-10/12
                 md:w-1/2
                 md:p-12'

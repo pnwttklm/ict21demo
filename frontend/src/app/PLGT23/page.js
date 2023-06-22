@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
-const Top = dynamic(() => import("../../components/top"));
+const Top = dynamic(() => import("../../components/PLGT23_components/top"));
 const Info = dynamic(() => import("../../components/PLGT23_components/info"));
 const Countdown = dynamic(() =>import("../../components/countdown"));
 const Place = dynamic(() => import('../../components/place'))
@@ -24,13 +24,15 @@ export default function plgt23() {
           date='July 4-5'
           description='Play, learn, and grow together by Chittapanya team with activities designed specifically for ICT freshy in order to get to know each other. These activities are thoughtfully crafted to facilitate interaction and enable the freshies to get to know each other. By engaging in these activities, the participants can not only have fun but also learn from one another and grow both personally and professionally.'
         />
-        <Countdown targetDate={dateTimeAfterThreeDays} />
+        <div className=" m-4">
+          <Countdown targetDate={dateTimeAfterThreeDays} />
+        </div>
         <Info />
 
-        <div className="flex flex-col content-center items-center w-full h-fit bg-[#1D1D1F] mt-16 p-8 md:p-16 gap-7 md:gap-14">
+        <div className="flex flex-col content-center items-center w-full h-fit bg-[#1D1D1F] mt-16 p-16 gap-7 md:gap-14">
           <h1 className=' text-2xl font-bold text-[#F5F5F7] items-center 
             pb-7 
-            md:pb-14
+            md:pb-10
             md:text-4xl'
           >
             LOCATION

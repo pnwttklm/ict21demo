@@ -160,12 +160,13 @@ export default function () {
               href="https://apps.apple.com/us/app/we-mahidol/id1425003959?itsct=apps_box_badge&amp;itscg=30200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-            >
+            > 
               <img
                 width={120}
                 height={120}
                 src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1542153600"
                 alt="Download on the App Store"
+                loading="lazy"
               />
             </motion.a>
             <motion.a
@@ -179,6 +180,7 @@ export default function () {
                 height={153}
                 alt="Get it on Google Play"
                 src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                loading="lazy"
               />
             </motion.a>
           </div>

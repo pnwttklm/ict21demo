@@ -82,11 +82,19 @@ export default function CountdownTimer({ targetDate }) {
     return (
       
       <div className={isDanger ? 'countdown danger' : 'countdown'}>
-        <div className='p-16'>
-          <Text fontSize='6xl' className='p-6 rounded-3xl font-bold size-3xl outline outline-4'>
+        <div className='p-3 md:p-12'>
+          <h1 className=' rounded-3xl outline
+          pb-8 pt-8 pl-4 pr-4
+          font-medium md:font-bold  
+          outline-2 md:outline-4
+          text-2xl md:text-6xl'>
             {value}
-          </Text>
-          <h1 className='mt-3 font-semibold size-3xl'>{type}</h1>
+          </h1>
+          <h1 className='mt-3 font-semibold
+            text-xs md:text-base'
+          >
+            {type}
+          </h1>
         </div>
       </div>
     );
