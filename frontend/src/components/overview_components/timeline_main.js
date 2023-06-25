@@ -19,7 +19,8 @@ export default function() {
           <SimpleGrid className='pt-10 pl-20 pr-20 pb-10' columns={[1,1,2,4]} spacing={10}>
             {timeline_elements.map((timeline, index) => (
               <div key={index}>
-                <Popover trigger='hover'>
+                <Popover trigger='hover' closeOnBlur={true} >
+                {/* {({ onClose }) => ( */}
                   <PopoverTrigger>
                     <div className='flex flex-col items-center justify-center'>
                       <Image className='mb-2' width={200} height={200} src={timeline.img_url} alt={`image of ${timeline.event_name}`} loading="lazy"/>
@@ -58,6 +59,7 @@ export default function() {
                       </PopoverBody>
                     </PopoverContent>
                   </Portal>
+                {/* )} */}
                 </Popover>
               </div>
             ))}
@@ -66,10 +68,10 @@ export default function() {
             <PopoverTrigger>
               <div className='flex flex-col items-center'>
               <Image className='mb-2' width={200} height={200} src='/asset/For_Timeline/SemesterST.svg' alt='Semester Begins' loading="lazy"/>
-                <p className='bg-white rounded-full pt-1 pb-1 pl-3 pr-3 font-medium 
-                text-xs
-                sm:text-sm
-                md:text-base'>Semester Begins 🎉</p>
+              <p className='bg-white rounded-full pt-1 pb-1 pl-3 pr-3 font-bold 
+                      text-xs
+                      sm:text-sm
+                      md:text-base'>Semester Begins 🎉</p>
                 <p className='mt-2 text-white font-semibold
                 text-xs
                 sm:text-sm
@@ -104,6 +106,15 @@ export default function() {
   const timeline_elements = [
     {
       img_url:'/asset/For_Timeline/PLGT23_1.svg',
+      event_name: 'Information Session',
+      day: 'Jul 3',
+      dateTime: 'July 3, 2023 10.30 a.m.-12 a.m.',
+      location: 'Grand Auditorium, Faculty of ICT',
+      dressCode: 'white shirt',
+      calendarLink: ''
+    },
+    {
+      img_url:'/asset/For_Timeline/PLGT23_1.svg',
       event_name: 'PLGT23 Day 1 at Salaya',
       day: 'Jul 4',
       dateTime: 'July 4, 2023 9 a.m.-4 p.m.',
@@ -125,7 +136,7 @@ export default function() {
       event_name: 'Fire Prevention and Control',
       day: 'Jul 6',
       dateTime: 'July 6, 2023 9 a.m.-4 p.m.',
-      location: 'Faculty of ICT',
+      location: 'Grand Auditorium, Faculty of ICT',
       dressCode: 'proper',
       calendarLink: ''
     },
@@ -139,7 +150,7 @@ export default function() {
       calendarLink: ''
     },
     {
-      img_url:'/asset/For_Timeline/TOEFL_ITP.svg',
+      img_url:'/asset/For_Timeline/TOEFL_ITP1.svg',
       event_name: 'TOEFL ITP (Round 1)',
       day: 'Jul 7',
       dateTime: 'July 7, 2023 1 p.m.-4 p.m.',
@@ -157,10 +168,37 @@ export default function() {
       calendarLink: ''
     },
     {
+      img_url:'/asset/For_Timeline/preppro.svg',
+      event_name: 'Exemption Exam',
+      day: 'Jul 18',
+      dateTime: 'July 18, 2023 9 a.m.-12 p.m.',
+      location: 'Faculty of ICT',
+      dressCode: 'proper',
+      calendarLink: ''
+    },
+    {
+      img_url:'/asset/For_Timeline/preppro.svg',
+      event_name: 'Ethics Sessions',
+      day: 'Jul 21',
+      dateTime: 'July 21, 2023 1 p.m.-3 p.m.',
+      location: 'Faculty of ICT',
+      dressCode: 'proper',
+      calendarLink: ''
+    },
+    {
       img_url:'/asset/For_Timeline/MUELT.svg',
       event_name: 'MU-ELT',
       day: 'Jul 22-23',
       dateTime: 'July 22-23, 2023 9 a.m. - 4 p.m.',
+      location: 'Faculty of ICT',
+      dressCode: 'proper',
+      calendarLink: ''
+    },
+    {
+      img_url:'/asset/For_Timeline/TOEFL_ITP2.svg',
+      event_name: 'TOEFL-ITP (Round 2)',
+      day: 'Jul 25',
+      dateTime: 'July 25, 2023 9 a.m. - 12 a.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
       calendarLink: ''

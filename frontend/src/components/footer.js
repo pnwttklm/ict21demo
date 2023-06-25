@@ -27,6 +27,7 @@ import {
   BsTiktok,
   BsLinkedin,
   BsFillXCircleFill,
+  BsLink,
 } from "react-icons/bs";
 import React, { useState } from "react";
 
@@ -138,7 +139,7 @@ export default function () {
 
           <Popover trigger='hover'>
                   <PopoverTrigger>
-                          <Link href="https://line.me/ti/g/P_AK5vTkp1"  target='_blank'>
+                          {/* <Link href="https://line.me/ti/g/P_AK5vTkp1"  target='_blank'> */}
                     <Image
                       width='116'
                       height='116'
@@ -146,37 +147,57 @@ export default function () {
                       src="/asset/forFooter/linewsf.svg"
                       loading="lazy"
                       className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500"
+                      alt="linewsf"
                     ></Image>
-                        </Link>
+                       
+                        {/* </Link> */}
                   </PopoverTrigger>
                     <PopoverContent className=' rounded-3xl items-center'>
                       
-                      <PopoverBody className='p-6'>
+                      <PopoverBody className='p-6 items-center'>
                         
-                          <Image width={150} height={150} src='/asset/forFooter/qrlinewsf.jpg' />
-    
+                          <Image width={150} height={150} src='/asset/forFooter/qrlinewsf.jpg' alt="qr linewsf"/>
+                          <Button
+                             className="mt-8 rounded-full bg-[#00ff66] hover:text-[#F5F5F7] hover:bg-[#1D1D1F]"
+                              size={{ base: "sm", md: "lg" }}
+                              leftIcon={<BsLink/>}
+                              
+                          >
+                            <Link href="https://line.me/ti/g/P_AK5vTkp1">Link</Link>
+                            
+                          </Button>
                       </PopoverBody>
+                
                     </PopoverContent>
                 </Popover>
 
                 <Popover trigger='hover'>
                   <PopoverTrigger>
-                  <Link href="https://line.me/ti/g/dq75BhxwT-"  target='_blank'>
+                  {/* <Link href="https://line.me/ti/g/dq75BhxwT-"  target='_blank'> */}
             <Image
               width='116'
               height='116'
               m="1"
               src="/asset/forFooter/linewosf.svg"
               className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500"
+              alt="line wosf"
             ></Image>
-          </Link>
+          {/* </Link> */}
                   </PopoverTrigger>
                     <PopoverContent className=' rounded-3xl items-center'>
                       
                       <PopoverBody className='p-6'>
                         
-                          <Image width={150} height={150} src='/asset/forFooter/qrlinewosf.jpg' />
-    
+                          <Image width={150} height={150} src='/asset/forFooter/qrlinewosf.jpg' alt="qr linewsf"/>
+                          <Button
+                             className="mt-8 rounded-full bg-[#00ff66] hover:text-[#F5F5F7] hover:bg-[#1D1D1F]"
+                              size={{ base: "sm", md: "lg" }}
+                              leftIcon={<BsLink/>}
+                              
+                          >
+                            <Link href="https://line.me/ti/g/dq75BhxwT-">Link</Link>
+                            
+                          </Button>
                       </PopoverBody>
                     </PopoverContent>
                 </Popover>
@@ -186,7 +207,7 @@ export default function () {
 
         {/* Feedback goes here. */}
         <FeedbackPopover />
-        <div className="text-[#00FF66] font-medium">
+        <div className="text-[#00FF66] font-medium hover:text-[#F5F5F7]">
           <a href='/acknowledgement'>
            <h1>Acknowledgemnt</h1>
          </a>
@@ -197,12 +218,12 @@ export default function () {
         {/* copyright */}
         <div className="flex flex-col p-8 bg-black w-full md:w-3/4 h-1/2 md:h-full justify-between rounded-3xl gap-20">
           <div className="flex flex-col gap-7">
-            <Image height={100} width={120} src='/asset/ict21_logo.svg' alt="ICT21 logo color version"/>
+            <Image height={100} width={120} className="h-[100px] w-[120px]" src='/asset/ict21_logo.svg' alt="ICT21 logo color version"/>
             <h1 className="text-white text-base">Powered by</h1>
-            <div className="flex flex-col md:flex-row w-full gap-1 md:gap-10">
-              <Image height={100} width={200} src='/asset/president_team.svg' alt="ICT President team logo"/>
+            <div className="flex flex-col md:flex-row w-full gap-0 md:gap-10">
+              <Image height={100} width={200} className="h-[100px] w-[200px]" src='/asset/president_team.svg' alt="ICT President team logo"/>
               <Link href='https://ict.mahidol.ac.th' target='_blank'><Image height={100} width={100} src='/asset/mu_ict.svg' alt="ICT and mu logo"/></Link>
-              <Image height={100} width={100} src='/asset/ict_badge_black.svg' alt="ICT21 badge"/>
+              <Image height={100} width={100} className="h-[100px] w-[100px]" src='/asset/ict_badge_black.svg' alt="ICT21 badge"/>
             </div>
           </div>
           <div className="flex items-end justify-between text-white text-[8px] md:text-xs">

@@ -29,7 +29,7 @@ export default function Sairahus() {
           <Countdown targetDate={dateTimeAfterThreeDays}/>
         </div>
 
-        <div className="flex flex-col content-center items-center w-full h-fit bg-[#1D1D1F] mt-16 p-16 gap-7 md:gap-14">
+        <div className="flex flex-col content-center items-center w-full h-fit bg-[#1D1D1F] mt-16 p-8 md:p-16  gap-7 md:gap-14">
             <h1 className=' text-2xl font-bold text-[#F5F5F7] items-center 
                 pb-7 
                 md:pb-10
@@ -48,7 +48,7 @@ export default function Sairahus() {
         </div>
       </div>
 
-      <Agenda/> 
+      <Agenda whichEvent='PLGT23'/> 
 
       <Sumup/>
       

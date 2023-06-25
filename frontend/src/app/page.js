@@ -29,7 +29,7 @@ export default function Home() {
           date1={'July 4'}
           date2={'July 5'}
           link={'/PLGT23'}
-          img={'/asset/foroverviewbadge/plgtbadg.png'} 
+          img={'/asset/foroverviewbadge/plgtbadge.svg'} 
           type={2}
         />
 
@@ -38,7 +38,7 @@ export default function Home() {
           info={'Let’s explore places around uni including restaurants, entertainments, and more.'} 
           date1={'July 22, 9 a.m.'}
           link={'/welcome-freshy'}
-          img={'/asset/foroverviewbadge/sairahusbadge.png'} 
+          img={'/asset/foroverviewbadge/sairahusbadge.svg'} 
           type={1}
         />
 
@@ -47,11 +47,11 @@ export default function Home() {
           info={'Hereditarily cursed passed down from generation to generation.'} 
           date1={'Aug 4, 1 p.m.'}
           link={'/sairahus'}
-          img={'/asset/foroverviewbadge/welcomefreshybadge.png'} 
+          img={'/asset/foroverviewbadge/welcomefreshybadge.svg'} 
           type={1}
         />
 
-        <p className='text-gray-500 
+        <p className='text-[#4A4A4A] 
         text-xs
         sm:text-sm
         md:text-base'>All activities will be conducted in Thai and English.</p>
@@ -62,7 +62,7 @@ export default function Home() {
             topic={'Guide Book'} 
             info={'Let’s explore places around uni including restaurants, entertainments, and more.'} 
             link={'/guide-book'}
-            img={'Rectangle56.svg'} 
+            img={'/asset/foroverviewbadge/book1.svg'} 
             type={3}
           />
 
@@ -70,7 +70,7 @@ export default function Home() {
             topic={'Meet our team'} 
             info={'Meet the team who make these happen, and make, learn, fun with us by joining us.'} 
             link={'/meet-our-team'}
-            img={'meet20.svg'} 
+            img={'/asset/foroverviewbadge/badge20.svg'} 
             type={3}
           />
 
@@ -78,7 +78,7 @@ export default function Home() {
       </div>
 
       <div id='timeline' className='h-24 '/>
-      <div className='bg-gradient-to-b from-black via-[#480582] to-black '>
+      <div className='bg-gradient-to-b from-[#000000] via-[#303285] to-[#000000]'>
         <div className='flex flex-col pt-10 justify-center'>
           <h1 className=' text-white font-bold text-center
           text-2xl

@@ -50,6 +50,30 @@ export default function CaptionCarousel() {
     {
       image: "https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/6F00A038-886C-478C-925E-B38A1CE157E5_1_105_c.jpeg?alt=media&token=ca1db308-8c27-4dc5-ad74-62debfa04eda",
     },
+    {
+      image: "https://mahidol.ac.th/temp/2020/07/salaya-04.jpg",
+    },
+    {
+      image: "https://mahidol.ac.th/temp/2020/07/salaya-05.jpg",
+    },
+    {
+      image: "https://mahidol.ac.th/temp/2020/07/salaya-06.jpg",
+    },
+    {
+      image: "https://mahidol.ac.th/temp/2020/07/salaya-07.jpg",
+    },
+    {
+      image: "https://mahidol.ac.th/temp/2020/07/salaya-08.jpg",
+    },
+    {
+      image: "https://mahidol.ac.th/temp/2020/07/salaya-09.jpg",
+    },
+    {
+      image: "https://mahidol.ac.th/temp/2020/07/salaya-10.jpg",
+    },
+    {
+      image: "https://mahidol.ac.th/temp/2020/07/salaya-11.jpg",
+    },
     
   ];
 

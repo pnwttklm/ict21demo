@@ -82,7 +82,7 @@ export default function CaptionCarousel() {
       <IconButton
         aria-label="left-arrow"
         variant="solid"
-        className="rounded-full"
+        className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
         colorScheme='whiteAlpha'
         position="absolute"
         left={side}
@@ -97,7 +97,7 @@ export default function CaptionCarousel() {
       <IconButton
         aria-label="right-arrow"
         variant="solid"
-        className="rounded-full"
+        className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
         colorScheme='whiteAlpha'
         position="absolute"
         right={side}
@@ -120,7 +120,7 @@ export default function CaptionCarousel() {
             <Image height={200} width={300} className="h-84 w-84 md:h-fit md:w-fit" src={card.image} alt={`${card.name} logo`} loading="lazy"/>
             <div className="flex flex-col justify-center items-center text-white">
               <div className="flex justify-start w-full m-4 md:m-16">
-                <Image className="h-5 w-8 md:h-fit md:w-fit" height={72} width={72} src="/quote.opening.svg" alt="quote opening img" loading="lazy" />
+                <Image className="h-5 w-8 md:h-fit md:w-fit ml-6" height={72} width={72} src="/quote.opening.svg" alt="quote opening img" loading="lazy" />
               </div>
               <div className="flex items-center justify-center text-sm md:text-xl">
                 <h1 className="text-left font-semibold">{card.name}</h1>
@@ -128,7 +128,7 @@ export default function CaptionCarousel() {
               </div>
               <p className="w-1/2 text-center mt-4 text-xs md:text-base">{card.text}</p>
               <div className="flex justify-end w-full m-4 md:m-16">
-                <Image className="h-5 w-8 md:h-fit md:w-fit" height={72} width={72} src="/quote.closing.svg" alt="quote closing img" loading="lazy"/>
+                <Image className="h-5 w-8 md:h-fit md:w-fit mr-6" height={72} width={72} src="/quote.closing.svg" alt="quote closing img" loading="lazy"/>
               </div>
               {/* <div className="flex items-center justify-center gap-10">
                 <IconButton

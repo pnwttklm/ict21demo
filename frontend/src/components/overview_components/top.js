@@ -33,7 +33,7 @@ export default function TopElement() {
                 md:text-5xl
                 xl:text-6xl"
             >
-              Snapshot Test
+              Snapshot Test of June 26.
             </h1>
             <p
               className=" font-medium
@@ -42,7 +42,7 @@ export default function TopElement() {
                 xl:text-2xl
                 "
             >
-              Of Jun 22.
+              Greetings, ICT21 Students of the Class of 2027!
             </p>
             <div
               className="flex flex-col font-normal gap-10
@@ -51,10 +51,24 @@ export default function TopElement() {
                 xl:text-lg"
             >
               <p>
-                We add many features and fixed many bugs,
+                {/* Mark your calendars and be part of this extraordinary opportunity to
+                kickstart your college journey with the Faculty of ICT. As you step
+                into the latest batch of our esteemed faculty, get ready to delve into
+                the world of cutting-edge technologies and enriching education. This
+                is your chance to connect with ICT Ajarns, experienced senpais, and
+                fellow developers. */}
+                Get yourselves ready for the upcoming four years of unforgettable college journey in the Faculty of ICT. 
+                As now you have stepped into this faculty, there’s no turning back. You will experience the world of cutting-edge technologies 
+                from the basic like printing “Hello, world!” to the abysmal dept of world changing algorithms, internet of things, 
+                and even taming an artificial intelligence. This is also a great opportunity to connect with our kind instructors, 
+                experienced seniors, and fellowship of ICT21 who have ended up in the same fate as you are.
               </p>
               <p>
-                including fixed some responsiveness, update timeline and its img, add some accurate information, footer is now be code, some colors changed due to the desire of art team, fixed some performance problems, message from senpais looks better, 3D head figures updated due to art team, update acknowledgement, provide more in ICT21 community, and more.
+                {/* Join us onsite events exclusively designed for ICT Freshy. Immerse
+                yourself in a month filled with knowledge, networking, and endless
+                possibilities. */}
+                Come join us at the onsite exclusive events specifically designed for you ICT freshmen. 
+                Immerse yourself in a month full of activities that will fill you with needed wisdom, making you ready for the upcoming semester.
               </p>
               <p>Stay tuned for more details, and we can't wait to welcome you!</p>
             </div>

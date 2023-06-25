@@ -155,7 +155,7 @@ export default function () {
             alt="wemahidol app card"
             loading="lazy"
           />
-          <div className="ml-2 mt-[250px] absolute flex justify-end items-center ">
+          <div className="ml-2 mt-80 absolute flex justify-end items-center ">
             <motion.a
               href="https://apps.apple.com/us/app/we-mahidol/id1425003959?itsct=apps_box_badge&amp;itscg=30200"
               whileHover={{ scale: 1.05 }}
