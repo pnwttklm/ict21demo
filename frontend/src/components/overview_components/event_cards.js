@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 
 import { Button, Icon } from "@chakra-ui/react";
 
@@ -20,7 +19,7 @@ export default function ({ topic, info, link, img, date1, date2, type }) {
       initial="hidden"
       whileInView="show"
       href={link}
-      className="flex p-6 w-9/12 outline outline-2 text-white text-center justify-center items-center rounded-[56px] gap-6
+      className="flex p-6 w-9/12 h-full outline outline-2 text-white text-center justify-center items-center rounded-[56px] gap-6
         flex-col
         md:flex-row
         md:outline-4
@@ -30,7 +29,7 @@ export default function ({ topic, info, link, img, date1, date2, type }) {
       <Image
         width={200}
         height={200}
-        className="w-18 h-18"
+        className=" w-48 h-48"
         alt={`${topic} logo`}
         src={img}
         loading="lazy"

@@ -125,7 +125,7 @@ export default function () {
           </h1>
         </div>
         <div className="flex flex-row gap-4 md:gap-10  justify-center items-center">
-          <Link href="https://discord.gg/BdeSeYAg" target='_blank'>
+          <Link href="https://discord.gg/AfQsmJ2c" target='_blank'>
             <Icon
               w={{ base: 8, md: 16 }}
               h={16}

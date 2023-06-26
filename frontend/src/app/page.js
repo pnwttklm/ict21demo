@@ -1,25 +1,51 @@
+"use client"
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 
+import {
+  Accordion,
+  Image,
+} from '@chakra-ui/react'
+
+const Individual_nav = dynamic(() => import('../components/individual_nav'))
 const GallerySlider2 = dynamic(() => import('../components/overview_components/galleryslider2'))
 const MsgSlider2 = dynamic(() => import('../components/overview_components/msgslider2'))
-const Question = dynamic(() => import('../components/questionsection'))
 const Allcards1 = dynamic(() => import('../components/overview_components/allcards1'))
 const Footer = dynamic(() => import('../components/footer'))
 const Timeline = dynamic(() => import( '../components/overview_components/timeline_main'))
 const E_card = dynamic(() => import('../components/overview_components/event_cards'))
 const Topelement = dynamic(() => import('../components/overview_components/top'))
 
+const Question = dynamic(() => import('../components/questionsection'))
+const QCard = dynamic(() => import('../components/questionCard'))
 
 
 export default function Home() {
 
   return (
     <>
-    <Head>
-        <title>ICT21-Overview</title>
-      </Head>
-      <div id='freshy-go-round' className='flex flex-col w-screen justify-center items-center'>
+    <title>Overview - ICT21</title>
+      <Individual_nav event_name='Overview' hasImg='hidden' img='' imgLink='' links={[{
+        delink: '/#about',
+        name: 'About'
+      }, {
+        delink: '/#timeline',
+        name: 'Timeline'
+      }, {
+        delink: '/#gallery',
+        name: 'Gallery'
+      }, {
+        delink: '/#msg-from-senpai',
+        name: 'Messages'
+      }, {
+        delink: '/#faqs',
+        name: 'FAQs'
+      }
+      
+      ]} />
+
+      {/* <Individual_nav event_name='PLGT23' links={['About','Location','Agenda','Sum Up','FAQs']} img='game_icon2.svg'/> */}
+      <div id='about' className='flex flex-col w-screen justify-center items-center'>
         <Topelement/>
 
         <main className='flex flex-col mt-10 gap-10 items-center'>
@@ -106,8 +132,39 @@ export default function Home() {
       {/* <MsgSlider/> keen-slider have problem with nextJs*/}
 
       <div className='h-24'/>
-      <div id='faq'>
-        <Question/>
+      <div id='faqs'>
+        
+      <div className='flex flex-col p-16 bg-white h-full w-screen items-center'>
+        <h1 className=' font-bold
+        text-2xl
+        md:text-4xl'>QUESTIONS...?</h1>
+        <Accordion allowToggle className='pt-16 
+        w-12/12
+        md:w-7/12'>
+
+        {questionElement.map((cardE, index) => (
+              <div key={index}>
+                <QCard
+                question={cardE.question}
+                answer={cardE.answer}
+                allowImg={cardE.allowImg}
+                allowFile={cardE.allowFile}
+                imgL={cardE.imgL}
+                imgAlt={cardE.imgAlt}
+                fileRoot={cardE.fileRoot}
+                filename={cardE.filename}
+                fileName={cardE.fileName}
+                ></QCard>
+              </div>
+        ))}
+
+          
+        </Accordion>
+         <Question/>
+
+      </div>
+
+
       </div>
 
       <div id='ict'>
@@ -120,3 +177,28 @@ export default function Home() {
     </>
   )
 }
+
+const questionElement = [
+  {
+    question: 'What is English Exemption?',
+    answer: 
+    <div>
+      <p>Hello</p>
+      <p>Hi</p>
+      <p>HAllo</p>
+      <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div>
+    </div>,
+    allowFile: '',//if allow '', if not 'hidden'
+    fileRoot: 'downloads/project1_leak.pdf',
+    filename: 'project1_leak.pdf',
+    fileName: 'Exemption Policy for Basic and Prerequisite English Classes',
+  },
+  {
+    question: 'Faculty of ICT is for doctosr, is not it?',
+    answer: 'You are more flexible\nHi\nhallo',
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+]

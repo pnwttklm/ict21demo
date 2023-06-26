@@ -32,7 +32,7 @@ import Image from 'next/image';
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box className='z-20 top-0 fixed'>
+      <Box className='z-20 top-0'>
         <Flex className=' w-screen h-16 drop-shadow-md backdrop-blur-[56px] bg-black/20'>
           <Flex
             className=' items-center'
@@ -215,33 +215,33 @@ const NAV_ITEMS= [
   {
     label: 'Overview',
     href: '/',
-    children: [
-      {
-        label: 'FRESHY GO ROUND',
-        subLabel: 'Your New Journey Begins!',
-        href: '#freshy-go-round'
-      },
-      {
-        label: 'TIMELINE',
-        subLabel: "Check Out What's Next",
-        href: '#timeline',
-      },
-      {
-        label: 'GALLERY',
-        subLabel: "Memories",
-        href: '#gallery',
-      },
-      {
-        label: 'MESSAGE FROM SENPAI',
-        subLabel: "Advices from Your Senior",
-        href: '#msg-from-senpai',
-      },
-      {
-        label: 'FAQ',
-        subLabel: "Any Question?",
-        href: '#faq',
-      },
-    ],
+    // children: [
+    //   {
+    //     label: 'FRESHY GO ROUND',
+    //     subLabel: 'Your New Journey Begins!',
+    //     href: '#freshy-go-round'
+    //   },
+    //   {
+    //     label: 'TIMELINE',
+    //     subLabel: "Check Out What's Next",
+    //     href: '#timeline',
+    //   },
+    //   {
+    //     label: 'GALLERY',
+    //     subLabel: "Memories",
+    //     href: '#gallery',
+    //   },
+    //   {
+    //     label: 'MESSAGE FROM SENPAI',
+    //     subLabel: "Advices from Your Senior",
+    //     href: '#msg-from-senpai',
+    //   },
+    //   {
+    //     label: 'FAQ',
+    //     subLabel: "Any Question?",
+    //     href: '#faq',
+    //   },
+    // ],
   },
   {
     label: 'PLGT23',

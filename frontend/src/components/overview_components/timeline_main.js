@@ -1,5 +1,6 @@
 'use client'
 import { 
+    Icon,
     SimpleGrid,
     Popover,
     PopoverTrigger,
@@ -49,9 +50,9 @@ export default function() {
                           <p className='font-medium'>
                             {timeline.dateTime}
                           </p>
-                          <span className='font-medium inline-block'>
-                            <BsGeoAltFill/> {timeline.location}
-                          </span>
+                          <p className='font-medium inline-block'>
+                            <Icon as={BsGeoAltFill}/> {timeline.location}
+                          </p>
                           <p>
                             <a className='font-medium'>Dress Code: </a>{timeline.dressCode}
                           </p>
@@ -90,9 +91,15 @@ export default function() {
                   </div>
                   <div className='flex flex-col'>
                   <h1 className='font-bold text-xl text-black'>Semester Begins 🎉</h1>
-                    <p>
-                      Say hi to senpais, Ajarns, and staffs. Start your own legendary journey at Faculty of ICT.
-                    </p>
+                  <p className='font-medium'>
+                            Aug 7, 2023
+                          </p>
+                          <p className='font-medium inline-block'>
+                            <Icon as={BsGeoAltFill}/> Faculty of ICT, Mahidol University
+                          </p>
+                          <p>
+                            <a className='font-medium'>Dress Code: </a>student uniform
+                          </p>
                   </div>
                 </PopoverBody>
               </PopoverContent>

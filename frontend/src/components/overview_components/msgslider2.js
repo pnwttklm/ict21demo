@@ -124,7 +124,7 @@ export default function CaptionCarousel() {
               </div>
               <div className="flex items-center justify-center text-sm md:text-xl">
                 <h1 className="text-left font-semibold">{card.name}</h1>
-                <h1 className="text-[#FFFFFF80]"> — {card.pos}</h1>
+                <h1 className="text-[#FFFFFF80]">—{card.pos}</h1>
               </div>
               <p className="w-1/2 text-center mt-4 text-xs md:text-base">{card.text}</p>
               <div className="flex justify-end w-full m-4 md:m-16">
