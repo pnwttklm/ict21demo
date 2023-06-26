@@ -33,7 +33,7 @@ export default function TopElement() {
                 md:text-5xl
                 xl:text-6xl"
             >
-              Freshy go round.
+              Snapshot Test of June 26 V2.
             </h1>
             <p
               className=" font-medium
