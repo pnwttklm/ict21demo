@@ -19,13 +19,15 @@ export default function () {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
           target="_blank"
+          
         >
           <Image
             width={1000}
             height={1000}
-            src="/cards/mycourse.svg"
+            src="/cards/mycourse.webp"
             alt="mycourse card"
-            loading="lazy"
+            className="rounded-3xl"
+            // loading="lazy"
           />
         </motion.a>
 
@@ -38,9 +40,10 @@ export default function () {
           <Image
             width={1000}
             height={1000}
-            src="/cards/smartedu.svg"
+            src="/cards/smartedu.webp"
             alt="smartEDU card"
-            loading="lazy"
+            className="rounded-3xl"
+            // loading="lazy"
           />
         </motion.a>
 
@@ -54,9 +57,10 @@ export default function () {
             <Image
               width={1000}
               height={1000}
-              src="/cards/mux.svg"
+              src="/cards/mux.webp"
               alt="mux card"
-              loading="lazy"
+              className="rounded-3xl"
+              // loading="lazy"
             />
           </motion.a>
           <motion.a
@@ -68,9 +72,10 @@ export default function () {
             <Image
               width={1000}
               height={1000}
-              src="/cards/online.svg"
+              src="/cards/online.webp"
               alt="online card"
-              loading="lazy"
+              className="rounded-3xl"
+              // loading="lazy"
             />
           </motion.a>
         </SimpleGrid>
@@ -85,9 +90,9 @@ export default function () {
             width={1000}
             height={1000}
             className="h-full w-full bg-white rounded-3xl"
-            src="/cards/studentportal.svg"
+            src="/cards/studentportal.webp"
             alt="studentPortal card"
-            loading="lazy"
+            // loading="lazy"
           />
         </motion.a>
 
@@ -100,9 +105,10 @@ export default function () {
           <Image
             width={1000}
             height={1000}
-            src="/cards/softwaredownload.svg"
+            src="/cards/softwaredownload.webp"
             alt="software download card"
-            loading="lazy"
+            className="rounded-3xl"
+            // loading="lazy"
           />
         </motion.a>
 
@@ -115,9 +121,10 @@ export default function () {
           <Image
             width={1000}
             height={1000}
-            src="/cards/sayink.svg"
+            src="/cards/sayink.webp"
             alt="Salaya Link card"
-            loading="lazy"
+            className="rounded-3xl"
+            // loading="lazy"
           />
         </motion.a>
 
@@ -130,9 +137,10 @@ export default function () {
           <Image
             width={1000}
             height={1000}
-            src="/cards/aqi.svg"
+            src="/cards/aqi.webp"
             alt="AQI report card"
-            loading="lazy"
+            className="rounded-3xl"
+            // loading="lazy"
           />
         </motion.a>
 
@@ -140,9 +148,10 @@ export default function () {
           <Image
             width={1000}
             height={1000}
-            src="/cards/comingsoon.svg"
+            src="/cards/comingsoon.webp"
             alt="comingsoon card"
-            loading="lazy"
+            className="rounded-3xl"
+            // loading="lazy"
           />
         </a>
 
@@ -151,9 +160,10 @@ export default function () {
             width={1000}
             height={1000}
             className="rounded-3xl"
-            src="/cards/wemahidol.svg"
+            src="/cards/wemahidol.webp"
             alt="wemahidol app card"
-            loading="lazy"
+            // className="rounded-3xl"
+            // loading="lazy"
           />
           <div className="ml-2 mt-80 absolute flex justify-end items-center ">
             <motion.a
@@ -166,7 +176,7 @@ export default function () {
                 height={120}
                 src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1542153600"
                 alt="Download on the App Store"
-                loading="lazy"
+                // loading="lazy"
               />
             </motion.a>
             <motion.a
@@ -180,7 +190,7 @@ export default function () {
                 height={153}
                 alt="Get it on Google Play"
                 src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                loading="lazy"
+                // loading="lazy"
               />
             </motion.a>
           </div>
@@ -195,9 +205,10 @@ export default function () {
           <Image
             width={1000}
             height={1000}
-            src="/cards/atk.svg"
+            src="/cards/atk.webp"
             alt="ATK Swap card"
-            loading="lazy"
+            className="rounded-3xl"
+            // loading="lazy"
           />
         </motion.a>
       </SimpleGrid>
@@ -210,10 +221,10 @@ export default function () {
           <Image
             width={2000}
             height={2000}
-            src="/cards/roomreserved.svg"
+            src="/cards/roomreserved.webp"
             alt="room reserved card"
-            loading="lazy"
-            className=" pl-10 pr-10 pb-10 pt-0"
+            // loading="lazy"
+            className=" pl-10 pr-10 pb-10 pt-0 rounded-3xl"
           />
         </a>
         <a href="/mahidolMap.png">
@@ -221,10 +232,10 @@ export default function () {
             <Image
               width={2000}
               height={2000}
-              className="pl-10 pr-10 pb-10 pt-0"
-              src="/cards/map.svg"
+              className="pl-10 pr-10 pb-10 pt-0 rounded-3xl"
+              src="/cards/map.webp"
               alt="Map"
-              loading="lazy"
+              // loading="lazy"
             />
             <Button
               className="absolute mt-20 bg-white font-medium rounded-xl hover:text-[#f5f5f7] hover:bg-[#1D1D1F] active:bg-[#00FF66]"

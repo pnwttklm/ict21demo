@@ -1,13 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaAngleDown } from 'react-icons/fa6';
 
 export default function individual_nav({ event_name, links, hasImg, img, imgLink}) {
   return (
     <>
       <div className="sticky top-0 w-screen h-12 z-10 drop-shadow-md backdrop-blur-[56px] bg-black/20">
         <div className="flex w-screen h-12 p-6 text-white font-medium text-sm justify-between items-center">
-          <h1>{event_name}</h1>
-          <div className="flex gap-10 justify-center items-center">
+          <h1 className=" font-medium
+                text-lg
+                md:text-xl
+                xl:text-2xl
+                ">{event_name}</h1>
+          <div className="flex flex-row gap-10 justify-center items-center">
             {links.map((link, index) => (
               <div key={index}>
                 <Link href={link.delink}>{link.name}</Link>

@@ -41,9 +41,9 @@ export default function() {
                       <PopoverBody className='p-6'>
                         <div className='flex justify-between'>
                           <Image width={150} height={150} src={timeline.img_url} alt={`image of ${timeline.event_name}`} loading="lazy"/>
-                          <Link href={timeline.calendarLink} >
+                          <a href={`/asset/timeline_ics/${timeline.calendarLink}`} download={timeline.calendarLink}>
                             <Image width={56} height={56} className='h-18 w-18' src='Add_to_Calendar_btn.svg' alt='Add to Calendar'loading="lazy"/>
-                          </Link>
+                          </a>
                         </div>
                         <div className='flex flex-col'>
                           <h1 className='font-bold text-xl text-black'>{timeline.event_name}</h1>
@@ -112,13 +112,13 @@ export default function() {
   
   const timeline_elements = [
     {
-      img_url:'/asset/For_Timeline/PLGT23_1.svg',
+      img_url:'/asset/For_Timeline/InfoSS.svg',
       event_name: 'Information Session',
       day: 'Jul 3',
       dateTime: 'July 3, 2023 10.30 a.m.-12 a.m.',
       location: 'Grand Auditorium, Faculty of ICT',
       dressCode: 'white shirt',
-      calendarLink: ''
+      calendarLink: 'Information Session.ics',
     },
     {
       img_url:'/asset/For_Timeline/PLGT23_1.svg',
@@ -127,7 +127,7 @@ export default function() {
       dateTime: 'July 4, 2023 9 a.m.-4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'white shirt',
-      calendarLink: 'https://firebasestorage.googleapis.com/v0/b/ict21webstorage.appspot.com/o/PLGT23D1.ics?alt=media&token=8d825a7d-755f-444f-8be9-498ccd49c001'
+      calendarLink: 'PLGT23D1.ics',
     },
     {
       img_url:'/asset/For_Timeline/PLGT23_2.svg',
@@ -136,7 +136,7 @@ export default function() {
       dateTime: 'July 5, 2023 9 a.m.-4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'white shirt',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url: '/asset/For_Timeline/FP.svg',
@@ -145,7 +145,7 @@ export default function() {
       dateTime: 'July 6, 2023 9 a.m.-4 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/PDPA.svg',
@@ -154,7 +154,7 @@ export default function() {
       dateTime: 'July 7, 2023 9 a.m.-12 a.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/TOEFL_ITP1.svg',
@@ -163,7 +163,7 @@ export default function() {
       dateTime: 'July 7, 2023 1 p.m.-4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/preppro.svg',
@@ -172,25 +172,25 @@ export default function() {
       dateTime: 'July 10-25, 2023 9 a.m.-3 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
-      img_url:'/asset/For_Timeline/preppro.svg',
+      img_url:'/asset/For_Timeline/Exempt.svg',
       event_name: 'Exemption Exam',
       day: 'Jul 18',
       dateTime: 'July 18, 2023 9 a.m.-12 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
-      img_url:'/asset/For_Timeline/preppro.svg',
+      img_url:'/asset/For_Timeline/EthicsSS.svg',
       event_name: 'Ethics Sessions',
       day: 'Jul 21',
       dateTime: 'July 21, 2023 1 p.m.-3 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/MUELT.svg',
@@ -199,7 +199,7 @@ export default function() {
       dateTime: 'July 22-23, 2023 9 a.m. - 4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/TOEFL_ITP2.svg',
@@ -208,7 +208,7 @@ export default function() {
       dateTime: 'July 25, 2023 9 a.m. - 12 a.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/ICTOR.svg',
@@ -217,7 +217,7 @@ export default function() {
       dateTime: 'July 27, 2023 1 p.m. - 3 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
       dressCode: 'ceremonial',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/RN.svg',
@@ -226,7 +226,7 @@ export default function() {
       dateTime: 'July 31, 2023 9 a.m. - 4 p.m.',
       location: 'MLC',
       dressCode: 'proper',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/MahidolOR.svg',
@@ -235,7 +235,7 @@ export default function() {
       dateTime: 'August 1, 2023 9 a.m. - 12 a.m.',
       location: 'Prince Mahidol Hall',
       dressCode: 'ceremonial',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/WF.svg',
@@ -244,7 +244,7 @@ export default function() {
       dateTime: 'August 4, 2023 9 a.m. - 4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'White shirt',
-      calendarLink: ''
+      calendarLink: '',
     },
     {
       img_url:'/asset/For_Timeline/srh.svg',
@@ -253,6 +253,6 @@ export default function() {
       dateTime: 'August 4, 2023 9 a.m. - 4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'White shirt',
-      calendarLink: ''
+      calendarLink: '',
     },
   ]

@@ -29,7 +29,7 @@ export default function ({ topic, info, link, img, date1, date2, type }) {
       <Image
         width={200}
         height={200}
-        className=" w-48 h-48"
+        className=" w-40 h-40"
         alt={`${topic} logo`}
         src={img}
         loading="lazy"

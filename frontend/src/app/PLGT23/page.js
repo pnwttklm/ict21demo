@@ -73,7 +73,7 @@ export default function plgt23() {
             firsthalfName='Faculty of ICT,'
             secondhalfName='Mahidol University'
             link='https://goo.gl/maps/ug6xrjcSav17RaEa8'
-            image='https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/ICTBuilding.png?alt=media&token=a2e64f54-b92f-4c18-b45a-e743b1fa28f2'
+            image='ICTBuilding.webp'
             description='Unleashing Technology Horizons on San Sattaya Road: Faculty of ICT, Mahidol University, Where Innovation Converges with Academic Brilliance amidst a Tapestry of Knowledge, Enveloped by the Library, Lecture Theater I, Office of the President, and the Faculty of Engineering'
           />
 
@@ -85,7 +85,7 @@ export default function plgt23() {
             firsthalfName='Amphawa,'
             secondhalfName='Samut Songkhram'
             link='https://goo.gl/maps/2RuGnwguGQpGgbNSA'
-            image='amphawa1.png'
+            image='amphawa1.webp'
             description='Amphawa is a charming and historic town located in the province of Samut Songkhram, Thailand. Known for its picturesque canals and vibrant floating market, Amphawa offers visitors a glimpse into traditional Thai culture and a delightful sensory experience.'
           />
         </div>

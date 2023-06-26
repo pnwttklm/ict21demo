@@ -48,14 +48,14 @@ export default function CaptionCarousel() {
       pos: 'Vice President ICT#20',
       text: 'You’re in the phone with your girlfriend she’s upset she going up about something that you said.',
       image:
-      'https://firebasestorage.googleapis.com/v0/b/ict21webstorage.appspot.com/o/kung.png?alt=media&token=c59b80f4-b432-4982-86d8-d93b1600234e'    
+      '/msgcard/kung.webp'    
     },
     {
       name: "Thanachot Onlamoon",
       pos: 'Rookie ICT#20',
       text: "I don't know who are you but I'll kill you ",
       image:
-      'https://firebasestorage.googleapis.com/v0/b/ict21webstorage.appspot.com/o/kung.png?alt=media&token=c59b80f4-b432-4982-86d8-d93b1600234e'    
+      '/msgcard/kung.webp'    
     },
   ];
 

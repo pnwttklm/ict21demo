@@ -43,7 +43,7 @@ const questionCard = ({question, answer, allowFile, fileRoot, filename, fileName
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        <p>{answer}</p>
+                        <div className='text-xl'>{answer}</div>
                         <div className="p-4 flex flex-col items-center">
                             {/* <Image className={`${allowImg} w-96`} width={478} height={692} alt={imgAlt} src={imgL}/> */}
                             <div className={`${allowFile} flex flex-col lg:flex-row w-full sm:w-4/6 md:w-3/6 p-6 mt-4 rounded-3xl bg-[#EDEDED] justify-center items-center`}>

@@ -16,7 +16,7 @@ export default function TopElement({ event_name , date, description}) {
           initial="hidden"
           whileInView="show"
           className="w-full h-[600px]"
-          src="https://my.spline.design/broomcopycopy-7f340752a0c68ddde3d4f9bf151520bb/"
+          src="https://my.spline.design/broomcopycopy-7f340752a0c68ddde3d4f9bf151520bb/" 
           frameBorder="0"
           title='Welcome Freshy 3D'
         />
@@ -58,7 +58,7 @@ export default function TopElement({ event_name , date, description}) {
               className="mt-4 rounded-full text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
               size={{ base: "sm", md: "lg" }}
             >
-              Add to your calendar
+               <a href='/asset/timeline_ics/PLGT23D1.ics' download='PLGT23D1.ics'>Add to your calendar</a>
             </Button>
           </div>
         </motion.div>

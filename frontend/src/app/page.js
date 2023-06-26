@@ -186,7 +186,7 @@ const questionElement = [
       <p>Hello</p>
       <p>Hi</p>
       <p>HAllo</p>
-      <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div>
+      <div className="p-4 flex flex-col items-center"><Image width={478} height={692} alt='English Exemption documents' src='/asset/forQuestion/English_exemption_doc.webp' loading="lazy"/></div>
     </div>,
     allowFile: '',//if allow '', if not 'hidden'
     fileRoot: 'downloads/project1_leak.pdf',
@@ -194,8 +194,41 @@ const questionElement = [
     fileName: 'Exemption Policy for Basic and Prerequisite English Classes',
   },
   {
-    question: 'Faculty of ICT is for doctosr, is not it?',
-    answer: 'You are more flexible\nHi\nhallo',
+    question: 'If I graduate from ICT I will be a doctor, isn`t it?',
+    answer: 'ahhhhhh, maybe not.',
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+  {
+    question: 'How can I contact ICT staffs?',
+    answer:     <div>
+    <p>Here it is!</p>
+    <div className="p-4 flex flex-col items-center"><Image alt='English Exemption documents' src='/asset/forQuestion/contact.webp' loading="lazy"/></div>
+    </div>
+    ,
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+  {
+    question: 'I gonna buy a new computer for studying in ICT, can you recommend me?',
+    answer: <>
+      <p className='font-medium'>1. Do I have to have my own computer or laptop?</p>
+      <p >Ans. No, you don't. Faculty of ICT provided computers for all students in the class but if you want more privacy or continuity of working between your place and faculty you should go for it.</p>
+      <p className='font-medium'>2. Can you recommend me the specs</p>
+      <p>Ans. Yes, I can. The faculty recomended </p>
+      <p> -- CPU: Intel Core i5 or i7 Gen 11 or higher, AMD Ryzen 5 or 7 5500 series or higher</p>
+      <p> -- Storage: SSD PCLe/NVMe M.2 512GB or higher</p>
+      <p> -- Ram: DDR4 16GB or higher</p>
+      <p> -- Graphic for general programming: NVIDIA GeForce MX450 2GB GDDR6 or AMD Radeon Graphics</p>
+      <p> -- Graphic for multimedia purpose: NVIDIA GeForce GTX1650 4GB GDDR6 or AMD Radeon RX 5500M 4GB GDDR</p>
+      <p>*note that this is the recommended specs for buying a new one, lower specs still okay.</p>
+      <p className='font-medium'>3. How about Macs?</p>
+      <p>Ans. Macs are also recommended but some applications may not support but instructors always have alternative applications for Macs.</p>
+    </>,
     allowFile: 'hidden',
     fileRoot: '',
     filename: '',

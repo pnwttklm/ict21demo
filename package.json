@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "react-icons": "^4.10.1",
     "react-unity-webgl": "^9.4.2"
   }
 }

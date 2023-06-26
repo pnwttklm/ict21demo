@@ -156,7 +156,7 @@ export default function () {
                       
                       <PopoverBody className='p-6 items-center'>
                         
-                          <Image width={150} height={150} src='/asset/forFooter/qrlinewsf.jpg' alt="qr linewsf"/>
+                          <Image width={150} height={150} src='/asset/forFooter/qrlinewsf.webp' alt="qr linewsf"/>
                           <Button
                              className="mt-8 rounded-full bg-[#00ff66] hover:text-[#F5F5F7] hover:bg-[#1D1D1F]"
                               size={{ base: "sm", md: "lg" }}
@@ -188,7 +188,7 @@ export default function () {
                       
                       <PopoverBody className='p-6'>
                         
-                          <Image width={150} height={150} src='/asset/forFooter/qrlinewosf.jpg' alt="qr linewsf"/>
+                          <Image width={150} height={150} src='/asset/forFooter/qrlinewosf.webp' alt="qr linewsf"/>
                           <Button
                              className="mt-8 rounded-full bg-[#00ff66] hover:text-[#F5F5F7] hover:bg-[#1D1D1F]"
                               size={{ base: "sm", md: "lg" }}

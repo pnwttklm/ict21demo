@@ -42,37 +42,13 @@ export default function CaptionCarousel() {
 
   const cards = [
     {
-      image: "https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/ICTBuilding.png?alt=media&token=a2e64f54-b92f-4c18-b45a-e743b1fa28f2",
+      image: "ICTBuilding.webp",
     },
     {
-      image: "https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/IMG_2906.jpeg?alt=media&token=46d7132e-13d9-4a3a-9d16-67ff46ec5437",
+      image: "/asset/overviewGallery/1.webp",
     },
     {
-      image: "https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/6F00A038-886C-478C-925E-B38A1CE157E5_1_105_c.jpeg?alt=media&token=ca1db308-8c27-4dc5-ad74-62debfa04eda",
-    },
-    {
-      image: "https://mahidol.ac.th/temp/2020/07/salaya-04.jpg",
-    },
-    {
-      image: "https://mahidol.ac.th/temp/2020/07/salaya-05.jpg",
-    },
-    {
-      image: "https://mahidol.ac.th/temp/2020/07/salaya-06.jpg",
-    },
-    {
-      image: "https://mahidol.ac.th/temp/2020/07/salaya-07.jpg",
-    },
-    {
-      image: "https://mahidol.ac.th/temp/2020/07/salaya-08.jpg",
-    },
-    {
-      image: "https://mahidol.ac.th/temp/2020/07/salaya-09.jpg",
-    },
-    {
-      image: "https://mahidol.ac.th/temp/2020/07/salaya-10.jpg",
-    },
-    {
-      image: "https://mahidol.ac.th/temp/2020/07/salaya-11.jpg",
+      image: "/asset/overviewGallery/2.webp",
     },
     
   ];
