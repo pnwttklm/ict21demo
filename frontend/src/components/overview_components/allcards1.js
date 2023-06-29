@@ -6,13 +6,13 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 export default function () {
   return (
-    <div className="flex flex-col h-full justify-center items-center bg-[#EDEDED]">
+    <div className="flex flex-col h-full w-full justify-center items-center bg-[#EDEDED]">
       <SimpleGrid
         columns={[1, 1, 2]}
         spacing={10}
-        className="p-10
-            w-full
-            sm:w-2/3"
+        className="py-10 p-2
+        md:w-full
+        xl:w-2/3"
       >
         <motion.a
           href="https://mycourses.ict.mahidol.ac.th/"
@@ -155,45 +155,38 @@ export default function () {
           />
         </a>
 
-        <div className="relative flex justify-center items-center">
-          <Image
-            width={1000}
-            height={1000}
-            className="rounded-3xl"
-            src="/cards/wemahidol.webp"
-            alt="wemahidol app card"
-            // className="rounded-3xl"
-            // loading="lazy"
-          />
-          <div className="ml-2 mt-80 absolute flex justify-end items-center ">
-            <motion.a
-              href="https://apps.apple.com/us/app/we-mahidol/id1425003959?itsct=apps_box_badge&amp;itscg=30200"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            > 
-              <img
-                width={120}
-                height={120}
-                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1542153600"
-                alt="Download on the App Store"
-                // loading="lazy"
-              />
-            </motion.a>
-            <motion.a
-              href="https://play.google.com/store/apps/details?id=th.ac.mahidol.SCBxMU.WeMahidol&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              target="_blank"
-            >
-              <Image
-                width={153}
-                height={153}
-                alt="Get it on Google Play"
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                // loading="lazy"
-              />
-            </motion.a>
-          </div>
+        <div className=" min-w-full h-full w-full pt-12 pb-12 flex justify-center items-end rounded-3xl bg-cover bg-center bg-no-repeat gap-3" style={{ backgroundImage: `url('/cards/wemahidol.webp')`}}>
+          <div className="h-[400px]"/>
+          <motion.a
+          href="https://apps.apple.com/us/app/we-mahidol/id1425003959?itsct=apps_box_badge&amp;itscg=30200"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          target="_blank"
+          >
+            <Image
+              width={640}
+              height={190}
+              alt="Download on the App Store"
+              src="https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/en-us.svg"
+              // loading="lazy"
+              className="z-10 w-32 h-10"
+            />
+          </motion.a>
+          <motion.a
+          href="https://play.google.com/store/apps/details?id=th.ac.mahidol.SCBxMU.WeMahidol&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          target="_blank"
+          >
+            <Image
+              width={2560}
+              height={754}
+              alt="Get it on Google Play"
+              src="/cards/GooglePlay_badge.webp"
+              // loading="lazy"
+              className=" w-32 h-10"
+            />
+          </motion.a>
         </div>
 
         <motion.a
@@ -214,8 +207,8 @@ export default function () {
       </SimpleGrid>
       <div
         className="flex flex-col justify-center items-center
-            w-full
-            sm:w-2/3"
+        md:w-full
+        xl:w-2/3"
       >
         <a>
           <Image
@@ -224,7 +217,7 @@ export default function () {
             src="/cards/roomreserved.webp"
             alt="room reserved card"
             // loading="lazy"
-            className=" pl-10 pr-10 pb-10 pt-0 rounded-3xl"
+            className="rounded-3xl p-[10px]"
           />
         </a>
         <a href="/mahidolMap.png">
@@ -232,13 +225,13 @@ export default function () {
             <Image
               width={2000}
               height={2000}
-              className="pl-10 pr-10 pb-10 pt-0 rounded-3xl"
+              className="p-[10px] rounded-3xl"
               src="/cards/map.webp"
               alt="Map"
               // loading="lazy"
             />
             <Button
-              className="absolute mt-20 bg-white font-medium rounded-xl hover:text-[#f5f5f7] hover:bg-[#1D1D1F] active:bg-[#00FF66]"
+              className="absolute mt-32 bg-white font-medium rounded-xl hover:text-[#f5f5f7] hover:bg-[#1D1D1F] active:bg-[#00FF66]"
               size={["xs", "sm", "md", "lg"]}
             >
               Get Mahidol Map
@@ -248,7 +241,7 @@ export default function () {
         </a>
       </div>
       <p
-        className="pl-10 pr-10 pb-10 pt-0 text-[#4A4A4A] text-center
+        className="py-10 px-2 text-[#4A4A4A] text-center
             text-xs
             sm:text-sm
             md:text-lg"

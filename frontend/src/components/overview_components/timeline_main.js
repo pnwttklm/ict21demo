@@ -85,9 +85,9 @@ export default function() {
                 <PopoverBody className='p-6'>
                   <div className='flex justify-between'>
                   <Image width={150} height={150} src='/asset/For_Timeline/SemesterST.svg' alt='Semester Begins' loading="lazy"/>
-                    <Link type='button' href='/#'>
+                  <a href='/asset/timeline_ics/Semester Begins.ics' download='Semester Begins.ics'>
                       <Image width={56} height={56} className='h-18 w-18' src='Add_to_Calendar_btn.svg' alt='Add to Calendar' loading="lazy"/>
-                    </Link>
+                    </a>
                   </div>
                   <div className='flex flex-col'>
                   <h1 className='font-bold text-xl text-black'>Semester Begins 🎉</h1>
@@ -112,10 +112,19 @@ export default function() {
   
   const timeline_elements = [
     {
+      img_url:'/asset/For_Timeline/preppro.svg',
+      event_name: 'Preparatory Program',
+      day: 'Jul 3 - 31',
+      dateTime: 'July 3 - 31, 2023',
+      location: 'Faculty of ICT',
+      dressCode: 'proper',
+      calendarLink: 'Preparatory Program.ics',
+    },
+    {
       img_url:'/asset/For_Timeline/InfoSS.svg',
       event_name: 'Information Session',
       day: 'Jul 3',
-      dateTime: 'July 3, 2023 10.30 a.m.-12 a.m.',
+      dateTime: 'July 3, 2023 10.30 a.m.-12 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
       dressCode: 'white shirt',
       calendarLink: 'Information Session.ics',
@@ -127,7 +136,7 @@ export default function() {
       dateTime: 'July 4, 2023 9 a.m.-4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'white shirt',
-      calendarLink: 'PLGT23D1.ics',
+      calendarLink: 'PLGT23 Day 1 at Salaya.ics',
     },
     {
       img_url:'/asset/For_Timeline/PLGT23_2.svg',
@@ -136,7 +145,7 @@ export default function() {
       dateTime: 'July 5, 2023 9 a.m.-4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'white shirt',
-      calendarLink: '',
+      calendarLink: 'PLGT23 Day 2 at Amphawa.ics',
     },
     {
       img_url: '/asset/For_Timeline/FP.svg',
@@ -145,16 +154,16 @@ export default function() {
       dateTime: 'July 6, 2023 9 a.m.-4 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: '',
+      calendarLink: 'Training Program for Fire Prevention and Control for ID66 Students.ics',
     },
     {
       img_url:'/asset/For_Timeline/PDPA.svg',
       event_name: 'PDPA Training',
       day: 'Jul 7',
-      dateTime: 'July 7, 2023 9 a.m.-12 a.m.',
+      dateTime: 'July 7, 2023 9 a.m.-12 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: '',
+      calendarLink: 'PDPA Training.ics',
     },
     {
       img_url:'/asset/For_Timeline/TOEFL_ITP1.svg',
@@ -163,16 +172,7 @@ export default function() {
       dateTime: 'July 7, 2023 1 p.m.-4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: '',
-    },
-    {
-      img_url:'/asset/For_Timeline/preppro.svg',
-      event_name: 'Prepartory Program',
-      day: 'Jul 10-25',
-      dateTime: 'July 10-25, 2023 9 a.m.-3 p.m.',
-      location: 'Faculty of ICT',
-      dressCode: 'proper',
-      calendarLink: '',
+      calendarLink: 'TOEFL ITP (Round 1).ics',
     },
     {
       img_url:'/asset/For_Timeline/Exempt.svg',
@@ -181,7 +181,7 @@ export default function() {
       dateTime: 'July 18, 2023 9 a.m.-12 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: '',
+      calendarLink: 'Exemption Exam.ics',
     },
     {
       img_url:'/asset/For_Timeline/EthicsSS.svg',
@@ -190,25 +190,34 @@ export default function() {
       dateTime: 'July 21, 2023 1 p.m.-3 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: '',
+      calendarLink: 'Ethics Sessions for ICT Students.ics',
     },
     {
       img_url:'/asset/For_Timeline/MUELT.svg',
       event_name: 'MU-ELT',
-      day: 'Jul 22-23',
-      dateTime: 'July 22-23, 2023 9 a.m. - 4 p.m.',
+      day: 'Jul 22 - 23',
+      dateTime: 'July 22 - 23, 2023',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: '',
+      calendarLink: 'English Proficiency Test (MU-ELT).ics',
+    },
+    {
+      img_url:'/asset/For_Timeline/RN.svg',
+      event_name: 'Rak Nong',
+      day: 'Jul 24 - 26',
+      dateTime: 'July 24 - 26, 2023',
+      location: 'Mahidol University',
+      dressCode: 'proper',
+      calendarLink: 'Rak Nong.ics',
     },
     {
       img_url:'/asset/For_Timeline/TOEFL_ITP2.svg',
-      event_name: 'TOEFL-ITP (Round 2)',
+      event_name: 'TOEFL ITP (Round 2)',
       day: 'Jul 25',
-      dateTime: 'July 25, 2023 9 a.m. - 12 a.m.',
+      dateTime: 'July 25, 2023 9 a.m. - 12 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'proper',
-      calendarLink: '',
+      calendarLink: 'TOEFL ITP (Round 2).ics',
     },
     {
       img_url:'/asset/For_Timeline/ICTOR.svg',
@@ -217,42 +226,33 @@ export default function() {
       dateTime: 'July 27, 2023 1 p.m. - 3 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
       dressCode: 'ceremonial',
-      calendarLink: '',
-    },
-    {
-      img_url:'/asset/For_Timeline/RN.svg',
-      event_name: 'Rak Nong',
-      day: 'Jul 31',
-      dateTime: 'July 31, 2023 9 a.m. - 4 p.m.',
-      location: 'MLC',
-      dressCode: 'proper',
-      calendarLink: '',
+      calendarLink: 'ICT Orientation.ics',
     },
     {
       img_url:'/asset/For_Timeline/MahidolOR.svg',
       event_name: 'Mahidol Orientation',
-      day: 'Aug 1',
-      dateTime: 'August 1, 2023 9 a.m. - 12 a.m.',
+      day: 'July 31',
+      dateTime: 'July 31, 2023 9 a.m. - 12 p.m.',
       location: 'Prince Mahidol Hall',
       dressCode: 'ceremonial',
-      calendarLink: '',
+      calendarLink: 'Mahidol Orientation.ics',
     },
     {
       img_url:'/asset/For_Timeline/WF.svg',
       event_name: 'Welcome Freshy',
-      day: 'Aug 4',
-      dateTime: 'August 4, 2023 9 a.m. - 4 p.m.',
+      day: 'Aug 6',
+      dateTime: 'August 6, 2023 9 a.m. - 1 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'White shirt',
-      calendarLink: '',
+      calendarLink: 'Welcome Freshy.ics',
     },
     {
       img_url:'/asset/For_Timeline/srh.svg',
       event_name: 'Sairahus',
-      day: 'Aug 4',
-      dateTime: 'August 4, 2023 9 a.m. - 4 p.m.',
+      day: 'Aug 6',
+      dateTime: 'August 6, 2023 1 p.m. - 4 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'White shirt',
-      calendarLink: '',
+      calendarLink: 'Sairahus.ics',
     },
   ]

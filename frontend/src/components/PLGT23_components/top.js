@@ -53,14 +53,20 @@ export default function TopElement({ event_name , date, description}) {
               {description}
             </p>
           </div>
-          <div>
-            <Button
-              className="mt-4 rounded-full text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
+          {/* <div> */}
+            {/* <Button
+              className="mt-4 m-1 rounded-3xl lg:rounded-r-sm md:rounded-r-sm text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
               size={{ base: "sm", md: "lg" }}
-            >
-              <a href='/asset/timeline_ics/PLGT23D1.ics' download='PLGT23D1.ics'>Add to your calendar</a>
-            </Button>
-          </div>
+            > */}
+              <a href='/asset/timeline_ics/PLGT23 Day 1 at Salaya.ics' download='PLGT23 Day 1 at Salaya.ics' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Add Day 1 to calendar</a>
+            {/* </Button>
+            <Button
+              className="mt-4 m-1 rounded-3xl lg:rounded-l-sm md:rounded-l-sm text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
+              size={{ base: "sm", md: "lg" }}
+            > */}
+              <a href='/asset/timeline_ics/PLGT23 Day 2 at Amphawa.ics' download='PLGT23 Day 2 at Amphawa.ics' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Add Day 2 to calendar</a>
+            {/* </Button> */}
+          {/* </div> */}
         </motion.div>
       </>
     );

@@ -11,6 +11,7 @@ import {
     AccordionIcon,
     Button,
     Stack,
+    Text,
     Textarea,
     Checkbox,
     Input,
@@ -88,18 +89,49 @@ const Form = ({ ClosingPopover }) => {
         <Textarea  value={Question} id='question' resize={("none")} placeholder='Type your questions here!' className={`text-xs md:text-base rounded-2xl`} onChange={(event) => {setQuestion(event.target.value)}}/>
         <p className=' font-semibold'>Email For Replying</p>
         <Input  value={Email} id='email' placeholder='Give us your email here!' className='text-xs md:text-base rounded-2xl' type="email" onChange={(event) => {setEmail(event.target.value)}}/>
+        <a className='font-bold text text-xs md:text-sm text-[#1D1D1F] hover:text-[#00FF66] underline underline-offset-1' onClick={onOpen}>
+        <Checkbox isChecked={Checked} colorScheme='green' onClick={onOpen} size={{base:'sm', md:'md'}}>
+               I agree and acknowledge in the agreement.
+        </Checkbox></a>
         
-        <Checkbox isChecked={Checked} colorScheme='green' size={{base:'sm', md:'md'}}>
-                <a className='font-bold text text-xs md:text-sm text-[#1D1D1F] hover:text-[#00FF66] underline underline-offset-1' onClick={onOpen}>I agree and acknowledge in the agreement.</a>
-        </Checkbox>
-        
-        <Modal onClose={onClose} isOpen={isOpen} isCentered >
+        <Modal onClose={onClose} isOpen={isOpen} isCentered scrollBehavior={'inside'}>
             <ModalOverlay />
             <ModalContent className='rounded-3xl'>
             <ModalHeader>Agreement</ModalHeader>
             {/* <ModalCloseButton /> */}
             <ModalBody>
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+                <Text>
+
+You hereby give the Developer Team, ICT#20 President Team consent to collect and process your personal information for the purpose of answering question in ICT21 Website. You understand and agree that the information you provide may only be used for the ICT21 Website. 
+</Text>
+
+<Text>
+Personal information may be collected:</Text>
+
+<Text>1. Email</Text>
+
+<Text>Your personal information will be securely kept by Developer Team, ICT20 President Team and only Developer Team, ICT20 President Team can access to your personal information for one year from the day you submit the question and email.</Text>
+
+<Text>You consent that the personal information you provide may be processed to answer the question you asked.</Text>
+
+<Text>By agree this consent form, you acknowledge that you have read and agree to the information provided above. You also willingly consent to the collection and processing of answering your question purposes.
+</Text>
+ 
+
+<Text>คุณยินยอมให้ทีมนักพัฒนาในประธาน ICT รุ่น 20 เก็บและใช้งานข้อมูลส่วนบุคคลเพื่อใช้สำหรับการตอบกลับคำถามที่คุณถามภายในเว็บไซต์ ICT21 คุณยอมรับและตกลงว่าข้อมูลที่ถูกเก็บนั้นจะใช้สำหรับเว็บไซต์ ICT21 ดังกล่าวเท่านั้น</Text>
+
+<Text>ข้อมูลส่วนบุคคลได้แก่</Text>
+
+ 
+
+<Text>1. อีเมล</Text>
+
+<Text>ข้อมูลส่วนตัวดังกล่าวของคุณจะถูกเก็บรักษาอย่างปลอดภัยโดยทีมนักพัฒนาในประธาน ICT รุ่น 20 และมีเพียงทีมนักพัฒนาของประธาน ICT รุ่น 20 เท่านั้นที่สามารถเข้าถึงข้อมูลส่วนตัวดังกล่าวของคุณเป็นเวลาทั้งสิ้นหนึ่งปีนับจากวันที่คุณได้ส่งคำถามและอีเมล</Text>
+
+<Text>คุณยินยอมว่าข้อมูลส่วนบุคคลที่คุณกรอกนั้นจะถูกใช้สำหรับการตอบกลับคำถามที่คุณถามภายในเว็บไซต์ ICT21</Text>
+
+<Text>เมื่อคุณกดเห็นด้วยกับแบบฟอร์มนี้ หมายความว่าคุณเข้าใจและยอมรับนโยบายความเป็นส่วนตัวข้างต้น และคุณยินยอมการเก็บรวบรวมและใช้งานข้อมูลส่วนตัวของคุณในการตอบกลับคำถามที่คุณถามภายในเว็บไซต์ ICT21
+</Text>
             </ModalBody>
             <ModalFooter className=' gap-2'>
                 <Button onClick={() => { setChecked(false); onClose()}}>
@@ -138,7 +170,7 @@ function WalkthroughPopover() {
                 <PopoverTrigger>
                     <Button className='mt-16 rounded-full bg-[#00ff66] hover:text-[#f5f5f7] hover:bg-[#1D1D1F]' size={{base:'sm', md:'lg'}}>Ask a Question</Button>
                 </PopoverTrigger>
-                <PopoverContent color='#1D1D1F' bg='#FFFFFF'  className='rounded-3xl p-3' width={{base:'56',md:'sm'}}>
+                <PopoverContent color='#1D1D1F' bg='#FFFFFF'  className='rounded-3xl p-3' width={{ base: "sm", md: "md" }}>
                 <PopoverHeader pt={4} fontWeight='bold' border='0' className=' 
                 text-xs
                 md:text-base'>
@@ -151,7 +183,7 @@ function WalkthroughPopover() {
                 <PopoverBody className='
                 text-xs
                 md:text-base'>
-                    <p className='mb-4'>Ask us your curious question, we will collect information and answer you within 7 days. Please provide us your email for replying.</p>
+                    <p className='mb-4'>If you have something in your mind and really want to know it, this allows you to ask your questions. Within 7 days, we will answer you via email. Please provide us your email for replying.</p>
                     <FocusLock returnFocus persistentFocus={false}>
                         <PopoverArrow />
                         <Form ClosingPopover={onClose}/>

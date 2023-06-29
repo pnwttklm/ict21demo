@@ -55,12 +55,12 @@ export default function TopElement({ event_name , date, description}) {
             </p>
           </div>
           <div>
-            <Button
+            {/* <Button
               className="mt-4 rounded-full text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
               size={{ base: "sm", md: "lg" }}
-            >
-               <a href='/asset/timeline_ics/PLGT23D1.ics' download='PLGT23D1.ics'>Add to your calendar</a>
-            </Button>
+            > */}
+               <a href='/asset/timeline_ics/Sairahus.ics' download='Sairahus.ics' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Add to your calendar</a>
+            {/* </Button> */}
           </div>
         </motion.div>
       </>

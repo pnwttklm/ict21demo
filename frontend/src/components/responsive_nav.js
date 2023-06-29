@@ -17,50 +17,80 @@ import {
     HStack,
 } from '@chakra-ui/react';
 
-import {
-  FaBars,
-  FaTimes,
-  FaAngleDown,
-  FaAngleRight,
-} from 'react-icons/fa'
+import{
+  BsListNested,
+  BsXLg,
+  BsChevronDown,
+  BsChevronRight,
+
+}from 'react-icons/bs'
 
 import Image from 'next/image';
-
+// import { motion } from "framer-motion";
+import { usePathname } from 'next/navigation';
   
 
-  export default function WithSubnavigation() {
+export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
-  
-    return (
-      <Box className='z-20 top-0'>
-        <Flex className=' w-screen h-16 drop-shadow-md backdrop-blur-[56px] bg-black/20'>
-          <Flex
-            className=' items-center'
-            flex={{ base: 1, md: 'auto' }}
-            ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'none' }}>
+    
+    function navColor() {
+      if (isInclude()) {
+        return 'white'
+      }
+      else {
+        return 'black'
+      }
+    }
 
-            <IconButton
-              className=' text-white ml-6'
-              onClick={onToggle}
-              icon={
-                isOpen ? <FaTimes w={5} h={5} /> : <FaBars w={5} h={5} />
-              }
-              variant='unstyled'
-              aria-label={'Toggle Navigation'}
-            /> 
-          </Flex>
+    function navColorContrast() {
+      if (isInclude()) {
+        return 'black'
+      }
+      else {
+        return 'white'
+      }
+    }
+    
+    function ictLogo() {
+      if (isInclude()) {
+        return 'ict21_logo.svg'
+      }
+      else {
+        return 'ICT_logo_monowhite.svg'
+      }
+    }
+
+    return (
+      <Box id='about' className='z-20top-0'>
+        <Flex className={` w-screen h-16 drop-shadow-md backdrop-blur-[56px] bg-${navColor()}`}>
 
           <Flex className="flex flex-1 justify-between">
-            <Link href="/" className="nav-items"><Image width={930} height={576} src="/asset/ICT_logo_monowhite.svg" className="h-14 pt-2 w-28 drop-shadow-md" alt='ICT21-logo-navber'/></Link>
+            <Link href="/" className="nav-items"><Image width={930} height={576} src={`/asset/${ictLogo()}`} className="h-14 pt-2 w-28 drop-shadow-md" alt='ICT21-logo-navber'/></Link>
             <Flex className="hidden md:flex mr-4">
               <DesktopNav />
             </Flex>
           </Flex>
-          <Link href="/meet-our-team" className="nav-items"><Image priority width={536} height={171} src="/asset/meet_our_team.svg" className=" h-14 pt-4 w-44 drop-shadow-md" alt='meetOurTeamLogo-navbar'></Image></Link>
+
+          <div className='flex items-center'>
+            <Link href="/meet-our-team" className="nav-items"><Image priority width={512} height={512} src="/asset/meet_our_team.svg" className=" h-32 pt-4 w-32 drop-shadow-md" alt='meetOurTeamLogo-navbar'></Image></Link>
+
+            <Flex
+              className='flex md:hidden items-center mr-2'
+            >
+              <IconButton
+                className={` text-${navColorContrast()} text-3xl`}
+                onClick={onToggle}
+                icon={
+                  isOpen ? <BsXLg w={12} h={12} /> : <BsListNested w={12} h={12} />
+                }
+                variant='unstyled'
+                aria-label={'Toggle Navigation'}
+              /> 
+            </Flex>
+          </div>
         </Flex>
   
-        <Collapse in={isOpen} animateOpacity className='text-white'>
+        <Collapse in={isOpen} animateOpacity className=' text-white'>
           <MobileNav />
         </Collapse>
       </Box>
@@ -68,7 +98,18 @@ import Image from 'next/image';
   }
   
   const DesktopNav = function() {
-    const linkColor = useColorModeValue('white', 'white');
+    const pathname = usePathname();
+
+    function navColor() {
+      if (isInclude()) {
+        return 'black'
+      }
+      else {
+        return 'white'
+      }
+    }
+
+    const linkColor = useColorModeValue(navColor(), navColor());
     const linkHoverColor = useColorModeValue('#00FF66', 'white');
     const popoverContentBgColor = useColorModeValue('#EDEDED', 'white');
   
@@ -143,7 +184,7 @@ import Image from 'next/image';
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'#000000'} w={5} h={5} as={FaAngleRight} />
+            <Icon color={'#000000'} w={5} h={5} as={BsChevronRight} />
           </Flex>
         </Stack>
       </Link>
@@ -151,8 +192,17 @@ import Image from 'next/image';
   };
   
   const MobileNav = function() {
+    const pathname = usePathname();
+    function navColor() {
+      if (isInclude()) {
+        return 'white'
+      }
+      else {
+        return 'black'
+      }
+    }
     return (
-      <Stack className='backdrop-blur-[56px] bg-black/20 p-4' display={{ md: 'none' }}>
+      <Stack className={`h-full mb-96 pb-96 backdrop-blur-[56px] bg-${navColor()} p-4`} display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />
         ))}
@@ -161,6 +211,16 @@ import Image from 'next/image';
   };
   
   const MobileNavItem = function({ label, children, href }) {
+    const pathname = usePathname();
+
+    function navColorContrast() {
+      if (isInclude()) {
+        return 'black'
+      }
+      else {
+        return 'white'
+      }
+    }
     const { isOpen, onToggle } = useDisclosure();
   
     return (
@@ -174,19 +234,21 @@ import Image from 'next/image';
           _hover={{
             textDecoration: 'none',
           }}>
+            
           <Text
-            fontWeight={600}
-            color='white'>
+            fontWeight={500}
+            className='text-3xl'
+            color={`${navColorContrast()}`}>
             {label}
           </Text>
         </Flex>
           {children && (
             <Icon
-              as={FaAngleDown}
+              as={BsChevronDown}
               transition={'all .25s ease-in-out'}
               transform={isOpen ? 'rotate(180deg)' : ''}
-              w={4}
-              h={4}
+              w={12}
+              h={12}
               onClick={onToggle}
             />
           )}
@@ -200,10 +262,12 @@ import Image from 'next/image';
             borderColor={useColorModeValue('gray.200', 'gray.700')}
             align={'start'}>
             {children &&
-              children.map((child) => (
+              children.map((child, index) => (
+                
                 <Link key={child.label} py={2} href={child.href}>
                   {child.label}
                 </Link>
+                
               ))}
           </Stack>
         </Collapse>
@@ -215,33 +279,6 @@ const NAV_ITEMS= [
   {
     label: 'Overview',
     href: '/',
-    // children: [
-    //   {
-    //     label: 'FRESHY GO ROUND',
-    //     subLabel: 'Your New Journey Begins!',
-    //     href: '#freshy-go-round'
-    //   },
-    //   {
-    //     label: 'TIMELINE',
-    //     subLabel: "Check Out What's Next",
-    //     href: '#timeline',
-    //   },
-    //   {
-    //     label: 'GALLERY',
-    //     subLabel: "Memories",
-    //     href: '#gallery',
-    //   },
-    //   {
-    //     label: 'MESSAGE FROM SENPAI',
-    //     subLabel: "Advices from Your Senior",
-    //     href: '#msg-from-senpai',
-    //   },
-    //   {
-    //     label: 'FAQ',
-    //     subLabel: "Any Question?",
-    //     href: '#faq',
-    //   },
-    // ],
   },
   {
     label: 'PLGT23',
@@ -260,3 +297,13 @@ const NAV_ITEMS= [
     href: '/guide-book',
   },
 ];
+
+function isInclude() {
+  const pathname = usePathname();
+  if (pathname.includes('/guide-book')  || pathname.includes('/meet-our-team') || pathname.includes('/privacy-policy')) {
+    return true
+  }
+  else {
+    return false
+  }
+}

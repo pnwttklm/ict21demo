@@ -33,7 +33,7 @@ export default function TopElement() {
                 md:text-5xl
                 xl:text-6xl"
             >
-              Snapshot Test of June 27.
+              Snapshot Test of Jun 29.
             </h1>
             <p
               className=" font-medium

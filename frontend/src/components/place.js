@@ -8,7 +8,7 @@ const ict = ({ firsthalfName, secondhalfName, link, image, description }) => {
   return (
     <>
       <div
-          className=" bg-cover bg-center bg-no-repeat rounded-3xl
+          className=" bg-cover bg-top bg-no-repeat rounded-3xl
             w-full
             h-full
             md:h-3/4 

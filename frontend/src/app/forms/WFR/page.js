@@ -1,0 +1,1 @@
+export default function() {return(<meta httpEquiv="Refresh" content="0;URL=https://youtu.be/dQw4w9WgXcQ" />)}

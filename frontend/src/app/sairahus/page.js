@@ -19,25 +19,25 @@ const Question = dynamic(() => import('../../components/questionsection'))
 const QCard = dynamic(() => import('../../components/questionCard'))
 
 export default function Sairahus() {
-  const dateTimeAfterThreeDays = new Date("July 4, 2023 09:00:00"); //customize date here
+  const dateTimeAfterThreeDays = new Date("August 6, 2023 13:00:00"); //customize date here
 
   return (
     <>
     <title>Sairahus - ICT21</title>
     <Individual_nav event_name='PLGT23' hasImg='hidden' img='' imgLink='' links={[{
-        delink: '/sairahus/#sairahus',
+        delink: '/sairahus#about',
         name: 'About'
       }, {
-        delink: '/sairahus/#location',
+        delink: '/sairahus#location',
         name: 'Location'
       }, {
-        delink: '/sairahus/#agenda',
+        delink: '/sairahus#agenda',
         name: 'Agenda'
       }, {
-        delink: '/sairahus/#sum-up',
+        delink: '/sairahus#sum-up',
         name: 'Sum Up'
       }, {
-        delink: '/sairahus/#faqs',
+        delink: '/sairahus#faqs',
         name: 'FAQs'
       }
       
@@ -48,7 +48,7 @@ export default function Sairahus() {
       >
         <Top 
             event_name='Sairahus'
-            date='Aug 4'
+            date='Aug 6'
             description='Hereditarily cursed passed down from generation to generation.'
         />
         
@@ -69,23 +69,25 @@ export default function Sairahus() {
             firsthalfName='Faculty of ICT,'
             secondhalfName='Mahidol University'
             link='/'
-            image='https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/ICTBuilding.png?alt=media&token=a2e64f54-b92f-4c18-b45a-e743b1fa28f2'
+            image='ICTBuilding.webp'
             description='Unleashing Technology Horizons on San Sattaya Road: Faculty of ICT, Mahidol University, Where Innovation Converges with Academic Brilliance amidst a Tapestry of Knowledge, Enveloped by the Library, Lecture Theater I, Office of the President, and the Faculty of Engineering'
           />
         </div>
       </div>
 
-      <div id='agenda'><Agenda whichEvent='PLGT23'/> </div>
+      <div id='agenda'><Agenda whichEvent='Sairahus'/> </div>
 
       <div id='sum-up'><Sumup/></div>
       
-      <div id='faqs' className='flex flex-col p-16 bg-white h-full w-screen items-center'>
+      <div id='faqs'>
+        
+      <div className='flex flex-col p-6 bg-white h-full w-full items-center'>
         <h1 className=' font-bold
         text-2xl
         md:text-4xl'>QUESTIONS...?</h1>
         <Accordion allowToggle className='pt-16 
-        w-12/12
-        md:w-7/12'>
+        md:w-full
+        xl:w-7/12'>
 
         {questionElement.map((cardE, index) => (
               <div key={index}>
@@ -107,6 +109,7 @@ export default function Sairahus() {
         </Accordion>
          <Question/>
 
+      </div>
       </div>
 
       <Footer/>

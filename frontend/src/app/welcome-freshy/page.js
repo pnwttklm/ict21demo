@@ -21,25 +21,25 @@ const QCard = dynamic(() => import('../../components/questionCard'))
 
 
 export default function welcomeFreshy() {
-  const dateTimeAfterThreeDays = new Date("July 4, 2023 09:00:00"); //customize date here
+  const dateTimeAfterThreeDays = new Date("August 6, 2023 09:00:00"); //customize date here
 
   return (
     <>
     <title>Welcome Freshy - ICT21</title>
-    <Individual_nav event_name='Welcome Freshy' hasImg='' img='game_icon2.svg' imgLink='/welcome-freshy-game' links={[{
-        delink: '/welcome-freshy/#welcome-freshy',
+    <Individual_nav event_name='Welcome Freshy' hasImg='' img='/gamelogo.webp' imgLink='/welcome-freshy/game' links={[{
+        delink: '/welcome-freshy#about',
         name: 'About'
       }, {
-        delink: '/welcome-freshy/#location',
+        delink: '/welcome-freshy#location',
         name: 'Location'
       }, {
-        delink: '/welcome-freshy/#agenda',
+        delink: '/welcome-freshy#agenda',
         name: 'Agenda'
       }, {
-        delink: '/welcome-freshy/#sum-up',
+        delink: '/welcome-freshy#sum-up',
         name: 'Sum Up'
       }, {
-        delink: '/welcome-freshy/#faqs',
+        delink: '/welcome-freshy#faqs',
         name: 'FAQs'
       }
       
@@ -50,7 +50,7 @@ export default function welcomeFreshy() {
       >
         <Top 
             event_name='Welcome Freshy'
-            date='Aug 4'
+            date='Aug 6'
             description='Say hi to senpais, Ajarns, and staffs. Start your own legendary journey at Faculty of ICT.'
         />
         
@@ -73,23 +73,32 @@ export default function welcomeFreshy() {
             firsthalfName='Faculty of ICT,'
             secondhalfName='Mahidol University'
             link='/'
-            image='https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/ICTBuilding.png?alt=media&token=a2e64f54-b92f-4c18-b45a-e743b1fa28f2'
+            image='ICTBuilding.webp'
             description='Unleashing Technology Horizons on San Sattaya Road: Faculty of ICT, Mahidol University, Where Innovation Converges with Academic Brilliance amidst a Tapestry of Knowledge, Enveloped by the Library, Lecture Theater I, Office of the President, and the Faculty of Engineering'
           />
         </div>
       </div>
 
-      <div id='agenda'><Agenda whichEvent='PLGT23'/> </div>
+      <div id='agenda'><Agenda whichEvent='Welcome Freshy'/> </div>
 
-      <div id='sum-up'><Sumup/></div>
+      <div id='sum-up'><Sumup theText={
+        <>
+        <p><b>Welcome Freshy </b>Sat 6th August, around 9.00-12.30</p>
+        <p><b>Before the day </b>you have to register online once (button is on the top)</p>
+        <p><b>Registration </b>at 2nd Floor, Faculty of ICT, 8.00-9.00</p>
+        <p><b>Dress Code </b>proper or Harry Potter theme</p>
+        </>
+      }/></div>
       
-      <div id='faqs' className='flex flex-col p-16 bg-white h-full w-screen items-center'>
+      <div id='faqs'>
+        
+      <div className='flex flex-col p-6 bg-white h-full w-full items-center'>
         <h1 className=' font-bold
         text-2xl
         md:text-4xl'>QUESTIONS...?</h1>
         <Accordion allowToggle className='pt-16 
-        w-12/12
-        md:w-7/12'>
+        md:w-full
+        xl:w-7/12'>
 
         {questionElement.map((cardE, index) => (
               <div key={index}>
@@ -112,6 +121,7 @@ export default function welcomeFreshy() {
          <Question/>
 
       </div>
+      </div>
 
       <Footer/>
     </>
@@ -120,21 +130,37 @@ export default function welcomeFreshy() {
 
 const questionElement = [
   {
-    question: 'What is English Exemption?',
+    question: 'What is the Welcome Freshy activities?',
     answer: 
     <div>
       <p>Hello</p>
       <p>Hi</p>
       <p>HAllo</p>
-      <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div>
+      {/* <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div> */}
     </div>,
-    allowFile: '',//if allow '', if not 'hidden'
+    allowFile: 'hidden',//if allow '', if not 'hidden'
     fileRoot: 'downloads/project1_leak.pdf',
     filename: 'project1_leak.pdf',
     fileName: 'Exemption Policy for Basic and Prerequisite English Classes',
   },
   {
-    question: 'Faculty of ICT is for doctosr, is not it?',
+    question: 'Any cost?',
+    answer: 'You are more flexible\nHi\nhallo',
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+  {
+    question: 'When? Where?',
+    answer: 'You are more flexible\nHi\nhallo',
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+  {
+    question: '2-Day activity means I have to sleep over right?',
     answer: 'You are more flexible\nHi\nhallo',
     allowFile: 'hidden',
     fileRoot: '',

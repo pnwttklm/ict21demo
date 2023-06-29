@@ -21,6 +21,14 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang='en'>
+      <head>
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="icon" href="/icon.svg" />
+      <link
+      rel="apple-touch-icon"
+        href="/apple-icon.ico"
+      />
+      </head>
       <body className={IBM_Thai.className}>
           <Providers>
             <ResNav/>

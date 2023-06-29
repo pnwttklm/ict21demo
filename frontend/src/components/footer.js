@@ -11,8 +11,6 @@ import {
   FocusLock,
   Stack,
   Textarea,
-  Input,
-  IconButton,
   useToast,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -23,10 +21,8 @@ import {
   BsTwitter,
   BsYoutube,
   BsDiscord,
-  BsLine,
   BsTiktok,
   BsLinkedin,
-  BsFillXCircleFill,
   BsLink,
 } from "react-icons/bs";
 import React, { useState } from "react";
@@ -36,10 +32,9 @@ export default function () {
   const year = new Date().getFullYear();
   return (
     <div className="bg-[#1D1D1D]">
-
-      
-
-      <div className="flex flex-col p-10 justify-center items-center gap-10">
+      <div className="flex flex-col pt-10 justify-center items-center gap-10
+      md:pb-0
+      ">
         <h1
           className=" text-white font-bold
                 text-2xl
@@ -141,12 +136,12 @@ export default function () {
                   <PopoverTrigger>
                           {/* <Link href="https://line.me/ti/g/P_AK5vTkp1"  target='_blank'> */}
                     <Image
-                      width='116'
-                      height='116'
+                      width={723}
+                      height={414}
                       m="1"
                       src="/asset/forFooter/linewsf.svg"
                       loading="lazy"
-                      className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500"
+                      className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500 w-24 h-24"
                       alt="linewsf"
                     ></Image>
                        
@@ -175,11 +170,11 @@ export default function () {
                   <PopoverTrigger>
                   {/* <Link href="https://line.me/ti/g/dq75BhxwT-"  target='_blank'> */}
             <Image
-              width='116'
-              height='116'
+              width={779}
+              height={414}
               m="1"
               src="/asset/forFooter/linewosf.svg"
-              className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500"
+              className="text-[#FFFFFF] hover:text-[#00FF66] transition-colors duration-500 w-24 h-24"
               alt="line wosf"
             ></Image>
           {/* </Link> */}
@@ -209,14 +204,16 @@ export default function () {
         <FeedbackPopover />
         <div className="text-[#00FF66] font-medium hover:text-[#F5F5F7]">
           <a href='/acknowledgement'>
-           <h1>Acknowledgemnt</h1>
+           <h1>Acknowledgement</h1>
          </a>
         </div>
 
 
 
         {/* copyright */}
-        <div className="flex flex-col p-8 bg-black w-full md:w-3/4 h-1/2 md:h-full justify-between rounded-3xl gap-20">
+        <div className="flex flex-col p-8 bg-black w-full h-1/2 justify-between  gap-8
+        md:h-full 
+        ">
           <div className="flex flex-col gap-7">
             <Image height={100} width={120} className="h-[100px] w-[120px]" src='/asset/ict21_logo.svg' alt="ICT21 logo color version"/>
             <h1 className="text-white text-base">Powered by</h1>
@@ -225,9 +222,14 @@ export default function () {
               <Link href='https://ict.mahidol.ac.th' target='_blank'><Image height={100} width={100} src='/asset/mu_ict.svg' alt="ICT and mu logo"/></Link>
               <Image height={100} width={100} className="h-[100px] w-[100px]" src='/asset/ict_badge_black.svg' alt="ICT21 badge"/>
             </div>
+            <div className="flex flex-row gap-6">
+              <a href='/privacy-policy' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Privacy Policy</a>
+              <a href='/terms-and-condition' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Terms & Conditions</a>
+            </div>
+            
           </div>
           <div className="flex items-end justify-between text-white text-[8px] md:text-xs">
-            <h1 >Copyright © {year}. ICT#20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.</h1>
+            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.</h1>
             <h1 >Apple® and Apple logo® are trademarks of Apple Inc.</h1>
           </div>
         </div>
@@ -319,7 +321,7 @@ function FeedbackPopover() {
             color="#1D1D1F"
             bg="#FFFFFF"
             className="rounded-3xl p-3"
-            width={{ base: "56", md: "sm" }}
+            width={{ base: "sm", md: "md" }}
           >
             <PopoverHeader
               pt={4}
@@ -341,8 +343,7 @@ function FeedbackPopover() {
           md:text-base"
             >
               <p className="mb-4">
-                Give us your opinion or feedback. We are working hard on every
-                message from you all. Your feedback will be sent anonymously.
+              We are accepting opinion and feedback from everyone to make sure that we will notice every issue that happens. The opinion and feedback will be anonymously collected by the way.
               </p>
               <FocusLock returnFocus persistentFocus={false}>
                 <PopoverArrow />

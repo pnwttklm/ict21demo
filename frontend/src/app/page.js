@@ -4,8 +4,10 @@ import Head from 'next/head'
 
 import {
   Accordion,
-  Image,
+  // Image,
 } from '@chakra-ui/react'
+
+import Image from "next/image"
 
 const Individual_nav = dynamic(() => import('../components/individual_nav'))
 const GallerySlider2 = dynamic(() => import('../components/overview_components/galleryslider2'))
@@ -24,28 +26,35 @@ export default function Home() {
 
   return (
     <>
-    <title>Overview - ICT21</title>
+    <Head>
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link
+  rel="apple-touch-icon"
+  href="/apple-icon.ico"
+/>
+    </Head>
+    <title>ICT21</title>
       <Individual_nav event_name='Overview' hasImg='hidden' img='' imgLink='' links={[{
-        delink: '/#about',
+        delink: '#about',
         name: 'About'
       }, {
-        delink: '/#timeline',
+        delink: '#timeline',
         name: 'Timeline'
       }, {
-        delink: '/#gallery',
+        delink: '#gallery',
         name: 'Gallery'
       }, {
-        delink: '/#msg-from-senpai',
+        delink: '#msg-from-senpai',
         name: 'Messages'
       }, {
-        delink: '/#faqs',
+        delink: '#faqs',
         name: 'FAQs'
       }
       
       ]} />
 
       {/* <Individual_nav event_name='PLGT23' links={['About','Location','Agenda','Sum Up','FAQs']} img='game_icon2.svg'/> */}
-      <div id='about' className='flex flex-col w-screen justify-center items-center'>
+      <div id='overview' className='flex flex-col w-screen justify-center items-center'>
         <Topelement/>
 
         <main className='flex flex-col mt-10 gap-10 items-center'>
@@ -62,7 +71,7 @@ export default function Home() {
         <E_card 
           topic={'Welcome Freshy'} 
           info={'Let’s explore places around uni including restaurants, entertainments, and more.'} 
-          date1={'July 22, 9 a.m.'}
+          date1={'Aug 6, 9 a.m.'}
           link={'/welcome-freshy'}
           img={'/asset/foroverviewbadge/sairahusbadge.svg'} 
           type={1}
@@ -71,7 +80,7 @@ export default function Home() {
         <E_card 
           topic={'Sairahus'} 
           info={'Hereditarily cursed passed down from generation to generation.'} 
-          date1={'Aug 4, 1 p.m.'}
+          date1={'Aug 6, 1 p.m.'}
           link={'/sairahus'}
           img={'/asset/foroverviewbadge/welcomefreshybadge.svg'} 
           type={1}
@@ -131,16 +140,16 @@ export default function Home() {
       </div>
       {/* <MsgSlider/> keen-slider have problem with nextJs*/}
 
-      <div className='h-24'/>
+      <div className='h-6'/>
       <div id='faqs'>
         
-      <div className='flex flex-col p-16 bg-white h-full w-screen items-center'>
+      <div className='flex flex-col p-12 bg-white h-full w-full items-center'>
         <h1 className=' font-bold
         text-2xl
         md:text-4xl'>QUESTIONS...?</h1>
         <Accordion allowToggle className='pt-16 
-        w-12/12
-        md:w-7/12'>
+        md:w-full
+        xl:w-7/12'>
 
         {questionElement.map((cardE, index) => (
               <div key={index}>
@@ -189,12 +198,20 @@ const questionElement = [
       <div className="p-4 flex flex-col items-center"><Image width={478} height={692} alt='English Exemption documents' src='/asset/forQuestion/English_exemption_doc.webp' loading="lazy"/></div>
     </div>,
     allowFile: '',//if allow '', if not 'hidden'
-    fileRoot: 'downloads/project1_leak.pdf',
+    fileRoot: '/downloads/project1_leak.pdf',
     filename: 'project1_leak.pdf',
     fileName: 'Exemption Policy for Basic and Prerequisite English Classes',
   },
   {
-    question: 'If I graduate from ICT I will be a doctor, isn`t it?',
+    question: 'I would like to loan the student loan (กยศ.)',
+    answer: 'WEll',
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+  {
+    question: 'Every single person graduated from Mahidol University is a doctor, isn`t it?',
     answer: 'ahhhhhh, maybe not.',
     allowFile: 'hidden',
     fileRoot: '',
@@ -205,7 +222,7 @@ const questionElement = [
     question: 'How can I contact ICT staffs?',
     answer:     <div>
     <p>Here it is!</p>
-    <div className="p-4 flex flex-col items-center"><Image alt='English Exemption documents' src='/asset/forQuestion/contact.webp' loading="lazy"/></div>
+    <div className="p-4 flex flex-col items-center"><Image width={478} height={692} alt='English Exemption documents' src='/asset/forQuestion/contact.webp' loading="lazy"/></div>
     </div>
     ,
     allowFile: 'hidden',
@@ -233,5 +250,16 @@ const questionElement = [
     fileRoot: '',
     filename: '',
     fileName: '',
+  },
+  {
+    question: 'Is there any scholarship for ICT students',
+    answer: <><p>Yes, there is. For ICT students the faculty provides scholarships for students who demonstrate excellent academic and activity qualifications. The scholarships cover the tuition and university fees.</p>
+    <p>More information in the file below.</p>
+    </>
+    ,
+    allowFile: '',
+    fileRoot: 'https://www.ict.mahidol.ac.th/wp-content/uploads/2023/02/16.-ICT-66-ทุนการศึกษา-66-ประกาศ-เรื่องการให้ทุนการศึกษาทุน-Talentพ.ศ.-2566-ID66-เป็นต้นไป.pdf',
+    filename: '16.-ICT-66-ทุนการศึกษา-66-ประกาศ-เรื่องการให้ทุนการศึกษาทุน-Talentพ.ศ.-2566-ID66-เป็นต้นไป.pdf',
+    fileName: 'ICT 66 Scholarships',
   },
 ]

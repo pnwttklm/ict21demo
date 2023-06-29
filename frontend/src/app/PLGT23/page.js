@@ -25,19 +25,19 @@ export default function plgt23() {
     <>
     <title>PLGT23 - ICT21</title>
     <Individual_nav event_name='PLGT23' hasImg='hidden' img='' imgLink='' links={[{
-        delink: '/PLGT23/#plgt23',
+        delink: '/PLGT23#about',
         name: 'About'
       }, {
-        delink: '/PLGT23/#location',
+        delink: '/PLGT23#location',
         name: 'Location'
       }, {
-        delink: '/PLGT23/#agenda',
+        delink: '/PLGT23#agenda',
         name: 'Agenda'
       }, {
-        delink: '/PLGT23/#sum-up',
+        delink: '/PLGT23#sum-up',
         name: 'Sum Up'
       }, {
-        delink: '/PLGT23/#faqs',
+        delink: '/PLGT23#faqs',
         name: 'FAQs'
       }
       
@@ -132,21 +132,37 @@ export default function plgt23() {
 
 const questionElement = [
   {
-    question: 'What is English Exemption?',
+    question: 'What is the Welcome Freshy activities?',
     answer: 
     <div>
       <p>Hello</p>
       <p>Hi</p>
       <p>HAllo</p>
-      <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div>
+      {/* <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div> */}
     </div>,
-    allowFile: '',//if allow '', if not 'hidden'
+    allowFile: 'hidden',//if allow '', if not 'hidden'
     fileRoot: 'downloads/project1_leak.pdf',
     filename: 'project1_leak.pdf',
     fileName: 'Exemption Policy for Basic and Prerequisite English Classes',
   },
   {
-    question: 'Faculty of ICT is for doctosr, is not it?',
+    question: 'Any cost?',
+    answer: 'You are more flexible\nHi\nhallo',
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+  {
+    question: 'When? Where?',
+    answer: 'You are more flexible\nHi\nhallo',
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+  {
+    question: '2-Day activity means I have to sleep over right?',
     answer: 'You are more flexible\nHi\nhallo',
     allowFile: 'hidden',
     fileRoot: '',
