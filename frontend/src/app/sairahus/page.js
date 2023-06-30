@@ -24,7 +24,7 @@ export default function Sairahus() {
   return (
     <>
     <title>Sairahus - ICT21</title>
-    <Individual_nav event_name='PLGT23' hasImg='hidden' img='' imgLink='' links={[{
+    <Individual_nav event_name='Sairahus' eventlink='sairahus' hasImg='hidden' img='' imgLink='' links={[{
         delink: '/sairahus#about',
         name: 'About'
       }, {
@@ -77,7 +77,14 @@ export default function Sairahus() {
 
       <div id='agenda'><Agenda whichEvent='Sairahus'/> </div>
 
-      <div id='sum-up'><Sumup/></div>
+      <div id='sum-up'><Sumup
+      theText={
+        <>
+        <p><b>Sairahus </b>Sun 6th August, around 13.00-16.00 at Faculty of ICT</p>
+        <p><b>Dress Code </b>proper</p>
+        </>
+      }
+      /></div>
       
       <div id='faqs'>
         
@@ -119,22 +126,32 @@ export default function Sairahus() {
 
 const questionElement = [
   {
-    question: 'What is English Exemption?',
+    question: 'What is the Sairahus activity?',
     answer: 
     <div>
       <p>Hello</p>
       <p>Hi</p>
       <p>HAllo</p>
-      <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div>
+      {/* <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div> */}
     </div>,
-    allowFile: '',//if allow '', if not 'hidden'
+    allowFile: 'hidden',//if allow '', if not 'hidden'
     fileRoot: 'downloads/project1_leak.pdf',
     filename: 'project1_leak.pdf',
     fileName: 'Exemption Policy for Basic and Prerequisite English Classes',
   },
   {
-    question: 'Faculty of ICT is for doctosr, is not it?',
-    answer: 'You are more flexible\nHi\nhallo',
+    question: 'Any cost?',
+    answer: <div>
+    <p>No, it's all for free.</p>
+  </div>,
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
+  },
+  {
+    question: 'When? Where?',
+    answer: 'Sun 6th August, around 13.00-16.00 at Faculty of ICT',
     allowFile: 'hidden',
     fileRoot: '',
     filename: '',

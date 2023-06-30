@@ -13,11 +13,11 @@ function UnityApp() {
 }
 
 export default function Game() {
-const path = '/asset/TemplateData/';
+  const path = '/asset/TemplateData/';
 
-const favicon = path+'favicon.ico';
-const unityLogoDark = path+'unity-logo-dark.png';
-const progressBarEmptyDark = path+'progress-bar-empty-dark.png';
+  const favicon = path+'favicon.ico';
+  const unityLogoDark = path+'unity-logo-dark.png';
+  const progressBarEmptyDark = path+'progress-bar-empty-dark.png';
 
   return (
     <>

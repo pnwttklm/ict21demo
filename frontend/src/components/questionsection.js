@@ -114,7 +114,7 @@ Personal information may be collected:</Text>
 
 <Text>You consent that the personal information you provide may be processed to answer the question you asked.</Text>
 
-<Text>By agree this consent form, you acknowledge that you have read and agree to the information provided above. You also willingly consent to the collection and processing of answering your question purposes.
+<Text>By agree this consent form, you acknowledge that you have read and agree to the information provided above, privacy policy, and terms and conditions. You also willingly consent to the collection and processing of answering your question purposes.
 </Text>
  
 

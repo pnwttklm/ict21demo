@@ -31,9 +31,13 @@ import React, { useState } from "react";
 export default function () {
   const year = new Date().getFullYear();
   return (
-    <div className="bg-[#1D1D1D]">
-      <div className="flex flex-col pt-10 justify-center items-center gap-10
-      md:pb-0
+    <div className="bg-[#1D1D1D] pt-6">
+
+      <div className='flex flex-row rounded-3xl justify-center items-center p-3 md:p-6 my-8 md:my-16'>
+          <p className=' font-normal md:font-medium text-[#EDEDED] text-xs md:text-xl text-center'>Proudly made from ❤️ for Nong ๆ #21 by P ๆ #20</p>
+      </div>
+      <div className="flex flex-col pt-6 justify-center items-center gap-10
+      md:pb-09
       ">
         <h1
           className=" text-white font-bold
@@ -229,7 +233,7 @@ export default function () {
             
           </div>
           <div className="flex items-end justify-between text-white text-[8px] md:text-xs">
-            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.</h1>
+            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.</h1>
             <h1 >Apple® and Apple logo® are trademarks of Apple Inc.</h1>
           </div>
         </div>

@@ -9,7 +9,7 @@ import {
   Container,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
-import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+import { BsChevronLeft, BsChevronRight,  } from "react-icons/bs";
 import { useState } from "react";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
@@ -56,7 +56,7 @@ export default function CaptionCarousel() {
   return (
     <Box
       position={"relative"}
-      height={"800px"}
+      height={"600px"}
       width={"full"}
       overflow={"hidden"}
     >
@@ -76,8 +76,7 @@ export default function CaptionCarousel() {
       <IconButton
         aria-label="left-arrow"
         variant="solid"
-        className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
-        // colorScheme='teal'
+        className="bg-[#1D1D1F] text-[#F5F5F7] hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
         color={"white"}
         position="absolute"
         left={side}
@@ -86,14 +85,13 @@ export default function CaptionCarousel() {
         zIndex={2}
         onClick={() => slider?.slickPrev()}
       >
-        <BsArrowLeftCircle size="40px" />
+        <BsChevronLeft className='p-2' size="36px" />
       </IconButton>
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
         variant="solid"
-        className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
-        // colorScheme='teal'
+        className="bg-[#1D1D1F] text-[#F5F5F7] hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
         color={"white"}
         position="absolute"
         right={side}
@@ -102,7 +100,7 @@ export default function CaptionCarousel() {
         zIndex={2}
         onClick={() => slider?.slickNext()}
       >
-        <BsArrowRightCircle size="40px" />
+        <BsChevronRight className='p-2' size="36px" />
       </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
@@ -110,7 +108,7 @@ export default function CaptionCarousel() {
           <Box
             key={index}
             height={"full"}
-            position="relative"
+            position="center"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize={{ base: "contain", xl: "contain" }}

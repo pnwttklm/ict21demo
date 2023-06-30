@@ -202,7 +202,7 @@ export default function WithSubnavigation() {
       }
     }
     return (
-      <Stack className={`h-full mb-96 pb-96 backdrop-blur-[56px] bg-${navColor()} p-4`} display={{ md: 'none' }}>
+      <Stack className={`h-screen backdrop-blur-[56px] bg-${navColor()} p-4`} display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />
         ))}
@@ -233,11 +233,12 @@ export default function WithSubnavigation() {
           align={'center'}
           _hover={{
             textDecoration: 'none',
-          }}>
+          }}
+          >
             
           <Text
             fontWeight={500}
-            className='text-3xl'
+            className='text-2xl'
             color={`${navColorContrast()}`}>
             {label}
           </Text>

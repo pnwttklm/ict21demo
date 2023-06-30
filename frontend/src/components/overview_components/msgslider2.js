@@ -3,13 +3,10 @@ import {
   Box,
   IconButton,
   useBreakpointValue,
-  Stack,
-  Heading,
-  Text,
-  Container,
+  Button,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
-import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+import { BsChevronLeft, BsChevronRight,  } from "react-icons/bs";
 import { useState } from "react";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
@@ -44,16 +41,9 @@ export default function CaptionCarousel() {
 
   const cards = [
     {
-      name: "Natchapol Mingmahaphan",
-      pos: 'President ICT#20',
-      text: "หนีไปลูกผึ้ง หนีไป ผึ้งงง หนีไปปปปปป",
-      image:
-      '/msgcard/kung.webp'    
-    },
-    {
       name: "Napatkrit Asavarojpanich",
       pos: 'Vice President ICT#20',
-      text: 'You`re in the phone with your girlfriend she`s upset she going up about something that you said.',
+      text: '"Everything comes at a cost. And if you aspire to things that most could never dream of, then naturally, there will be an unimaginable price to pay." - Genshin Impact',
       image:
       '/msgcard/kung.webp'    
     },
@@ -73,11 +63,56 @@ export default function CaptionCarousel() {
       '/msgcard/arus.webp'
     },
     {
+      name: "Natchapol Mingmahaphan",
+      pos: 'President ICT#20',
+      text: "หนีไปลูกผึ้ง หนีไป ผึ้งงง หนีไปปปปปป",
+      image:
+      '/msgcard/golf.webp'    
+    },
+    {
       name: "Jarukit Buntheangjai",
       pos: 'ICT#20',
       text: "อยากทำไรแล้วไม่เดือดร้อนใครก็ทำเลย ใช้ชีวิตมหาลัยให้ตัวเองจบไปแล้วไม่เสียดาย ig: tatajarukit",
       image:
-      '/msgcard/tata.webp'    
+      '/msgcard/tata2.webp'    
+    },
+    {
+      name: "Ornjira Korsakpaisarn",
+      pos: 'Secretary ICT#20',
+      text: "Welcome to ICT 21 ขอให้น้องๆทุกคนเรียนอย่างมีความสุข ไม่เจ็บไม่ป่วยแข็งแรง อย่าปวดหลัง!",
+      image:
+      '/msgcard/aj.webp'    
+    },
+    {
+      name: "Eakbodin Kanjanamuengthong",
+      pos: 'ICT#20',
+      text: "ชีวิตที่มีปิดเทอมของคุณเหลืออีกแค่ 4 ปี ดังนั้น อยากทำอะไรก็ทำ",
+      image:
+      '/msgcard/tang.webp'    
+    },
+    {
+      name: "Jakkaphat Jumratboonsom",
+      pos: 'ICT#20',
+      text: "การนอนเป็นเรื่องสำคัญมีโอกาสเมื่อไหร่ก็นอนเถอะก่อนจะไม่ได้นอน",
+      image:
+      '/msgcard/mt.webp'    
+    },
+    {
+      name: "Announcement",
+      pos: 'Dev Team',
+      text: <>
+      <p>ใครอยากบอกอะไรกับน้อง ๆ คลิกปุ่มด้านล่างหรือสแกน QR Code เลย</p>
+      <Button
+              className="mt-4 rounded-full text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
+              size={{ base: "sm", md: "lg" }}
+            >
+               <a href='https://forms.gle/rmdx8zsdeyFDfJe56' target='_blank'>Send Message</a>
+      </Button>
+      </>
+      
+      ,
+      image:
+      '/msgcard/qrc.webp'    
     },
   ];
 
@@ -104,31 +139,29 @@ export default function CaptionCarousel() {
       <IconButton
         aria-label="left-arrow"
         variant="solid"
-        className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
-        colorScheme='whiteAlpha'
+        className="bg-[#1D1D1F] text-[#F5F5F7] hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
+        // colorScheme='whiteAlpha'
         position="absolute"
         left={side}
         top={top}
-        // transform={"translate(0%, -50%)"}
         zIndex={2}
         onClick={() => slider?.slickPrev()}
       >
-        <BsArrowLeftCircle size="40px" />
+        <BsChevronLeft className='p-2' size="36px" />
       </IconButton> 
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
         variant="solid"
-        className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
-        colorScheme='whiteAlpha'
+        className="bg-[#1D1D1F] text-[#F5F5F7] hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
+        // colorScheme='whiteAlpha'
         position="absolute"
         right={side}
         top={top}
-        // transform={"translate(0%, -50%)"}
         zIndex={2}
         onClick={() => slider?.slickNext()}
       >
-        <BsArrowRightCircle size="40px" />
+        <BsChevronRight className='p-2' size="36px" />
       </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>

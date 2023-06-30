@@ -14,7 +14,7 @@ export default function() {
   
   return(
     <div className="bg-white">
-    <Individual_nav event_name='Privacy Policy' hasImg='hidden' img='' imgLink='' links={[{
+    <Individual_nav event_name='Privacy Policy' eventlink='privacy-policy' hasImg='hidden' img='' imgLink='' links={[{
         delink: '/privacy-policy#THA',
         name: '🇹🇭ภาษาไทย'
       }, {
@@ -22,8 +22,9 @@ export default function() {
         name: '🇺🇸English'
       },
       ]} />
-      <div id='THA' className="text-black bg-white p-32">
-        <h1 className="font-bold text-3xl my-16">นโยบายความเป็นส่วนตัวสำหรับลูกค้า</h1>
+
+      <div id='THA' className="text-black bg-white p-12 md:p-32">
+        <h1 className="font-bold text-3xl m-8 md:my-16">นโยบายความเป็นส่วนตัวสำหรับลูกค้า</h1>
         <p>ทีมนักพัฒนาในทีมประธานรุ่น 20 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล ให้ความสำคัญกับการคุ้มครองข้อมูลส่วนบุคคลของคุณ โดยนโยบายความเป็นส่วนตัวฉบับนี้ได้อธิบายแนวปฏิบัติเกี่ยวกับการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคล รวมถึงสิทธิต่าง ๆ ของเจ้าของข้อมูลส่วนบุคคล ตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล</p>
 
         <h2 className="font-bold text-2xl my-6">การเก็บรวบรวมข้อมูลส่วนบุคคล</h2>
@@ -119,7 +120,7 @@ export default function() {
         คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล 999 ถนนพุทธมณฑลสาย 4 ศาลายา พุทธมณฑล นครปฐม 73170
         </p>
 
-        <p>อีเมล poonyawatt.klu@student.mahidol.edu</p>
+        <p>อีเมล poonyawatt.klu@student.mahidol.ac.th</p>
         <p>เว็บไซต์ https://ict21.ict.mahidol.ac.th</p>
         <p>หมายเลขโทรศัพท์ 0881060571</p>
 
@@ -130,15 +131,15 @@ export default function() {
         คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล 999 ถนนพุทธมณฑลสาย 4 ศาลายา พุทธมณฑล นครปฐม 73170
         </p>
 
-        <p>อีเมล poonyawatt.klu@student.mahidol.edu</p>
+        <p>อีเมล poonyawatt.klu@student.mahidol.ac.th</p>
         <p>หมายเลขโทรศัพท์ 0881060571</p>
 
       </div>
 
 
 
-      <div id='ENG' className="text-black bg-white p-32">
-        <h1 className="font-bold text-3xl my-16">Privacy Policy for Customer</h1>
+      <div id='ENG' className="text-black bg-white p-12 md:p-32">
+        <h1 className="font-bold text-3xl my-8 md:my-16">Privacy Policy for Customer</h1>
         <p>Developer Team, ICT20 President Team, Faculty of Information and Communication Technology, Mahidol University recognizes the importance of the protection of your personal data. This Privacy Policy explains our practices regarding the collection, use or disclosure of personal data including other rights of the Data Subjects in accordance with the Personal Data Protection Laws.</p>
         
         <h2 className="font-bold text-2xl my-6">Collection of Personal Data</h2>
@@ -236,7 +237,7 @@ export default function() {
         Faculty of ICT, Mahidol University, 999 Phutthamonthon Sai 4 Road , Salaya, Phutthamonthon, Nakhon Pathom, 73170
         </p>
 
-        <p>poonyawatt.klu@student.mahidol.edu</p>
+        <p>poonyawatt.klu@student.mahidol.ac.th</p>
         <p>https://ict21.ict.mahidol.ac.th</p>
         <p>0881060571</p>
         <p className='pt-6'><b>Data Protection Officer</b></p>
@@ -246,7 +247,7 @@ export default function() {
         Faculty of ICT, Mahidol University, 999 Phutthamonthon Sai 4 Road , Salaya, Phutthamonthon, Nakhon Pathom, 73170
         </p>
 
-        <p>https://ict21.ict.mahidol.ac.th</p>
+        <p>poonyawatt.klu@student.mahidol.ac.th</p>
         <p>0881060571</p>
       </div>
 

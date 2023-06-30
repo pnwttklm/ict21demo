@@ -13,7 +13,7 @@ const fadeInUp = {
 import { usePathname } from 'next/navigation';
 
 
-export default function individual_nav({ event_name, links, hasImg, img, imgLink}) {
+export default function individual_nav({ event_name, eventlink, links, hasImg, img, imgLink}) {
   const [isOpen, setIsOpen] = useState(false);
   
   function toggleOpen() {
@@ -25,7 +25,7 @@ export default function individual_nav({ event_name, links, hasImg, img, imgLink
       return 'white'
     }
     else {
-      return 'black'
+      return '[#000000]'
     }
   }
 
@@ -40,13 +40,14 @@ export default function individual_nav({ event_name, links, hasImg, img, imgLink
 
   return (
     <>
-      <div className={`sticky top-0 w-screen h-12 z-20 backdrop-blur-[56px] bg-${navColor()}/20`} onClick={toggleOpen}>
+      <div className={`sticky top-0 w-screen h-12 z-20 bg-${navColor()}/20 backdrop-blur-[56px] drop-shadow-2xl`} onClick={toggleOpen}>
         <div className={`flex w-screen h-12 p-6 text-${navColorContrast()} font-medium text-sm justify-between items-center `}>
-        <h1 className=" font-medium
+        <Link href={`${eventlink}#about`}><h1 className=" font-medium
                 text-lg
+                drop-shadow-md
                 md:text-xl
                 xl:text-2xl
-                ">{event_name}</h1>
+                ">{event_name}</h1></Link>
           <div className="flex flex-row gap-6 justify-center items-center">
           {/* justify-center items-center */}
             <div className={`hidden md:flex flex-row gap-10 text-${navColorContrast()}`}>
@@ -56,7 +57,7 @@ export default function individual_nav({ event_name, links, hasImg, img, imgLink
                 </div>
               ))}
             </div>
-            <div className={`flex flex-row text-xl md:hidden cursor-pointer transition-all duration-200 ${isOpen ? "transform -rotate-180" : ""}`} onClick={toggleOpen}>
+            <div className={`flex flex-row text-xl md:hidden drop-shadow-md cursor-pointer transition-all duration-200 ${isOpen ? "transform -rotate-180" : ""}`} onClick={toggleOpen}>
               <BsChevronDown/>
             </div>
             { isOpen && (
@@ -66,7 +67,7 @@ export default function individual_nav({ event_name, links, hasImg, img, imgLink
                 animate='show'
                 exit='exit'
                 transition={{  duration: 0.3, ease: "easeOut", }}
-                className={`absolute top-12 left-0 w-full h-96 p-6 backdrop-blur-[16px] bg-${navColor}/20 flex md:hidden flex-col text-2xl`}>
+                className={`absolute top-12 left-0 w-full h-96 pt-3 backdrop-blur-[16px] bg-${navColor}/20 flex md:hidden flex-col text-2xl`}>
                   {links.map((link, index) => (
                     <motion.div
                     initial={{opacity: 0, y: -16}}
@@ -74,7 +75,7 @@ export default function individual_nav({ event_name, links, hasImg, img, imgLink
                     exit={{ opacity: 0, y: -16}}
                     transition={{ duration: 0.6, ease: "easeOut"}}
                     key={index}>
-                    <div className="m-2">
+                    <div className="ml-6 text-2xl ">
                       <Link href={link.delink}>{link.name}</Link>
                     </div>
                     </motion.div>

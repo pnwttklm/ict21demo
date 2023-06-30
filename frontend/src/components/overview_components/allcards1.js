@@ -214,7 +214,7 @@ export default function () {
           <Image
             width={2000}
             height={2000}
-            src="/cards/roomreserved.webp"
+            src="/cards/roomreserve.svg"
             alt="room reserved card"
             // loading="lazy"
             className="rounded-3xl p-[10px]"

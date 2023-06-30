@@ -13,7 +13,7 @@ export default function TopElement() {
           <motion.iframe
             variants={fadeInUp}
             whileInView="show"
-            className="w-full h-[600px]"
+            className="w-full h-[500px]"
             src="https://my.spline.design/untitledcopycopy-68a94d1e36b2b2363b738436fefb91a2/"
             frameBorder="0"
             title='Freshy go round 3D'
@@ -33,7 +33,7 @@ export default function TopElement() {
                 md:text-5xl
                 xl:text-6xl"
             >
-              Snapshot Test of Jun 29.
+              Freshy go round.
             </h1>
             <p
               className=" font-medium

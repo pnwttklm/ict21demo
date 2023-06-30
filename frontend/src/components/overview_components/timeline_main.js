@@ -11,7 +11,6 @@ import {
 } from '@chakra-ui/react'
 import { BsGeoAltFill } from "react-icons/bs";
 import Image from 'next/image'
-import Link from 'next/link';
 
 export default function() {
     return (
@@ -117,7 +116,7 @@ export default function() {
       day: 'Jul 3 - 31',
       dateTime: 'July 3 - 31, 2023',
       location: 'Faculty of ICT',
-      dressCode: 'proper',
+      dressCode: 'Student Uniform',
       calendarLink: 'Preparatory Program.ics',
     },
     {
@@ -126,7 +125,7 @@ export default function() {
       day: 'Jul 3',
       dateTime: 'July 3, 2023 10.30 a.m.-12 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
-      dressCode: 'white shirt',
+      dressCode: 'Student Uniform',
       calendarLink: 'Information Session.ics',
     },
     {
@@ -135,7 +134,7 @@ export default function() {
       day: 'Jul 4',
       dateTime: 'July 4, 2023 9 a.m.-4 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'white shirt',
+      dressCode: 'Proper',
       calendarLink: 'PLGT23 Day 1 at Salaya.ics',
     },
     {
@@ -144,7 +143,7 @@ export default function() {
       day: 'Jul 5',
       dateTime: 'July 5, 2023 9 a.m.-4 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'white shirt',
+      dressCode: 'Proper',
       calendarLink: 'PLGT23 Day 2 at Amphawa.ics',
     },
     {
@@ -153,7 +152,7 @@ export default function() {
       day: 'Jul 6',
       dateTime: 'July 6, 2023 9 a.m.-4 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
-      dressCode: 'proper',
+      dressCode: 'Proper',
       calendarLink: 'Training Program for Fire Prevention and Control for ID66 Students.ics',
     },
     {
@@ -162,7 +161,7 @@ export default function() {
       day: 'Jul 7',
       dateTime: 'July 7, 2023 9 a.m.-12 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'proper',
+      dressCode: 'Student Uniform',
       calendarLink: 'PDPA Training.ics',
     },
     {
@@ -171,7 +170,7 @@ export default function() {
       day: 'Jul 7',
       dateTime: 'July 7, 2023 1 p.m.-4 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'proper',
+      dressCode: 'Student Uniform',
       calendarLink: 'TOEFL ITP (Round 1).ics',
     },
     {
@@ -180,7 +179,7 @@ export default function() {
       day: 'Jul 18',
       dateTime: 'July 18, 2023 9 a.m.-12 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'proper',
+      dressCode: 'Student Uniform',
       calendarLink: 'Exemption Exam.ics',
     },
     {
@@ -189,7 +188,7 @@ export default function() {
       day: 'Jul 21',
       dateTime: 'July 21, 2023 1 p.m.-3 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'proper',
+      dressCode: 'Student Uniform',
       calendarLink: 'Ethics Sessions for ICT Students.ics',
     },
     {
@@ -198,7 +197,7 @@ export default function() {
       day: 'Jul 22 - 23',
       dateTime: 'July 22 - 23, 2023',
       location: 'Faculty of ICT',
-      dressCode: 'proper',
+      dressCode: 'Depends',
       calendarLink: 'English Proficiency Test (MU-ELT).ics',
     },
     {
@@ -207,7 +206,7 @@ export default function() {
       day: 'Jul 24 - 26',
       dateTime: 'July 24 - 26, 2023',
       location: 'Mahidol University',
-      dressCode: 'proper',
+      dressCode: 'Proper',
       calendarLink: 'Rak Nong.ics',
     },
     {
@@ -216,7 +215,7 @@ export default function() {
       day: 'Jul 25',
       dateTime: 'July 25, 2023 9 a.m. - 12 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'proper',
+      dressCode: 'Student Uniform',
       calendarLink: 'TOEFL ITP (Round 2).ics',
     },
     {
@@ -225,7 +224,7 @@ export default function() {
       day: 'Jul 27',
       dateTime: 'July 27, 2023 1 p.m. - 3 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
-      dressCode: 'ceremonial',
+      dressCode: 'Ceremonial',
       calendarLink: 'ICT Orientation.ics',
     },
     {
@@ -234,7 +233,7 @@ export default function() {
       day: 'July 31',
       dateTime: 'July 31, 2023 9 a.m. - 12 p.m.',
       location: 'Prince Mahidol Hall',
-      dressCode: 'ceremonial',
+      dressCode: 'Ceremonial',
       calendarLink: 'Mahidol Orientation.ics',
     },
     {
@@ -243,7 +242,7 @@ export default function() {
       day: 'Aug 6',
       dateTime: 'August 6, 2023 9 a.m. - 1 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'White shirt',
+      dressCode: 'Proper or Harry Potter Theme',
       calendarLink: 'Welcome Freshy.ics',
     },
     {
@@ -252,7 +251,7 @@ export default function() {
       day: 'Aug 6',
       dateTime: 'August 6, 2023 1 p.m. - 4 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'White shirt',
+      dressCode: 'Proper',
       calendarLink: 'Sairahus.ics',
     },
   ]

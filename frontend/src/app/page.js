@@ -4,10 +4,14 @@ import Head from 'next/head'
 
 import {
   Accordion,
+  Icon
   // Image,
 } from '@chakra-ui/react'
 
+// import {BsLink} from 'react-icons/bs'
+
 import Image from "next/image"
+import { BsLink } from 'react-icons/bs'
 
 const Individual_nav = dynamic(() => import('../components/individual_nav'))
 const GallerySlider2 = dynamic(() => import('../components/overview_components/galleryslider2'))
@@ -34,7 +38,7 @@ export default function Home() {
 />
     </Head>
     <title>ICT21</title>
-      <Individual_nav event_name='Overview' hasImg='hidden' img='' imgLink='' links={[{
+      <Individual_nav event_name='Overview' eventlink='' hasImg='hidden' img='' imgLink='' links={[{
         delink: '#about',
         name: 'About'
       }, {
@@ -143,7 +147,7 @@ export default function Home() {
       <div className='h-6'/>
       <div id='faqs'>
         
-      <div className='flex flex-col p-12 bg-white h-full w-full items-center'>
+      <div className='flex flex-col pt-16 p-12 bg-white h-full w-full items-center'>
         <h1 className=' font-bold
         text-2xl
         md:text-4xl'>QUESTIONS...?</h1>
@@ -192,7 +196,7 @@ const questionElement = [
     question: 'What is English Exemption?',
     answer: 
     <div>
-      <p>Hello</p>
+      <p>English Exemption </p>
       <p>Hi</p>
       <p>HAllo</p>
       <div className="p-4 flex flex-col items-center"><Image width={478} height={692} alt='English Exemption documents' src='/asset/forQuestion/English_exemption_doc.webp' loading="lazy"/></div>
@@ -204,7 +208,16 @@ const questionElement = [
   },
   {
     question: 'I would like to loan the student loan (กยศ.)',
-    answer: 'WEll',
+    answer: <>
+      <p>As a student of ICT you can loan the student loan (กยศ.) type 1.</p>
+      <p className='pb-6'>You can learn more by clicking the link below</p>
+      
+      <a href='https://sites.google.com/view/musl-mahidol2564/' className="w-fit rounded-full text-md font-medium hover:text-[#F5F5F7] hover:bg-[#1D1D1F] bg-[#F5F5F7] px-4 p-2" >
+      <Icon className="mr-1" as={BsLink} />
+        Link
+      </a>
+      
+    </>,
     allowFile: 'hidden',
     fileRoot: '',
     filename: '',
@@ -234,9 +247,9 @@ const questionElement = [
     question: 'I gonna buy a new computer for studying in ICT, can you recommend me?',
     answer: <>
       <p className='font-medium'>1. Do I have to have my own computer or laptop?</p>
-      <p >Ans. No, you don't. Faculty of ICT provided computers for all students in the class but if you want more privacy or continuity of working between your place and faculty you should go for it.</p>
+      <p ><b>Ans.</b> No, you don't. Faculty of ICT provided computers for all students in the class but if you want more privacy or continuity of working between your place and faculty you should go for it.</p>
       <p className='font-medium'>2. Can you recommend me the specs</p>
-      <p>Ans. Yes, I can. The faculty recomended </p>
+      <p><b>Ans.</b> Yes, I can. The faculty recomended </p>
       <p> -- CPU: Intel Core i5 or i7 Gen 11 or higher, AMD Ryzen 5 or 7 5500 series or higher</p>
       <p> -- Storage: SSD PCLe/NVMe M.2 512GB or higher</p>
       <p> -- Ram: DDR4 16GB or higher</p>
@@ -244,7 +257,7 @@ const questionElement = [
       <p> -- Graphic for multimedia purpose: NVIDIA GeForce GTX1650 4GB GDDR6 or AMD Radeon RX 5500M 4GB GDDR</p>
       <p>*note that this is the recommended specs for buying a new one, lower specs still okay.</p>
       <p className='font-medium'>3. How about Macs?</p>
-      <p>Ans. Macs are also recommended but some applications may not support but instructors always have alternative applications for Macs.</p>
+      <p><b>Ans.</b> Macs are also recommended but some applications may not support but instructors always have alternative applications for Macs.</p>
     </>,
     allowFile: 'hidden',
     fileRoot: '',
@@ -261,5 +274,15 @@ const questionElement = [
     fileRoot: 'https://www.ict.mahidol.ac.th/wp-content/uploads/2023/02/16.-ICT-66-ทุนการศึกษา-66-ประกาศ-เรื่องการให้ทุนการศึกษาทุน-Talentพ.ศ.-2566-ID66-เป็นต้นไป.pdf',
     filename: '16.-ICT-66-ทุนการศึกษา-66-ประกาศ-เรื่องการให้ทุนการศึกษาทุน-Talentพ.ศ.-2566-ID66-เป็นต้นไป.pdf',
     fileName: 'ICT 66 Scholarships',
+  },
+  {
+    question: 'If I choose Software Engineering track will I get B.Sc or B.E',
+    answer: 
+    <p>Everyone graduated from any track of ICT will get The Bachelor of Science Program in Information and Communication Technology(B.Sc)</p>
+    ,
+    allowFile: 'hidden',
+    fileRoot: '',
+    filename: '',
+    fileName: '',
   },
 ]

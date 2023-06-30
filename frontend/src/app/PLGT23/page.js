@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import React from "react";
 import {
   Accordion,
-  Image,
 } from '@chakra-ui/react'
 
 const Individual_nav = dynamic(() => import('../../components/individual_nav'))
@@ -24,7 +23,7 @@ export default function plgt23() {
   return (
     <>
     <title>PLGT23 - ICT21</title>
-    <Individual_nav event_name='PLGT23' hasImg='hidden' img='' imgLink='' links={[{
+    <Individual_nav event_name='PLGT23' eventlink='PLGT23' hasImg='hidden' img='' imgLink='' links={[{
         delink: '/PLGT23#about',
         name: 'About'
       }, {
@@ -93,7 +92,14 @@ export default function plgt23() {
 
       <div id='agenda'><Agenda whichEvent='PLGT23'/></div>
 
-      <div  id='sum-up'><Sumup theText="Hello World"/></div>
+      <div  id='sum-up'><Sumup theText={
+        <>
+        <p><b>PLGT23 2 days</b>Tue 4th July and Wed 5th July, around 9.00-16.00</p>
+        <p><b>Day 1 </b>9.00 at Grand Auditorium, Faculty of ICT</p>
+        <p><b>Day 2 </b>9.00 at Innovative Space (Bamboo Garden), Faculty of ICT</p>
+        <p><b>Dress Code </b>proper</p>
+        </>
+      }/></div>
 
       <div id='faqs' className='flex flex-col p-16 bg-white h-full w-screen items-center'>
         <h1 className=' font-bold
@@ -132,7 +138,7 @@ export default function plgt23() {
 
 const questionElement = [
   {
-    question: 'What is the Welcome Freshy activities?',
+    question: 'What is the PLGT activities?',
     answer: 
     <div>
       <p>Hello</p>
@@ -147,7 +153,7 @@ const questionElement = [
   },
   {
     question: 'Any cost?',
-    answer: 'You are more flexible\nHi\nhallo',
+    answer: 'All activity is free! Plus, the faculty also provides food, drink, and snack for free!',
     allowFile: 'hidden',
     fileRoot: '',
     filename: '',
@@ -155,7 +161,10 @@ const questionElement = [
   },
   {
     question: 'When? Where?',
-    answer: 'You are more flexible\nHi\nhallo',
+    answer: <div>
+    <p>Tue 4th July and Wed 5th July, around 9.00-16.00</p>
+    <p>Day 1 the activity takes place in Faculty of ICT, and Day 2 the activity taks place in Amphawa.</p>
+   </div>,
     allowFile: 'hidden',
     fileRoot: '',
     filename: '',
@@ -163,7 +172,10 @@ const questionElement = [
   },
   {
     question: '2-Day activity means I have to sleep over right?',
-    answer: 'You are more flexible\nHi\nhallo',
+    answer:  <div>
+    <p>No.</p>
+    <p>The activity is two one-day activities the first day at Faculty of ICT the second day at Amphawa.</p>
+   </div>,
     allowFile: 'hidden',
     fileRoot: '',
     filename: '',

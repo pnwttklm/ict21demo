@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body className={IBM_Thai.className}>
           <Providers>
             <ResNav/>
-            <motion.div className='z-20 bg-gradient-radial from-[#00FFFF] to-[#33FF00] rounded-full top-0 left-0 right-0 h-[2px] fixed' style={{ scaleX }} />  
+            <motion.div className='z-30 bg-gradient-radial from-[#00FFFF] to-[#33FF00] rounded-full top-0 left-0 right-0 h-[2px] fixed' style={{ scaleX }} />  
             {children}
           </Providers>
       </body>

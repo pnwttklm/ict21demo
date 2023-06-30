@@ -15,7 +15,7 @@ export default function TopElement({ event_name , date, description}) {
           variants={fadeInUp}
           initial="hidden"
           whileInView="show"
-          className="w-96 h-[600px]"
+          className="w-96 h-[500px]"
           src="https://my.spline.design/untitledcopycopy-68a94d1e36b2b2363b738436fefb91a2/"
           frameBorder="0"
         />

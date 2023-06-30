@@ -1,7 +1,8 @@
 'use client'
 import {
-    Button
+    Icon
 } from '@chakra-ui/react'
+import {BsCalendarPlus} from 'react-icons/bs'
 import { motion } from 'framer-motion'
 const fadeInUp = {
     hidden: { opacity:0, y:50 },
@@ -15,7 +16,7 @@ export default function TopElement({ event_name , date, description}) {
           variants={fadeInUp}
           initial="hidden"
           whileInView="show"
-          className="w-full h-[600px]"
+          className="w-full h-[500px]"
           loading="lazy"
           src="https://my.spline.design/untitledcopycopy-3d9f2f0a66920c69f75b6915da72b96d/"
           frameBorder="0"
@@ -59,7 +60,7 @@ export default function TopElement({ event_name , date, description}) {
               className="mt-4 rounded-full text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
               size={{ base: "sm", md: "lg" }}
             > */}
-               <a href='/asset/timeline_ics/Sairahus.ics' download='Sairahus.ics' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Add to your calendar</a>
+               <a href='/asset/timeline_ics/Sairahus.ics' download='Sairahus.ics' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Add to your calendar<Icon className='ml-2' as={BsCalendarPlus}/></a>
             {/* </Button> */}
           </div>
         </motion.div>
