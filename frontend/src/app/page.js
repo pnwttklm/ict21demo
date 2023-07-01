@@ -196,12 +196,11 @@ const questionElement = [
     question: 'What is English Exemption?',
     answer: 
     <div>
-      <p>English Exemption </p>
-      <p>Hi</p>
-      <p>HAllo</p>
+      <p>Ask Mr. Martin or P.Tum for more information, but to say it in short, exemption is an act that if you are good at English and have a solid proof (such as getting a remarkable score in  TOEFL, IELTS, etc.) you will be able to skip the easy English class that everyone will be taken and go study even more advanced course instead. (the skipped class will be granted as S grade and it won’t be calculated in your GPA, but you still got the credit and need to pay the credit fee).</p>
+      <p>As your senior, I recommend you to exempt because you can take more foreign languages available such as German(I, II), and Chinese(I, II).</p>
       <div className="p-4 flex flex-col items-center"><Image width={478} height={692} alt='English Exemption documents' src='/asset/forQuestion/English_exemption_doc.webp' loading="lazy"/></div>
     </div>,
-    allowFile: '',//if allow '', if not 'hidden'
+    allowFile: 'hidden',//if allow '', if not 'hidden'
     fileRoot: '/downloads/project1_leak.pdf',
     filename: 'project1_leak.pdf',
     fileName: 'Exemption Policy for Basic and Prerequisite English Classes',
@@ -224,7 +223,7 @@ const questionElement = [
     fileName: '',
   },
   {
-    question: 'Every single person graduated from Mahidol University is a doctor, isn`t it?',
+    question: "Everyone who graduated from Mahidol university is a doctor, isn't it",
     answer: 'ahhhhhh, maybe not.',
     allowFile: 'hidden',
     fileRoot: '',

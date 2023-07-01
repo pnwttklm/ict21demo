@@ -51,7 +51,7 @@ export default function welcomeFreshy() {
         <Top 
             event_name='Welcome Freshy'
             date='Aug 6'
-            description='Say hi to senpais, Ajarns, and staffs. Start your own legendary journey at Faculty of ICT.'
+            description='Say hi to senpais, Ajarns, and staffs. Start your own legendary journey at Faculty of ICT. The following date will be an activity that usually be called “Welcome Freshy”, where freshmen can have another chance to do icebreaking, get to know even more peers especially between new ICT and DST students, our kind teacher, senior and staffs. (For any chance you might be able to find your soulmate here if you are lucky enough UwU) If you think you are not good at getting along with people, or you want it to be your debut in this faculty, maybe now it’s your chance.'
         />
         
         <div className=" m-4">
@@ -133,9 +133,7 @@ const questionElement = [
     question: 'What is the Welcome Freshy activity?',
     answer: 
     <div>
-      <p>Hello</p>
-      <p>Hi</p>
-      <p>HAllo</p>
+      <p>Welcome Freshy is a yearly activity for new freshmen. Letting know each other between year 1 ICT and DST.</p>
       {/* <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div> */}
     </div>,
     allowFile: 'hidden',//if allow '', if not 'hidden'

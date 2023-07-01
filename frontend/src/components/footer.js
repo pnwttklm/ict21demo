@@ -34,7 +34,7 @@ export default function () {
     <div className="bg-[#1D1D1D] pt-6">
 
       <div className='flex flex-row rounded-3xl justify-center items-center p-3 md:p-6 my-8 md:my-16'>
-          <p className=' font-normal md:font-medium text-[#EDEDED] text-xs md:text-xl text-center'>Proudly made from ❤️ for Nong ๆ #21 by P ๆ #20</p>
+          <p className=' font-medium md:font-medium text-[#EDEDED] text-xs md:text-xl text-center'>Proudly crafted from ❤️ for Nong ๆ ICT#21 by P ๆ ICT#20</p>
       </div>
       <div className="flex flex-col pt-6 justify-center items-center gap-10
       md:pb-09

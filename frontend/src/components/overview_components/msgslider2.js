@@ -72,7 +72,7 @@ export default function CaptionCarousel() {
     {
       name: "Jarukit Buntheangjai",
       pos: 'ICT#20',
-      text: "อยากทำไรแล้วไม่เดือดร้อนใครก็ทำเลย ใช้ชีวิตมหาลัยให้ตัวเองจบไปแล้วไม่เสียดาย ig: tatajarukit",
+      text: "อยากทำไรแล้วไม่เดือดร้อนใครก็ทำเลย ใช้ชีวิตมหาลัยให้ตัวเองจบไปแล้วไม่เสียดาย",
       image:
       '/msgcard/tata2.webp'    
     },

@@ -49,7 +49,7 @@ export default function Sairahus() {
         <Top 
             event_name='Sairahus'
             date='Aug 6'
-            description='Hereditarily cursed passed down from generation to generation.'
+            description='Hereditarily cursed passed down from generation to generation. Generations by generations, the student ID or Rahus Naksuksa is passed down. Find your seniors in your Sairahus here! Now you might be wondering that how will finding your “P’Rahus” benefits you, right? A certain advantage can be instantly granted to you such as a spoiler for the whole next semester that your seniors previously faced a year ago, which they probably haven’t forgotten such nostalgic (traumatic, to be precise) moment just yet. Not only just an untold experience but also something that you might like such as worksheets, slides, lectures, and even some gift from your senior. So, stay tuned for this event and get ready to know that random person who is just happened to get in the university 1 year faster than you do! (If you are lucky enough your senior will not resign yet)'
         />
         
         <div className=" m-4">
@@ -129,9 +129,7 @@ const questionElement = [
     question: 'What is the Sairahus activity?',
     answer: 
     <div>
-      <p>Hello</p>
-      <p>Hi</p>
-      <p>HAllo</p>
+      <p>Sairahus is a yearly activity for new freshmen. Letting know each other between year 1 ICT and another year of ICT.</p>
       {/* <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div> */}
     </div>,
     allowFile: 'hidden',//if allow '', if not 'hidden'

@@ -48,7 +48,7 @@ export default function plgt23() {
         <Top 
           event_name='PLGT23'
           date='July 4-5'
-          description='Play, learn, and grow together by Chittapanya team with activities designed specifically for ICT freshy in order to get to know each other. These activities are thoughtfully crafted to facilitate interaction and enable the freshies to get to know each other. By engaging in these activities, the participants can not only have fun but also learn from one another and grow both personally and professionally.'
+          description='Play, Learn and Grow Together, the activity specifically designed by Chittapanya team for ICT freshies to get to know each other. This event is thoughtfully made to enable the process of icebreaking for freshmen to interact, play, learn and grow together as the name mentioned. Along the activities, attendees can have fun while getting to know or at least having an attempt to remember faces of those who failed into the same fate as they are. '
         />
         <div className=" m-4">
           <Countdown targetDate={dateTimeAfterThreeDays} />
@@ -141,9 +141,7 @@ const questionElement = [
     question: 'What is the PLGT activities?',
     answer: 
     <div>
-      <p>Hello</p>
-      <p>Hi</p>
-      <p>HAllo</p>
+      <p>Play Learn Grow Together(PLGT) is a yearly activity for new freshmen. Letting know each other with in year 1 of ICT.</p>
       {/* <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div> */}
     </div>,
     allowFile: 'hidden',//if allow '', if not 'hidden'

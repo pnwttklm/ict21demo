@@ -16,9 +16,7 @@ export default function() {
                         <div className='flex'>
                             <h1 className='text-transparent bg-clip-text font-extrabold text-xl md:text-3xl bg-gradient-to-l from-[#00FFFF] to-[#33FF00]'>DAY 1</h1>
                         </div>
-                        <p className='text-[#F5F5F7] text-sm md:text-base'>Mark your calendars and be part of this extraordinary opportunity to kickstart your college journey with the Faculty of ICT.
-                            As you step into the latest batch of our esteemed faculty, get ready to delve into the world of cutting-edge technologies and enriching education.
-                            This is your chance to connect with ICT Ajarns, experienced senpais, and fellow developers.
+                        <p className='text-[#F5F5F7] text-sm md:text-base'>The first day of this activity will be held at the faculty of ICT, Mahidol University Salaya campus. This is an opportunity for freshmen to get used to both their peers and the place where they will be studying throughout the next four years. Freshmen will be able to have fun with activities provided while getting familiar with the faculty building together with their newfound friends.
                         </p>
                     </div>
                     {/* <Center width='50px'> */}
@@ -28,9 +26,7 @@ export default function() {
                         <div className='flex justify-end'>
                             <h1 className=' text-transparent bg-clip-text font-extrabold text-xl md:text-3xl bg-gradient-to-l from-[#FF6B00] to-[#8F00FF]'>DAY 2</h1>
                         </div>
-                        <p className='text-[#F5F5F7] text-right text-sm md:text-base'>Mark your calendars and be part of this extraordinary opportunity to kickstart your college journey with the Faculty of ICT.
-                            As you step into the latest batch of our esteemed faculty, get ready to delve into the world of cutting-edge technologies and enriching education.
-                            This is your chance to connect with ICT Ajarns, experienced senpais, and fellow developers.
+                        <p className='text-[#F5F5F7] text-right text-sm md:text-base'>The second day will a field trip will be at Amphawa, Samut Songkran. Well, at this rate, you freshmen that reading this will start to wonder why the so-called icebreaking activity will be held at Amphawa. Will it be a trip to the famous Amphawa floating market? That’s going to be a surprise! 
                         </p>
                     </div>
                 </div>
