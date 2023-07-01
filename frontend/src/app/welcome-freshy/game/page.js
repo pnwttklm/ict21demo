@@ -3,10 +3,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function UnityApp() {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "/game/Build/Web_Game_Test.loader.js",
-    dataUrl: "/game/Build/Web_Game_Test.data",
-    frameworkUrl: "/game/Build/Web_Game_Test.framework.js",
-    codeUrl: "/game/Build/Web_Game_Test.wasm",
+    loaderUrl: "/game/Build/Web Game Test.loader.js",
+    dataUrl: "/game/Build/Web Game Test.data",
+    frameworkUrl: "/game/Build/Web Game Test.framework.js",
+    codeUrl: "/game/Build/Web Game Test.wasm",
   });
 
   return <Unity unityProvider={unityProvider} style={{ width: '100%', height: '200' }}/>;
