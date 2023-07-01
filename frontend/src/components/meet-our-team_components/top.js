@@ -1,9 +1,3 @@
-'use client'
-
-import { 
-    Stack 
-} from '@chakra-ui/react'
-
 import Image from "next/image";
 
 export default function TopElement() {

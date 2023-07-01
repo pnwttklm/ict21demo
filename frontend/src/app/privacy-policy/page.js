@@ -32,6 +32,7 @@ export default function() {
         เราจะเก็บรวบรวมข้อมูลส่วนบุคคลที่ได้รับโดยตรงจากคุณผ่านช่องทาง ดังต่อไปนี้
         </p><UnorderedList className='p-6'>
   <ListItem>อีเมล</ListItem>
+  <ListItem>รหัสนักศึกษา</ListItem>
 </UnorderedList>
         <p></p>
 
@@ -147,6 +148,7 @@ export default function() {
         We will collect your personal data that receive directly from you as following:
         </p><UnorderedList className='p-6'>
   <ListItem>email addres</ListItem>
+  <ListItem>student ID</ListItem>
 </UnorderedList>
         <p></p>
 

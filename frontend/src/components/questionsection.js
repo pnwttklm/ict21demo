@@ -4,23 +4,16 @@ import Image from 'next/image';
 
 //Chakra UI
 import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon,
     Button,
     Stack,
     Text,
     Textarea,
     Checkbox,
     Input,
-    Icon,
     Popover,
     PopoverTrigger,
     PopoverContent,
     PopoverHeader,
-    PopoverCloseButton,
     PopoverBody,
     PopoverArrow,
     useDisclosure,
@@ -28,19 +21,11 @@ import {
     ModalOverlay,
     ModalContent,
     ModalHeader,
-    ModalCloseButton,
     ModalBody,
     ModalFooter,
     useToast,
-    IconButton,
 } from '@chakra-ui/react'
 
-// react Icon
-import { 
-    BsPlusCircle,
-    BsFillArrowDownCircleFill,
-    BsFillXCircleFill,
-} from "react-icons/bs";
 import FocusLock from 'react-focus-lock';
 import React, { useState } from 'react';
 
@@ -114,7 +99,7 @@ Personal information may be collected:</Text>
 
 <Text>You consent that the personal information you provide may be processed to answer the question you asked.</Text>
 
-<Text>By agree this consent form, you acknowledge that you have read and agree to the information provided above, privacy policy, and terms and conditions. You also willingly consent to the collection and processing of answering your question purposes.
+<Text>By agree this consent form, you acknowledge that you have read and agree to the information provided above, <a href='/privacy-policy' className='text-[#0047AB] hover:text-[#00FF66]'>privacy policy</a>, and <a href='/terms-and-conditions' className='text-[#0047AB] hover:text-[#00FF66]'>terms and conditions</a>. You also willingly consent to the collection and processing of answering your question purposes.
 </Text>
  
 
@@ -130,7 +115,7 @@ Personal information may be collected:</Text>
 
 <Text>คุณยินยอมว่าข้อมูลส่วนบุคคลที่คุณกรอกนั้นจะถูกใช้สำหรับการตอบกลับคำถามที่คุณถามภายในเว็บไซต์ ICT21</Text>
 
-<Text>เมื่อคุณกดเห็นด้วยกับแบบฟอร์มนี้ หมายความว่าคุณเข้าใจและยอมรับนโยบายความเป็นส่วนตัวข้างต้น และคุณยินยอมการเก็บรวบรวมและใช้งานข้อมูลส่วนตัวของคุณในการตอบกลับคำถามที่คุณถามภายในเว็บไซต์ ICT21
+<Text>เมื่อคุณกดเห็นด้วยกับแบบฟอร์มนี้ หมายความว่าคุณเข้าใจและยอมรับนโยบายความเป็นส่วนตัวข้างต้น <a href='/privacy-policy' className='text-[#0047AB] hover:text-[#00FF66]'>นโยบายความเป็นส่วนตัว(Privacy Policy)</a> <a href='/terms-and-conditions' className='text-[#0047AB] hover:text-[#00FF66]'>ข้อกำหนดและเงื่อนไข(Terms and Conditions)</a> และคุณยินยอมการเก็บรวบรวมและใช้งานข้อมูลส่วนตัวของคุณในการตอบกลับคำถามที่คุณถามภายในเว็บไซต์ ICT21
 </Text>
             </ModalBody>
             <ModalFooter className=' gap-2'>
