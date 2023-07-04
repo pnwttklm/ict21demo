@@ -228,12 +228,12 @@ export default function () {
             </div>
             <div className="flex flex-row gap-6">
               <a href='/privacy-policy' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Privacy Policy</a>
-              <a href='/terms-and-condition' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Terms & Conditions</a>
+              <a href='/terms' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Terms of Use</a>
             </div>
             
           </div>
           <div className="flex items-end justify-between text-white text-[8px] md:text-xs">
-            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.</h1>
+            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.<br/>Pre-release Version 2.0</h1>
             <h1 >Apple® and Apple logo® are trademarks of Apple Inc.</h1>
           </div>
         </div>

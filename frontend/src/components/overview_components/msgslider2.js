@@ -98,6 +98,20 @@ export default function CaptionCarousel() {
       '/msgcard/mt.webp'    
     },
     {
+      name: "Kritin Chitchobtham",
+      pos: 'ICT#20',
+      text: "ที่คณะมีเต่าบิน หลอดชอบหมด แอร์ก็โคตรหนาว แต่อย่างน้อยก็มีโต๊ะปิงปอง",
+      image:
+      '/msgcard/tetee.webp'    
+    },
+    {
+      name: "Jakguy Boriboon",
+      pos: 'ICT#20',
+      text: "อย่าลืม gcc 6688XXX_qx.c -o main && ./main",
+      image:
+      '/msgcard/jakguy.webp'    
+    },
+    {
       name: "Announcement",
       pos: 'Dev Team',
       text: <>
@@ -185,26 +199,6 @@ export default function CaptionCarousel() {
               <div className="flex justify-end w-full m-4 md:m-16">
                 <Image className="h-5 w-8 md:h-fit md:w-fit mr-6" height={72} width={72} src="/quote.closing.svg" alt="quote closing img" loading="lazy"/>
               </div>
-              {/* <div className="flex items-center justify-center gap-10">
-                <IconButton
-                  aria-label="left-arrow"
-                  variant="solid"
-                  className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
-                  color={"white"}
-                  onClick={() => slider?.slickPrev()}
-                >
-                  <BsArrowLeftCircle size="40px" />
-                </IconButton>
-                <IconButton
-                  aria-label="right-arrow"
-                  variant="solid"
-                  className="hover:bg-[#FFFFFF] hover:text-[#000000] rounded-full"
-                  color={"white"}
-                  onClick={() => slider?.slickNext()}
-                >
-                  <BsArrowRightCircle size="40px" />
-                </IconButton>
-              </div> */}
             </div>
             </div>
           </div>
@@ -213,51 +207,3 @@ export default function CaptionCarousel() {
     </Box>
   );
 }
-
-// .card {
-          //   padding: 1rem 1.2rem;
-          //   border-radius: var(--border-radius);
-          //   background: rgba(var(--card-rgb), 0);
-          //   border: 1px solid rgba(var(--card-border-rgb), 0);
-          //   transition: background 200ms, border 200ms;
-          // }
-          // <Box
-          //   key={index}
-          //   height={"600px"}
-          //   width={"1121px"}
-          //   position="relative"
-          //   backgroundPosition="center"
-          //   backgroundRepeat="no-repeat"
-          //   backgroundSize={["contain", "contain"]}
-          //   borderWidth='3px'
-          //   borderRadius='65px'
-            // backgroundImage={`url(${card.image})`}
-            // className='outline-[#FFFFFF]'
-          // >
-            {/* This is the block you need to change, to customize the caption */}
-            // <Container size="container.lg" height="full" position="relative">
-              {/* <Stack
-                spacing={6}
-                w={"full"}
-                maxW={"lg"}
-                position="absolute"
-                top="50%"
-                transform="translate(0, -50%)"
-              > */}
-                // <Image 
-                // width='365px'
-                // height='365px'
-                // src={card.image}></Image>
-                // <Text
-                //   fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-                //   color="white"
-                //   className="font-bold text-[#FFFFFF]"
-                // >
-                //   {card.title}
-                // </Text>
-                // <Text fontSize={{ base: "md", lg: "lg" }} color="white" className="font-medium text-[#FFFFFF]">
-                //   {card.text}
-                // </Text>
-              {/* </Stack> */}
-          //   </Container>
-          // </Box>

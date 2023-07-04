@@ -94,7 +94,7 @@ export default function individual_nav({ event_name, eventlink, links, hasImg, i
 
 function isInclude() {
   const pathname = usePathname();
-  if (pathname.includes('/privacy-policy')) {
+  if (pathname.includes('/privacy-policy') || pathname.includes('/terms')) {
     return true
   }
   else {

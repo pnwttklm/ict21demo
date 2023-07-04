@@ -301,7 +301,7 @@ const NAV_ITEMS= [
 
 function isInclude() {
   const pathname = usePathname();
-  if (pathname.includes('/guide-book')  || pathname.includes('/meet-our-team') || pathname.includes('/privacy-policy')) {
+  if (pathname.includes('/guide-book')  || pathname.includes('/meet-our-team') || pathname.includes('/privacy-policy') || pathname.includes('/terms')) {
     return true
   }
   else {

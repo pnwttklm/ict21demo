@@ -97,7 +97,7 @@ export default function() {
                             <Icon as={BsGeoAltFill}/> Faculty of ICT, Mahidol University
                           </p>
                           <p>
-                            <a className='font-medium'>Dress Code: </a>student uniform
+                            <a className='font-medium'>Dress Code: </a>Student Uniform
                           </p>
                   </div>
                 </PopoverBody>
@@ -116,7 +116,7 @@ export default function() {
       day: 'Jul 3 - 31',
       dateTime: 'July 3 - 31, 2023',
       location: 'Faculty of ICT',
-      dressCode: 'Student Uniform',
+      dressCode: 'Proper W/ Blue Strap',
       calendarLink: 'Preparatory Program.ics',
     },
     {
@@ -125,7 +125,7 @@ export default function() {
       day: 'Jul 3',
       dateTime: 'July 3, 2023 10.30 a.m.-12 p.m.',
       location: 'Grand Auditorium, Faculty of ICT',
-      dressCode: 'Student Uniform',
+      dressCode: 'Proper',
       calendarLink: 'Information Session.ics',
     },
     {
@@ -161,7 +161,7 @@ export default function() {
       day: 'Jul 7',
       dateTime: 'July 7, 2023 9 a.m.-12 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'Student Uniform',
+      dressCode: 'Proper W/ Blue Strap',
       calendarLink: 'PDPA Training.ics',
     },
     {
@@ -170,7 +170,7 @@ export default function() {
       day: 'Jul 7',
       dateTime: 'July 7, 2023 1 p.m.-4 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'Student Uniform',
+      dressCode: 'Proper W/ Blue Strap',
       calendarLink: 'TOEFL ITP (Round 1).ics',
     },
     {
@@ -179,7 +179,7 @@ export default function() {
       day: 'Jul 18',
       dateTime: 'July 18, 2023 9 a.m.-12 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'Student Uniform',
+      dressCode: 'Proper W/ Blue Strap',
       calendarLink: 'Exemption Exam.ics',
     },
     {
@@ -188,7 +188,7 @@ export default function() {
       day: 'Jul 21',
       dateTime: 'July 21, 2023 1 p.m.-3 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'Student Uniform',
+      dressCode: 'Proper W/ Blue Strap',
       calendarLink: 'Ethics Sessions for ICT Students.ics',
     },
     {
@@ -215,7 +215,7 @@ export default function() {
       day: 'Jul 25',
       dateTime: 'July 25, 2023 9 a.m. - 12 p.m.',
       location: 'Faculty of ICT',
-      dressCode: 'Student Uniform',
+      dressCode: 'Proper W/ Blue Strap',
       calendarLink: 'TOEFL ITP (Round 2).ics',
     },
     {
