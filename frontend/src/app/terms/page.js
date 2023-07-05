@@ -4,6 +4,7 @@ import React from "react";
 
 import {
   ListItem,
+  OrderedList,
   UnorderedList,
   Divider,
 } from '@chakra-ui/react'
@@ -26,17 +27,92 @@ export default function() {
       },
       ]} />
       <div>
-      <div id='ENG' className="text-black bg-white p-12 md:p-32 md:mx-64">
+      <div id='ENG' className="text-black bg-white p-12 md:p-32 md:mx-64 text-2xl">
         <h1 className="font-bold text-5xl my-8 md:my-16 text-center">ICT21 Website Terms of Use</h1>
        
-        <h2 className="font-bold text-2xl my-6">Ownership of site; Agreement to Terms of Use</h2>
+        <h2 className="font-bold text-2xl my-6">Agreement to Terms and Conditions of Use</h2>
         <p>
-        These Terms and Conditions of Use (the "Terms of Use") apply to the 
+        BY USING THE SITE, YOU AGREE TO THESE TERMS AND CONDITIONS OF USE AND THE PRIVACY POLICY; IF YOU DO NOT AGREE, DO NOT USE THE SITE.
         </p>
-        
+        <h2 className="font-bold text-2xl my-6">Ownership of Website</h2>
+        <p>
+        These Terms and Conditions of Use ("Terms of Use") apply to the ICT21 Website located at ict21.ict.mahidol.ac.th, and all associated sites linked to ict21.ict.mahidol.ac.th by Developer Team in ICT20 President Team, its subsidiaries and affiliates, including ICT21 websites around the world (collectively, the "Website"). The Website is the property of Developer Team in ICT20 President Team and Faculty of ICT, Mahidol University (collectively, “We” or “Us” or “Our”).
+        </p>
+        <p>
+        We reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. Your continued use of the Site following the posting of changes will mean that you accept and agree to the changes. As long as you comply with these Terms of Use, We grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use the Site.
+        </p>
+        <p>
+        We reserves the right, all rights made by Us or relatively to Us will be reserved including all text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, sounds, music, artwork and computer code (collectively, “Content”), including but not limited to the font, third-party tools, third-party photographs, design, structure, selection, coordination, expression, "look and feel" and arrangement of such Content, contained on the Site is owned, controlled or licensed by or to We at anywhere and anytime.
+        </p>
 
-        <h2 className="font-bold text-2xl  my-6">Types of Data Collected</h2>
-        <p><b>Contact information</b> such as address, telephone number, e-mail address, etc.</p>
+        <h2 className="font-bold text-2xl  my-6">Your Use of Site</h2>
+        <p>You may not use any Content of Website gains from any method in order to do any acts or attempt to do any acts such that impair the reputation, prejudice the rights, or disgrace to Us, Developer Team in ICT20 President Team, ICT20 President Team, anyone related to Faculty of ICT Mahidol University, Faculty of ICT Mahidol University, Mahidol University.</p>
+<p>You may not use any "deep-link", "page-scrape", "robot", "spider" or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the Website or any Content, or in any way reproduce or circumvent the navigational structure or presentation of the Website or any Content, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the Website. We reserves the right to bar any such activity.</p>
+        <p>
+        You may not attempt to gain unauthorized access to any portion or feature of the Website, or any other systems or networks connected to the Website or to any Our server, or to any of the services offered on or through the Website, by hacking, password "mining" or any other illegitimate means.
+        </p>
+        <p>
+        You may not probe, scan or test the vulnerability of the Website or any network connected to the Website, nor breach the security or authentication measures on the Website or any network connected to the Website. You may not reverse look-up, trace or seek to trace any information on any other user of or visitor to the Website, or exploit the Website or any service or information made available or offered by or through the Website, in any way where the purpose is to reveal any information, including but not limited to personal identification or information, other than your own information, as provided for by the Website.
+        </p>
+        <p>
+        You agree that you will not take any action that imposes an unreasonable or disproportionately large load on the infrastructure of the Website or Our systems or networks, or any systems or networks connected to the Website or to Us.
+You agree not to use any device, software or routine to interfere or attempt to interfere with the proper working of the Website or any transaction being conducted on the Website, or with any other person’s use of the Website.
+        </p>
+        <p>
+        You may not forge headers or otherwise manipulate identifiers in order to disguise the origin of any message or transmittal you send to Us on or through the Website or any service offered on or through the Website. You may not pretend that you are, or that you represent, someone else, or impersonate any other individual or entity.
+        </p>
+        <p>
+        You may not use the Website or any Content for any purpose that is unlawful or prohibited by these Terms of Use, or to solicit the performance of any illegal activity or other activity which infringes the rights of Us or others.
+        </p>
+
+        <h2 className="font-bold text-2xl  my-6">Disclaimers</h2>
+        <p>
+        WE DOES NOT PROMISE THAT THE WEBSITE OR ANY CONTENT, SERVICE OR FEATURE OF THE WEBSITE WILL BE ERROR-FREE OR UNINTERRUPTED, OR THAT ANY DEFECTS WILL BE CORRECTED, OR THAT YOUR USE OF THE SITE WILL PROVIDE SPECIFIC RESULTS. THE WEBSITE AND ITS CONTENT ARE DELIVERED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS. ALL INFORMATION PROVIDED ON THE WEBSITE IS SUBJECT TO CHANGE WITHOUT NOTICE. WE CANNOT ENSURE THAT ANY FILES OR OTHER DATA YOU DOWNLOAD FROM THE WEBSITE WILL BE FREE OF VIRUSES OR CONTAMINATION OR DESTRUCTIVE FEATURES. WE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTIES OF ACCURACY, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. WE DISCLAIMS ANY AND ALL LIABILITY FOR THE ACTS, OMISSIONS AND CONDUCT OF ANY THIRD PARTIES IN CONNECTION WITH OR RELATED TO YOUR USE OF THE WEBSITE AND/OR ANY OUR SERVICES. YOU ASSUME TOTAL RESPONSIBILITY FOR YOUR USE OF THE WEBSITE AND ANY LINKED SITES. YOUR SOLE REMEDY AGAINST US FOR DISSATISFACTION WITH THE WEBSITE OR ANY CONTENT IS TO STOP USING THE WEBSITE OR ANY SUCH CONTENT. THIS LIMITATION OF RELIEF IS A PART OF THE BARGAIN BETWEEN THE PARTIES.
+        </p>
+
+        <h1 className="font-bold text-5xl my-8 md:my-16 text-center">ICT21 Website Welcome Freshy Game Terms and Conditions of Use</h1>
+        <h2 className="font-bold text-2xl  my-6">Agreement to Terms of Use</h2>
+        <p>
+        BY USING THE GAME, YOU AGREE TO THESE TERMS AND CONDITIONS OF USE AND PRIVACY POLICY; IF YOU DO NOT AGREE, DO NOT USE THE GAME.
+        </p>
+
+        <h2 className="font-bold text-2xl  my-6">Ownership of Game</h2>
+        <p>
+        These Terms and Conditions of Use (the "Terms of Use") apply to the ICT21 Website Welcome Freshy Game located at ict21.ict.mahidol.ac.th/welcome-freshy/game (collectively, the “Game") by Game Team of Developer Team in ICT20 President Team. The Game is the property of Developer Team in ICT20 President Team (collectively, “We” or “Us” or “Our”).
+        </p>
+        <p>
+        We reserves the right, all rights made by Us or relatively to Us will be reserved including all text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, artwork and computer code (collectively, “Game Content”), including but not limited to the font, third-party tools, third-party photographs, music, sound, design, structure, selection, coordination, expression, "look and feel" and arrangement of such Content, contained on the Game is owned, controlled or licensed by or to We at anywhere and anytime.
+        </p>
+        <p>
+        There are many parties involve with Welcome Freshy 2023 Activity including ICT20 President Team, DST2 President Team, and Staffs in ICT20 and DST2 (collectively, “Organizer”), Any person or group of person who are accepted by Organizer to be the one who decide or judge about activity(collectively, “Activity Committee”) and Faculty of ICT, Mahidol University (collectively, “The Faculty”).
+        </p>
+
+        <h2 className="font-bold text-2xl  my-6">Qualifications of applicants to participate in the Game</h2>
+        <p>
+        Applicants must have all these prerequisites:
+        </p>
+        <OrderedList className='p-6'>
+           <ListItem>Those who are accepted, have a student ID, and enrolled to be a student of The Faculty.</ListItem>
+           <ListItem>Those who are the first year students of The Faculty.</ListItem>
+           <ListItem>Those who are voluntary and able to participate in the activity.</ListItem>
+           <ListItem>Those who accept to the these terms and conditions of use and the privacy policy.</ListItem>
+        </OrderedList>
+
+        <h2 className="font-bold text-2xl  my-6">Applying to the Game</h2>
+        <OrderedList className='p-6'>
+           <ListItem>Applicants have to play the Game once and follow the steps to submit their student ID that is Mahidol University student ID which started with 6688 and 6687.</ListItem>
+           <ListItem>Applying will be completely finished when you click submit the correct student ID.</ListItem>
+           <ListItem>Applicants may play the Game more than one time but the highest score will be considered.</ListItem>
+           <ListItem>Applicants can play the Game since the day the Game is released until 12 pm of August 6, 2023 or any specific date and time released from the Activity Committee. Any score that is recorded after the date and time will be not considered for the prize.</ListItem>
+           <ListItem>If you do not want to be an applicant DO NOT SUBMIT YOUR SCORE.</ListItem>
+           <ListItem>If you want to resign from being an applicant you can contact Organizer via natchapol.min@student.mahidol.ac.th .</ListItem>
+           <ListItem>Any failures occur in game or website may cause your submission to not be recorded. It is your responsibility to check your record and contact us to protect your rights if it is incorrect.</ListItem>
+           <ListItem>Every applicants will be protected under the privacy policy.</ListItem>
+        </OrderedList>
+
+
+
+
 
         <h2 className="font-bold text-2xl my-6">Children</h2>
         <p>If you are under the age of 20 or having legal restrictions, we may collect use or disclose your personal data. We require your parents or guardian to be aware and provide consent to us or allowed by applicable laws. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
@@ -44,9 +120,9 @@ export default function() {
         <h2 className="font-bold text-2xl my-6">Storage of Data</h2>
         <p>We store your personal data as hard copy and soft copy.</p>
         <p>We store your personal data by using the following systems:</p>
-        <UnorderedList className='p-6'>
+        <OrderedList className='p-6'>
   <ListItem>Third-party server service providers outside of Thailand</ListItem>
-</UnorderedList>
+</OrderedList>
 
         <h2 className="font-bold text-2xl my-6">Use of Data</h2>
         <p>We use the collected data for various purposes:</p>
