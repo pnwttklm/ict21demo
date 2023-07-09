@@ -19,7 +19,7 @@ export default function() {
     <title>Legal - Terms of Use</title>
     <div className="bg-white">
     <Individual_nav event_name='Terms of Use' eventlink='terms' hasImg='hidden' img='' imgLink='' links={[{
-        delink: '/terms#ENG',
+        delink: '/terms#about',
         name: 'English'
       }, {
         delink: '/terms#THA',
@@ -56,7 +56,8 @@ export default function() {
         </p>
         <p>
         You agree that you will not take any action that imposes an unreasonable or disproportionately large load on the infrastructure of the Website or Our systems or networks, or any systems or networks connected to the Website or to Us.
-You agree not to use any device, software or routine to interfere or attempt to interfere with the proper working of the Website or any transaction being conducted on the Website, or with any other person’s use of the Website.
+        </p>
+<p>You agree not to use any device, software or routine to interfere or attempt to interfere with the proper working of the Website or any transaction being conducted on the Website, or with any other person’s use of the Website.
         </p>
         <p>
         You may not forge headers or otherwise manipulate identifiers in order to disguise the origin of any message or transmittal you send to Us on or through the Website or any service offered on or through the Website. You may not pretend that you are, or that you represent, someone else, or impersonate any other individual or entity.
@@ -110,227 +111,139 @@ You agree not to use any device, software or routine to interfere or attempt to 
            <ListItem>Every applicants will be protected under the privacy policy.</ListItem>
         </OrderedList>
 
-
-
-
-
-        <h2 className="font-bold text-2xl my-6">Children</h2>
-        <p>If you are under the age of 20 or having legal restrictions, we may collect use or disclose your personal data. We require your parents or guardian to be aware and provide consent to us or allowed by applicable laws. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
-        
-        <h2 className="font-bold text-2xl my-6">Storage of Data</h2>
-        <p>We store your personal data as hard copy and soft copy.</p>
-        <p>We store your personal data by using the following systems:</p>
+        <h2 className="font-bold text-2xl  my-6">Selection of Winners</h2>
         <OrderedList className='p-6'>
-  <ListItem>Third-party server service providers outside of Thailand</ListItem>
-</OrderedList>
+           <ListItem>The winners are judged by sorting ascending by score, the prizes will be given from the highest.</ListItem>
+           <ListItem>There are at least three prizes.</ListItem>
+           <ListItem>Organizing committee will announce the list of the winners at Grand Auditorium Hall, 4th Floor Faculty of ICT, Mahidol University, around 12pm.</ListItem>
+           <ListItem>Number of winners and number of prizes may differed without any informing in advance.</ListItem>
+           <ListItem>Any decision and judgement reached by the organizing committee is deemed final.</ListItem>
+        </OrderedList>
 
-        <h2 className="font-bold text-2xl my-6">Use of Data</h2>
-        <p>We use the collected data for various purposes:</p>
-        <UnorderedList className='p-6'>
-          <ListItem>To create and manage accounts</ListItem>
-          <ListItem>To share and manage information within organization</ListItem>
-          <ListItem>To provide after-sales services</ListItem>
-          <ListItem>To comply with our Terms and Conditions</ListItem>
-          <ListItem>To comply with laws, rules, and regulatory authorities</ListItem>
-        </UnorderedList>
-
-        <h2 className="font-bold text-2xl my-6">Disclosure of Personal Data</h2>
-        <p>We may disclose your personal data to the following parties in certain circumstances:</p>
-
-
-        <p className='pt-6'><b>Organization</b></p>
-        <p>We may disclose your personal data within our organization to provide and develop our products or services. We may combine information internally across the different products or services covered by this Privacy Policy to help us be more relevant and useful to you and others.</p>
-
-        <h2 className="font-bold text-2xl my-6">Data Retention</h2>
-        <p>We will retain your personal data for as long as necessary during the period you are a customer or under relationship with us, or for as long as necessary in connection with the purposes set out in this Privacy Policy, unless law requires or permits a longer retention period. We will erase, destroy or anonymize your personal data when it is no longer necessary or when the period lapses.</p>
-
-        <h2 className="font-bold text-2xl my-6">Data Subject Rights</h2>
-        <p>Subject to the Personal Data Protection Laws thereof, you may exercise any of these rights in the following:</p>
-
-        <p className="pt-6"><b>Withdrawal of consent</b>: If you have given consent to us to collect, use or disclose your personal data whether before or after the effective date of the Personal Data Protection Laws, you have the right to withdraw such consent at any time throughout the period your personal data available to us, unless it is restricted by laws or you are still under beneficial contract.</p>
-
-        <p className="pt-6"><b>Data access</b>: You have the right to access your personal data that is under our responsibility; to request us to make a copy of such data for you; and to request us to reveal as to how we obtain your personal data.</p>
-
-        <p className="pt-6"><b>Data portability</b>: You have the right to obtain your personal data if we organize such personal data in automatic machine-readable or usable format and can be processed or disclosed by automatic means; to request us to send or transfer the personal data in such format directly to other data controllers if doable by automatic means; and to request to obtain the personal data in such format sent or transferred by us directly to other data controller unless not technically feasible.</p>
-
-        <p className="pt-6"><b>Objection</b>: You have the right to object to collection, use or disclosure of your personal data at any time if such doing is conducted for legitimate interests of us, corporation or individual which is within your reasonable expectation; or for carrying out public tasks.</p>
-
-        <p className="pt-6"><b>Data erasure or destruction</b>: You have the right to request us to erase, destroy or anonymize your personal data if you believe that the collection, use or disclosure of your personal data is against relevant laws; or retention of the data by us is no longer necessary in connection with related purposes under this Privacy Policy; or when you request to withdraw your consent or to object to the processing as earlier described.</p>
-
-        <p className="pt-6"><b>Suspension</b>: You have the right to request us to suspend processing your personal data during the period where we examine your rectification or objection request; or when it is no longer necessary and we must erase or destroy your personal data pursuant to relevant laws but you instead request us to suspend the processing.</p>
-
-        <p className="pt-6"><b>Rectification</b>: You have the right to rectify your personal data to be updated, complete and not misleading.</p>
-
-        <p className="pt-6"><b>Complaint lodging</b>: You have the right to complain to competent authorities pursuant to relevant laws if you believe that the collection, use or disclosure of your personal data is violating or not in compliance with relevant laws.</p>
-
-
-        <p className="pt-6">You can exercise these rights as the Data Subject by contacting our Data Protection Officer as mentioned below. We will notify the result of your request within 30 days upon receipt of such request. If we deny the request, we will inform you of the reason via SMS, email address, telephone, registered mail (if applicable).</p>
-
-
-        <h2 className="font-bold text-2xl my-6">Advertising and Marketing</h2>
-
-        <p>We may send certain information or newsletter for the purpose of utilizing your preference via your email. If you no longer want to receive the communications from us, you can contact us through our email.</p>
-
-        <h2 className="font-bold text-2xl my-6">Cookies</h2>
-        <p>To enrich and perfect your experience, we use cookies or similar technologies to display personalized content, appropriate advertising and store your preferences on your computer. We use cookies to identify and track visitors, their usage of our website and their website access preferences. If you do not wish to have cookies placed on your computer you should set their browsers to refuse cookies before using our website.</p>
-
-        <h2 className="font-bold text-2xl my-6">Data Security</h2>
-        <p>We endeavor to protect your personal data by establishing security measures in accordance with the principles of confidentiality, integrity, and availability to prevent loss, unauthorized or unlawful access, destruction, use, alteration, or disclosure including administrative safeguard, technical safeguard, physical safeguard and access controls.</p>
-
-        <h2 className="font-bold text-2xl my-6">Data Breach Notification</h2>
-        <p>We will notify the Office of the Personal Data Protection Committee without delay and, where feasible, within 72 hours after having become aware of it, unless such personal data breach is unlikely to result in a risk to the rights and freedoms of you. If the personal data breach is likely to result in a high risk to the rights and freedoms of you, we will also notify the personal data breach and the remedial measures to you without delay through our website, SMS, email address, telephone or registered mail (if applicable).</p>
-
-        <h2 className="font-bold text-2xl my-6">Changes to this Privacy Policy</h2>
-        <p>We may change this Privacy Policy from time to time. Any changes of this Privacy Policy, we encourage you to frequently check on our website.</p>
-        <p>This Privacy Policy was last updated and effective on 29th June 2023</p>
-
-
-        <h2 className="font-bold text-2xl my-6">Links to Other Sites</h2>
-        <p>The purpose of this Privacy Policy is to offer products or services and use of our website. Any websites from other domains found on our site is subject to their privacy policy which is not related to us.</p>
-
-        <h2 className="font-bold text-2xl my-6">Contact Information</h2>
-        <p>If you have any questions about this Privacy Policy or would like to exercise your rights, you can contact us by using the following details:</p>
-
-        <p className='pt-6'><b>Data Controller</b></p>
-        <p>Developer Team, ICT20 President Team, Faculty of Information and Communication Technology, Mahidol University</p>
-
-        <p>
-        Faculty of ICT, Mahidol University, 999 Phutthamonthon Sai 4 Road , Salaya, Phutthamonthon, Nakhon Pathom, 73170
-        </p>
-
-        <p>poonyawatt.klu@student.mahidol.ac.th</p>
-        <p>https://ict21.ict.mahidol.ac.th</p>
-        <p>0881060571</p>
-        <p className='pt-6'><b>Data Protection Officer</b></p>
-        <p>Developer Team, ICT20 President Team, Faculty of Information and Communication Technology, Mahidol University</p>
-
-        <p>
-        Faculty of ICT, Mahidol University, 999 Phutthamonthon Sai 4 Road , Salaya, Phutthamonthon, Nakhon Pathom, 73170
-        </p>
-
-        <p>poonyawatt.klu@student.mahidol.ac.th</p>
-        <p>0881060571</p>
+        <h2 className="font-bold text-2xl  my-6">Game Details</h2>
+        <OrderedList className='p-6'>
+           <ListItem>The Game cost free of charge.</ListItem>
+           <ListItem>Organization committee may change the terms, conditions, and details of the activity which depends on consideration of Organization without any informing in advance.</ListItem>
+        </OrderedList>
       </div>
 
-    </div>
-
-    <Divider/>
-
-    <div id='THA' className="text-black bg-white p-12 md:p-32 md:mx-64">
-        <h1 className="font-bold text-5xl m-8 md:my-16 text-center">นโยบายความเป็นส่วนตัวสำหรับลูกค้า</h1>
-        <p>ทีมนักพัฒนาในทีมประธานรุ่น 20 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล ให้ความสำคัญกับการคุ้มครองข้อมูลส่วนบุคคลของคุณ โดยนโยบายความเป็นส่วนตัวฉบับนี้ได้อธิบายแนวปฏิบัติเกี่ยวกับการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคล รวมถึงสิทธิต่าง ๆ ของเจ้าของข้อมูลส่วนบุคคล ตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล</p>
-
-        <h2 className="font-bold text-2xl my-6">การเก็บรวบรวมข้อมูลส่วนบุคคล</h2>
-        <p>
-        เราจะเก็บรวบรวมข้อมูลส่วนบุคคลที่ได้รับโดยตรงจากคุณผ่านช่องทาง ดังต่อไปนี้
-        </p><UnorderedList className='p-6'>
-  <ListItem>อีเมล</ListItem>
-  <ListItem>รหัสนักศึกษา</ListItem>
-</UnorderedList>
-        <p></p>
-
-        <h2 className="font-bold text-2xl  my-6">ประเภทข้อมูลส่วนบุคคลที่เก็บรวบรวม</h2>
-        <p><b>ข้อมูลการติดต่อ</b> เช่น ที่อยู่ หมายเลขโทรศัพท์ อีเมล เป็นต้น</p>
-
-        <h2 className="font-bold text-2xl my-6">ผู้เยาว์</h2>
-        <p>หากคุณมีอายุต่ำกว่า 20 ปีหรือมีข้อจำกัดความสามารถตามกฎหมาย เราอาจเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลของคุณ เราอาจจำเป็นต้องให้พ่อแม่หรือผู้ปกครองของคุณให้ความยินยอมหรือที่กฎหมายอนุญาตให้ทำได้ หากเราทราบว่ามีการเก็บรวบรวมข้อมูลส่วนบุคคลจากผู้เยาว์โดยไม่ได้รับความยินยอมจากพ่อแม่หรือผู้ปกครอง เราจะดำเนินการลบข้อมูลนั้นออกจากเซิร์ฟเวอร์ของเรา</p>
-
-        <h2 className="font-bold text-2xl my-6">วิธีการเก็บรักษาข้อมูลส่วนบุคคล</h2>
-        <p>เราจะเก็บรักษาข้อมูลส่วนบุคคลของคุณในรูปแบบเอกสารและรูปแบบอิเล็กทรอนิกส์</p>
-        <p>เราเก็บรักษาข้อมูลส่วนบุคคลของคุณ ดังต่อไปนี้</p>
-        <UnorderedList className='p-6'>
-  <ListItem>ผู้ให้บริการเซิร์ฟเวอร์ในต่างประเทศ</ListItem>
-</UnorderedList>
-
-        <h2 className="font-bold text-2xl my-6">การประมวลผลข้อมูลส่วนบุคคล</h2>
-        <p>เราจะเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลของคุณเพื่อวัตถุประสงค์ดังต่อไปนี้</p>
-        <UnorderedList className='p-6'>
-          <ListItem>เพื่อสร้างและจัดการบัญชีผู้ใช้งาน</ListItem>
-          <ListItem>เพื่อการบริหารจัดการภายในบริษัท</ListItem>
-          <ListItem>เพื่อการบริการหลังการขาย</ListItem>
-          <ListItem>เพื่อปฏิบัติตามข้อตกลงและเงื่อนไข (Terms and Conditions)</ListItem>
-          <ListItem>เพื่อปฏิบัติตามกฎหมายและกฎระเบียบของหน่วยงานราชการ</ListItem>
-        </UnorderedList>
-
-        <h2 className="font-bold text-2xl my-6">การเปิดเผยข้อมูลส่วนบุคคล</h2>
-        <p>เราอาจเปิดเผยข้อมูลส่วนบุคคลของคุณให้แก่ผู้อื่นภายใต้ความยินยอมของคุณหรือที่กฎหมายอนุญาตให้เปิดเผยได้ ดังต่อไปนี้</p>
-
-        <p className='pt-6'><b>การบริหารจัดการภายในองค์กร</b></p>
-        <p>เราอาจเปิดเผยข้อมูลส่วนบุคคลของคุณภายในบริษัทเท่าที่จำเป็นเพื่อปรับปรุงและพัฒนาสินค้าหรือบริการของเรา เราอาจรวบรวมข้อมูลภายในสำหรับสินค้าหรือบริการต่าง ๆ ภายใต้นโยบายนี้เพื่อประโยชน์ของคุณและผู้อื่นมากขึ้น</p>
-
-        <h2 className="font-bold text-2xl my-6">ระยะเวลาจัดเก็บข้อมูลส่วนบุคคล</h2>
-        <p>เราจะเก็บรักษาข้อมูลส่วนบุคคลของคุณไว้ตามระยะเวลาที่จำเป็นในระหว่างที่คุณเป็นลูกค้าหรือมีความสัมพันธ์อยู่กับเราหรือตลอดระยะเวลาที่จำเป็นเพื่อให้บรรลุวัตถุประสงค์ที่เกี่ยวข้องกับนโยบายฉบับนี้ ซึ่งอาจจำเป็นต้องเก็บรักษาไว้ต่อไปภายหลังจากนั้น หากมีกฎหมายกำหนดไว้ เราจะลบ ทำลาย หรือทำให้เป็นข้อมูลที่ไม่สามารถระบุตัวตนของคุณได้ เมื่อหมดความจำเป็นหรือสิ้นสุดระยะเวลาดังกล่าว</p>
-
-        <h2 className="font-bold text-2xl my-6">สิทธิของเจ้าของข้อมูลส่วนบุคคล</h2>
-        <p>ภายใต้กฎหมายคุ้มครองข้อมูลส่วนบุคคล  คุณมีสิทธิในการดำเนินการดังต่อไปนี้</p>
-
-        <p className='pt-6'><b>สิทธิขอถอนความยินยอม (right to withdraw consent)</b> หากคุณได้ให้ความยินยอม เราจะเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลของคุณ ไม่ว่าจะเป็นความยินยอมที่คุณให้ไว้ก่อนวันที่กฎหมายคุ้มครองข้อมูลส่วนบุคคลใช้บังคับหรือหลังจากนั้น คุณมีสิทธิที่จะถอนความยินยอมเมื่อใดก็ได้ตลอดเวลา</p>
-
-        <p className='pt-6'><b>สิทธิขอเข้าถึงข้อมูล (right to access)</b> คุณมีสิทธิขอเข้าถึงข้อมูลส่วนบุคคลของคุณที่อยู่ในความรับผิดชอบของเราและขอให้เราทำสำเนาข้อมูลดังกล่าวให้แก่คุณ  รวมถึงขอให้เราเปิดเผยว่าเราได้ข้อมูลส่วนบุคคลของคุณมาได้อย่างไร</p>
-
-        <p className='pt-6'><b>สิทธิขอถ่ายโอนข้อมูล (right to data portability)</b> คุณมีสิทธิขอรับข้อมูลส่วนบุคคลของคุณในกรณีที่เราได้จัดทำข้อมูลส่วนบุคคลนั้นอยู่ในรูปแบบให้สามารถอ่านหรือใช้งานได้ด้วยเครื่องมือหรืออุปกรณ์ที่ทำงานได้โดยอัตโนมัติและสามารถใช้หรือเปิดเผยข้อมูลส่วนบุคคลได้ด้วยวิธีการอัตโนมัติ รวมทั้งมีสิทธิขอให้เราส่งหรือโอนข้อมูลส่วนบุคคลในรูปแบบดังกล่าวไปยังผู้ควบคุมข้อมูลส่วนบุคคลอื่นเมื่อสามารถทำได้ด้วยวิธีการอัตโนมัติ และมีสิทธิขอรับข้อมูลส่วนบุคคลที่เราส่งหรือโอนข้อมูลส่วนบุคคลในรูปแบบดังกล่าวไปยังผู้ควบคุมข้อมูลส่วนบุคคลอื่นโดยตรง เว้นแต่ไม่สามารถดำเนินการได้เพราะเหตุทางเทคนิค</p>
-
-        <p className='pt-6'><b>สิทธิขอคัดค้าน (right to object)</b>  คุณมีสิทธิขอคัดค้านการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลของคุณในเวลาใดก็ได้ หากการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลของคุณที่ทำขึ้นเพื่อการดำเนินงานที่จำเป็นภายใต้ประโยชน์โดยชอบด้วยกฎหมายของเราหรือของบุคคลหรือนิติบุคคลอื่น โดยไม่เกินขอบเขตที่คุณสามารถคาดหมายได้อย่างสมเหตุสมผลหรือเพื่อดำเนินการตามภารกิจเพื่อสาธารณประโยชน์</p>
-
-        <p className='pt-6'><b>สิทธิขอให้ลบหรือทำลายข้อมูล (right to erasure/destruction)</b> คุณมีสิทธิขอลบหรือทำลายข้อมูลส่วนบุคคลของคุณหรือทำให้ข้อมูลส่วนบุคคลเป็นข้อมูลที่ไม่สามารถระบุตัวคุณได้ หากคุณเชื่อว่าข้อมูลส่วนบุคคลของคุณถูกเก็บรวบรวม ใช้ หรือเปิดเผยโดยไม่ชอบด้วยกฎหมายที่เกี่ยวข้องหรือเห็นว่าเราหมดความจำเป็นในการเก็บรักษาไว้ตามวัตถุประสงค์ที่เกี่ยวข้องในนโยบายฉบับนี้ หรือเมื่อคุณได้ใช้สิทธิขอถอนความยินยอมหรือใช้สิทธิขอคัดค้านตามที่แจ้งไว้ข้างต้นแล้ว</p>
-
-        <p className='pt-6'><b>สิทธิขอให้ระงับการใช้ข้อมูล (right to restriction of processing)</b> คุณมีสิทธิขอให้ระงับการใช้ข้อมูลส่วนบุคคลชั่วคราวในกรณีที่เราอยู่ระหว่างตรวจสอบตามคำร้องขอใช้สิทธิขอแก้ไขข้อมูลส่วนบุคคลหรือขอคัดค้านของคุณหรือกรณีอื่นใดที่เราหมดความจำเป็นและต้องลบหรือทำลายข้อมูลส่วนบุคคลของคุณตามกฎหมายที่เกี่ยวข้องแต่คุณขอให้เราระงับการใช้แทน</p>
-
-        <p className='pt-6'><b>สิทธิขอให้แก้ไขข้อมูล (right to rectification)</b> คุณมีสิทธิขอแก้ไขข้อมูลส่วนบุคคลของคุณให้ถูกต้อง เป็นปัจจุบัน สมบูรณ์ และไม่ก่อให้เกิดความเข้าใจผิด</p>
-
-        <p className='pt-6'><b>สิทธิร้องเรียน (right to lodge a complaint)</b> คุณมีสิทธิร้องเรียนต่อผู้มีอำนาจตามกฎหมายที่เกี่ยวข้อง หากคุณเชื่อว่าการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลของคุณ เป็นการกระทำในลักษณะที่ฝ่าฝืนหรือไม่ปฏิบัติตามกฎหมายที่เกี่ยวข้อง</p>
 
 
-        <p className='pt-6'>คุณสามารถใช้สิทธิของคุณในฐานะเจ้าของข้อมูลส่วนบุคคลข้างต้นได้ โดยติดต่อมาที่เจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคลของเราตามรายละเอียดท้ายนโยบายนี้ เราจะแจ้งผลการดำเนินการภายในระยะเวลา 30 วัน นับแต่วันที่เราได้รับคำขอใช้สิทธิจากคุณ ตามแบบฟอร์มหรือวิธีการที่เรากำหนด ทั้งนี้ หากเราปฏิเสธคำขอเราจะแจ้งเหตุผลของการปฏิเสธให้คุณทราบผ่านช่องทางต่าง ๆ เช่น ข้อความ (SMS) อีเมล โทรศัพท์ จดหมาย เป็นต้น</p>
+      <div id='THA' className="text-black bg-white p-12 md:p-32 md:mx-64 text-2xl">
+      <h1 className="font-bold text-5xl my-8 md:my-16 text-center">ข้อกำหนดและเงื่อนไขการใช้งานของเว็บไซต์ ICT21</h1>
+       
+       <h2 className="font-bold text-2xl my-6">การเห็นด้วยในข้อกำหนดและเงื่อนไขการใช้งาน</h2>
+       <p>
+       เมื่อเข้าใช้งานเว็บไซต์นี้นั้นถือว่าคุณได้เห็นด้วยกับข้อกำหนดและเงื่อนไขการใช้งานรวมถึงนโยบายความเป็นส่วนตัว อย่าใช้งานเว็บไซต์นี้หากว่าคุณไม่ยอมรับ
+       </p>
+       <h2 className="font-bold text-2xl my-6">กรรมสิทธิ์ในเว็บไซต์</h2>
+       <p>
+       ข้อกำหนดและเงื่อนไขการใช้งาน(“<b>ข้อกำหนดการใช้งาน</b>”) ใช้กับเว็บไซต์ ICT21 ที่ตั้งอยู่ ณ ict21.ict.mahidol.ac.th และเว็บไซต์ที่เกี่ยวข้องที่เป็นของ ict21.ict.mahidol.ac.th ที่ถูกพัฒนาโดยทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 เว็บไซต์ลูกและเว็บไซต์หลักทั้งในประเทศและต่างประเทศที่อยู่ภายใต้เว็บไซต์ ICT21("<b>เว็บไซต์</b>") เว็บไซต์นั้นเป็นกรรมสิทธิ์ของทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 และคณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล (“<b>เรา</b>”)       
+       </p>
+       <p><br></br></p>
+       <p>
+       เราสงวนสิทธิ์ ตามดุลยพินิจของเราที่จะเปลี่ยนแปลง แก้ไข เพิ่ม ลด บางส่วนของข้อกำหนดการใช้งานเหล่านี้ได้ตลอดเวลา ซึ่งเป็นความรับผิดชอบของตัวคุณที่จะต้องตรวจสอบความเปลี่ยนแปลงของข้อกำหนดการใช้งานอยู่เป็นนิจ การดำเนินการใช้งานเว็บไซต์ต่อหลังจารการเปลี่ยนแปลงของข้อกำหนดการใช้งานนั้นให้ถือว่าคุณได้ให้การยอมรับและเห็นด้วยกับข้อกำหนดการใช้งานที่เปลี่ยนแปลงนั้น ตราบเท่าที่คุณปฏิบัติตามข้อกำหนดการใช้งานเราให้เอกสิทธิ์ ไม่ผูกขาด ไม่สามารถโอนย้ายได้ และสิทธิที่มีการจำกัดในการเข้าถึงและใช้งานเว็บไซต์
+</p>
+      <p><br></br></p>
+       <p>
+       เราสงวนสิทธิ์ทุกประการที่ถูกผลิตโดยเราหรือเกี่ยวข้องกับเรานั่นรวมถึงข้อความ กราฟิก อินเทอร์เฟซผู้ใช้ อินเทอร์เฟซภาพ รูปถ่าย เครื่องหมายทางการค้า โลโก้ เสียง ดนตรี งานศิลปะ และโค้ดทางคอมพิวเตอร์ทั้งหมด("<b>เนื้อหา</b>") แต่สำหรับรูปลักษณ์อักษร เครื่องมือของบุคคลที่สาม รูปภาพของบุคคลที่สาม ดีไซน์ โครงสร้าง การเลือกสรร การประสานงาน การแสดงออก รูปลักษณ์ และการจัดวางเนื้อหานั้นไม่ถูกครอบคลุมถึง ทั้งหมดเหล่านี้ที่เว็บไซต์เป็นเจ้าของ ควบคุม ให้อนุญาตโดยเราในทุกที่และทุกเวลา
+       </p>
 
+       <h2 className="font-bold text-2xl  my-6">การใช้งานเว็บไซต์ของคุณ
+</h2>
+       <p>
+       คุณไม่สามารถใช้เนื้อหาของเว็บไซต์ที่ได้รับมาไม่ว่าโดยวิธีการใดในการกระทำการใด ๆ หรือพยายามกระทำการใด ๆ ที่ทำให้เสื่อมเสียชื่อเสียง พรากไปซึ่งสิทธิ หรือการทำการใด ๆ ที่เสื่อมเสียต่อเรา ทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล ทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดลและมหาวิทยาลัยมหิดลโดยเด็ดขาด
+       </p>
+       <p><br></br></p>
+       <p>
+       คุณไม่สามารถใช้ "deep-link", "page-scrape", "robot", "spider" หรืออุปกรณ์ โปรแกรม อัลกอริธึมหรือวิธีการอัตโนมัติอื่นๆ หรือกระบวนการด้วยตนเองที่คล้ายคลึงกันหรือเทียบเท่า เพื่อเข้าถึง รับ คัดลอก หรือตรวจสอบส่วนใดส่วนหนึ่งของเว็บไซต์หรือเนื้อหาใดๆ หรือทําซ้ำหรือหลีกเลี่ยงโครงสร้างการนําทางหรือการนําเสนอของเว็บไซต์หรือเนื้อหาใดๆ ในทางใดทางหนึ่ง เพื่อรับหรือพยายามรับเนื้อหา เอกสาร หรือข้อมูลใดๆ  เราขอสงวนสิทธิ์ในการห้ามการกระทำดังกล่าว
+ </p>
+ <p><br></br></p>
+       <p>
+       คุณไม่สามารถพยายามเข้าถึงส่วนหรือคุณลักษณะใดส่วนหนึ่งของเว็บไซต์โดยไม่ได้รับอนุญาต หรือระบบหรือเครือข่ายอื่นใดที่เชื่อมต่อกับเว็บไซต์หรือเซิร์ฟเวอร์ของเรา หรือบริการใดๆ ที่นําเสนอบนหรือผ่านไซต์ โดยการแฮ็ก การ "การขุด" ด้วยรหัสผ่าน หรือวิธีการอื่นใดที่ผิดกฎหมาย
+คุณไม่สามารถตรวจสอบ สแกน หรือทดสอบช่องโหว่ของเว็บไซต์หรือเครือข่ายใดๆ ที่เชื่อมต่อกับเว็บไซต์ หรือละเมิดมาตรการรักษาความปลอดภัยหรือการรับรองความถูกต้องบนเว็บไซต์หรือเครือข่ายใดๆ ที่เชื่อมต่อกับเว็บไซต์ คุณไม่สามารถย้อนกลับการค้นหา ติดตาม หรือพยายามติดตามข้อมูลใดๆ เกี่ยวกับผู้ใช้รายอื่นหรือผู้เยี่ยมชมเว็บไซต์ หรือใช้ประโยชน์จากเว็บไซต์หรือบริการหรือข้อมูลใดๆ ที่มีให้หรือนําเสนอโดยหรือผ่านเว็บไซต์ ในลักษณะที่มีวัตถุประสงค์เพื่อเปิดเผยข้อมูลใดๆ รวมถึงแต่ไม่จํากัดเพียงข้อมูลประจําตัวหรือข้อมูลส่วนบุคคล นอกเหนือจากข้อมูลของคุณเอง ตามที่เว็บไซต์กําหนด
+</p>
+<p><br></br></p>
+       <p>
+       คุณตกลงว่าคุณจะไม่ดําเนินการใดๆ ที่กําหนดภาระอย่างหนักอย่างไม่สมเหตุสมผลหรือผิดปรกติวิสัยบนโครงสร้างพื้นฐานของเว็บไซต์หรือระบบหรือเครือข่ายของเรา หรือระบบหรือเครือข่ายใดๆ ที่เชื่อมต่อกับเว็บไซต์หรือกับเรา
+</p>
+<p><br></br></p>
+<p>
+คุณตกลงที่จะไม่ใช้อุปกรณ์ ซอฟต์แวร์ หรือการกระทำใดๆ เพื่อแทรกแซงหรือพยายามแทรกแซงการทํางานที่เหมาะสมของเว็บไซต์หรือกิจกรรมใดๆ ที่ดําเนินการบนเว็บไซต์ หรือกับการใช้งานเว็บไซต์ของบุคคลอื่น
+</p>
+<p><br></br></p>
+       <p>
+       คุณไม่สามารถปลอมแปลงส่วนหัวหรือจัดการตัวระบุเพื่ออําพรางที่มาของข้อความหรือการส่งใดๆ ที่คุณส่งถึงเราบนหรือผ่านเว็บไซต์หรือบริการใดๆ ที่นําเสนอบนหรือผ่านเว็บไซต์ คุณไม่สามารถแสร้งทําเป็นว่าคุณเป็นหรือเป็นตัวแทนคนอื่นหรือปลอมตัวเป็นบุคคลหรือนิติบุคคลอื่น
+</p>
+<p><br></br></p>
+       <p>
+       คุณไม่สามารถใช้ไซต์หรือเนื้อหาใด ๆ เพื่อวัตถุประสงค์ใด ๆ ที่ผิดกฎหมายหรือต้องห้ามตามข้อกําหนดการใช้งานเหล่านี้ หรือเพื่อเป็นส่วนหนึ่งของการกระทำที่ผิดกฎหมายหรือการกระทำอื่น ๆ ที่ละเมิดสิทธิ์ของเราหรือผู้อื่น
+       </p>
+       
 
-        <h2 className="font-bold text-2xl my-6">การโฆษณาและการตลาด</h2>
+       <h2 className="font-bold text-2xl  my-6">ข้อจำกัดความรับผิดชอบ</h2>
+       <p>
+       เราไม่สัญญาว่าเว็บไซต์หรือเนื้อหา บริการ หรือคุณลักษณะใดๆ ของเว็บไซต์จะปราศจากข้อผิดพลาดหรือไม่หยุดชะงัก หรือข้อบกพร่องใดๆ จะได้รับการแก้ไข หรือการใช้งานเว็บไซต์ของคุณจะให้ผลลัพธ์ที่เฉพาะ เว็บไซต์และเนื้อหาถูกจัดส่งตาม "ตามสภาพ" และ "ตามที่มี" ข้อมูลทั้งหมดที่ให้ไว้ในเว็บไซต์อาจมีการเปลี่ยนแปลงโดยไม่ต้องแจ้งให้ทราบล่วงหน้า เราไม่สามารถรับรองได้ว่าไฟล์หรือข้อมูลอื่น ๆ ที่คุณดาวน์โหลดจากเว็บไซต์จะปราศจากไวรัสหรือการติดเชื้อหรือคุณสมบัติการทําลายล้าง เราปฏิเสธการรับประกันทั้งหมด ไม่ว่าโดยชัดแจ้งหรือโดยนัย รวมถึงการรับประกันความถูกต้อง การไม่ละเมิด ความสามารถในการซื้อขาย และความเหมาะสมสําหรับวัตถุประสงค์เฉพาะใดๆ เราขอปฏิเสธความรับผิดใดๆ และทั้งหมดสําหรับการกระทํา การละเว้น และการดําเนินการของบุคคลที่สามที่เกี่ยวข้องกับหรือเกี่ยวข้องกับการใช้งานไซต์และ/หรือบริการใดๆ ของเรา คุณจะเป็นผู้รับผิดชอบทั้งหมดเพียงผู้เดียวสําหรับการใช้งานเว็บไซต์และเว็บไซต์ที่เชื่อมโยงใดๆ ของคุณ และเว็บไซต์ใดๆ การเยียวยาเพียงอย่างเดียวของคุณต่อเราสําหรับความไม่พอใจต่อไซต์หรือเนื้อหาใด ๆ คือการหยุดใช้ไซต์หรือเนื้อหาดังกล่าว ข้อจํากัดในการบรรเทาทุกข์นี้เป็นส่วนหนึ่งของการเจรจาต่อรองระหว่างคู่สัญญา
+</p>
+        <div id='gameth'></div>
+       <h1 className="font-bold text-5xl my-8 md:my-16 text-center">ข้อกำหนดและเงื่อนไขการใช้งานของเกม Welcome Freshy ในเว็บไซต์ ICT21</h1>
+       <h2 className="font-bold text-2xl  my-6">การเห็นด้วยในข้อกำหนดและเงื่อนไขการใช้งาน</h2>
+       <p>
+       เมื่อเข้าใช้งานเกมนี้นั้นถือว่าคุณได้เห็นด้วยกับข้อกำหนดและเงื่อนไขการใช้งานรวมถึงนโยบายความเป็นส่วนตัว อย่าใช้งานเกมนี้หากว่าคุณไม่ยอมรับ
+       </p>
 
-        <p>เราอาจส่งข้อมูลหรือจดหมายข่าวไปยังอีเมลของคุณ โดยมีวัตถุประสงค์เพื่อเสนอสิ่งที่น่าสนกับคุณ หากคุณไม่ต้องการรับการติดต่อสื่อสารจากเราผ่านทางอีเมลอีกต่อไป คุณสามารถติดต่อมายังอีเมลของเราได้</p>
+       <h2 className="font-bold text-2xl  my-6">กรรมสิทธิ์ในเกม</h2>
+       <p>
+       ข้อกำหนดและเงื่อนไขการใช้งาน("<b>ข้อกำหนดการใช้งาน</b>") ใช้กับเกม Welcome Freshy ในเว็บไซต์ ICT21 ที่ตั้งอยู่ ณ ict21.ict.mahidol.ac.th/welcome-freshy/game ("<b>เกม</b>") เกมนั้นเป็นกรรมสิทธิ์ของทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 ("<b>เรา</b>")</p>
+       <p><br></br></p>
+       <p>
+       เราสงวนสิทธิ์ ตามดุลยพินิจของเราที่จะเปลี่ยนแปลง แก้ไข เพิ่ม ลด บางส่วนของข้อกำหนดการใช้งานเหล่านี้ได้ตลอดเวลา ซึ่งเป็นความรับผิดชอบของตัวคุณที่จะต้องตรวจสอบความเปลี่ยนแปลงของข้อกำหนดการใช้งานอยู่เป็นนิจ การดำเนินการใช้งานเว็บไซต์ต่อหลังจารการเปลี่ยนแปลงของข้อกำหนดการใช้งานนั้นให้ถือว่าคุณได้ให้การยอมรับและเห็นด้วยกับข้อกำหนดการใช้งานที่เปลี่ยนแปลงนั้น ตราบเท่าที่คุณปฏิบัติตามข้อกำหนดการใช้งานเราให้เอกสิทธิ์ ไม่ผูกขาด ไม่สามารถโอนย้ายได้ และสิทธิที่มีการจำกัดในการเข้าถึงและใช้งานเกม
+เราสงวนสิทธิ์ทุกประการที่ถูกผลิตโดยเราหรือเกี่ยวข้องกับเรานั่นรวมถึงข้อความ กราฟิก อินเทอร์เฟซผู้ใช้ อินเทอร์เฟซภาพ รูปถ่าย เครื่องหมายทางการค้า โลโก้ งานศิลปะ และโค้ดทางคอมพิวเตอร์ทั้งหมด("<b>เนื้อหาในเกม</b>") แต่สำหรับรูปลักษณ์อักษร เครื่องมือของบุคคลที่สาม รูปภาพของบุคคลที่สาม เสียง ดนตรี ดีไซน์ โครงสร้าง การเลือกสรร การประสานงาน การแสดงออก รูปลักษณ์ และการจัดวางเนื้อหานั้นไม่ถูกครอบคลุมถึง ทั้งหมดเหล่านี้ที่เกมเป็นเจ้าของ ควบคุม ให้อนุญาตโดยเราในทุกที่และทุกเวลา</p>
+<p><br></br></p>
+       <p>
+       มีหลายฝ่ายที่เกี่ยวข้องกับกิจกรรม Welcome Freshy 2023 รวมถึงทีมประธาน ICT20 ทีมประธาน DST2 และผู้ปฏิบัติงานใน ICT20 และ DST2 (เรียกรวมกันว่า "<b>ผู้จัดงาน</b>") และคณะไอซีที มหาวิทยาลัยมหิดล ("<b>ผู้จัดงาน</b>") </p>
 
-        <h2 className="font-bold text-2xl my-6">เทคโนโลยีติดตามตัวบุคคล (Cookies)</h2>
-        <p>เพื่อเพิ่มประสบการณ์การใช้งานของคุณให้สมบูรณ์และมีประสิทธิภาพมากขึ้น เราใช้คุกกี้ (Cookies)หรือเทคโนโลยีที่คล้ายคลึงกัน เพื่อพัฒนาการเข้าถึงสินค้าหรือบริการ โฆษณาที่เหมาะสม และติดตามการใช้งานของคุณ เราใช้คุกกี้เพื่อระบุและติดตามผู้ใช้งานเว็บไซต์และการเข้าถึงเว็บไซต์ของเรา หากคุณไม่ต้องการให้มีคุกกี้ไว้ในคอมพิวเตอร์ของคุณ คุณสามารถตั้งค่าบราวเซอร์เพื่อปฏิเสธคุกกี้ก่อนที่จะใช้เว็บไซต์ของเราได้</p>
+       <h2 className="font-bold text-2xl  my-6">คุณสมบัติของผู้สมัครเข้าร่วมการแข่งขัน</h2>
+       <p>
+       ผู้สมัครต้องมีคุณสมบัติเบื้องต้นเหล่านี้ทั้งหมด:
+</p>
+       <OrderedList className='p-6'>
+          <ListItem>เป็นผู้ที่มีสิทธิ์เข้าศึกษา มีรหัสนักศึกษา และยืนยันสิทธิ์การเข้าศึกษาเป็นนักศึกษาของคณะ</ListItem>
+          <ListItem>เป็นผู้ที่เป็นกำลังศึกษาชั้นปีที่ 1 ของคณะ</ListItem>
+          <ListItem>เป็นผู้ที่สมัครใจเข้าร่วมและสามารถเข้าร่วมกิจกรรมดังกล่าวได้</ListItem>
+          <ListItem>เป็นผู้ที่ยอมรับข้อกําหนดและเงื่อนไขการใช้งานเหล่านี้และนโยบายความเป็นส่วนตัว</ListItem>
+       </OrderedList>
 
-        <h2 className="font-bold text-2xl my-6">การรักษาความมั่งคงปลอดภัยของข้อมูลส่วนบุคคล</h2>
-        <p>เราจะรักษาความมั่นคงปลอดภัยของข้อมูลส่วนบุคคลของคุณไว้ตามหลักการ การรักษาความลับ (confidentiality) ความถูกต้องครบถ้วน (integrity) และสภาพพร้อมใช้งาน (availability) ทั้งนี้ เพื่อป้องกันการสูญหาย เข้าถึง ใช้ เปลี่ยนแปลง แก้ไข หรือเปิดเผย นอกจากนี้เราจะจัดให้มีมาตรการรักษาความมั่นคงปลอดภัยของข้อมูลส่วนบุคคล ซึ่งครอบคลุมถึงมาตรการป้องกันด้านการบริหารจัดการ (administrative safeguard) มาตรการป้องกันด้านเทคนิค (technical safeguard) และมาตรการป้องกันทางกายภาพ (physical safeguard) ในเรื่องการเข้าถึงหรือควบคุมการใช้งานข้อมูลส่วนบุคคล (access control)</p>
+       <h2 className="font-bold text-2xl  my-6">การเข้าร่วมเกม</h2>
+       <OrderedList className='p-6'>
+          <ListItem>ผู้เข้าร่วมต้องเล่นเกมอย่างน้อยหนึ่งครั้งและทำตามขั้นตอนเพื่อส่งรหัสนักศึกษาซึ่งเป็นรหัสนักศึกษาของมหาวิทยาลัยมหิดลที่ขึ้นต้นด้วย 6688 หรือ 6687</ListItem>
+          <ListItem>การสมัครจะเสร็จสมบูรณ์เมื่อคุณคลิกส่งรหัสประจำตัวนักศึกษาที่ถูกต้อง</ListItem>
+          <ListItem>ผู้เข้าร่วมสามารถเล่นเกมได้มากกว่าหนึ่งครั้ง แต่คะแนนสูงสุดจะถูกบันทึกไว้พิจารณา</ListItem>
+          <ListItem>ผู้เข้าร่วมสามารถเล่นเกมได้ตั้งแต่วันที่เกมถูกเผยแพร่ยจนถึง 12.00 น. ของวันที่ 6 สิงหาคม 2566 หรือวันที่และเวลาใด ๆ ที่เผยแพร่จากคณะกรรมการกิจกรรม คะแนนใด ๆ ที่บันทึกไว้หลังจากวันที่และเวลาที่กำหนดจะไม่ได้รับการพิจารณาสําหรับรางวัล</ListItem>
+          <ListItem>หากคุณไม่ต้องการเป็นผู้เข้าร่วม อย่าส่งคะแนนของคุณ</ListItem>
+          <ListItem>หากคุณต้องการถอนตัวจากการเป็นผู้สมัคร คุณสามารถติดต่อผู้จัดงานได้ที่ natchaphol.min@student.mahidol.ac.th</ListItem>
+          <ListItem>ความผิดพลาดใด ๆ ที่เกิดขึ้นกับเกมหรือเว็บไซต์อาจส่งผลให้การส่งคะแนนของคุณเกิดความขัดข้องหรือข้อผิดพลาดใด ๆ นี่เป็นความรับผิดชอบของคุณเองในการตรวจสอบการบันทึกคะแนนของคุณ หากเกิดข้อผิดพลาดใด ๆ โปรดติดต่อเราเพื่อปกป้องสิทธิ์ของคุณ</ListItem>
+          <ListItem>ผู้เข้าร่วมทุกคนจะถูกปกป้องภายใต้นโยบายความเป็นส่วนตัว</ListItem>
+       </OrderedList>
 
-        <h2 className="font-bold text-2xl my-6">การแจ้งเหตุละเมิดข้อมูลส่วนบุคคล</h2>
-        <p>ในกรณีที่มีเหตุละเมิดข้อมูลส่วนบุคคลของคุณเกิดขึ้น เราจะแจ้งให้สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคลทราบโดยไม่ชักช้าภายใน 72 ชั่วโมง นับแต่ทราบเหตุเท่าที่สามารถกระทำได้ ในกรณีที่การละเมิดมีความเสี่ยงสูงที่จะมีผลกระทบต่อสิทธิและเสรีภาพของคุณ เราจะแจ้งการละเมิดให้คุณทราบพร้อมกับแนวทางการเยียวยาโดยไม่ชักช้าผ่านช่องทางต่าง ๆ เช่น  เว็บไซต์ ข้อความ (SMS) อีเมล โทรศัพท์ จดหมาย เป็นต้น</p>
+       <h2 className="font-bold text-2xl  my-6">การคัดเลือกผู้ได้รับรางวัล</h2>
+       <OrderedList className='p-6'>
+          <ListItem>ผู้ได้รับรางวัลจะถูกตัดสินจากการเรียงลำดับจากมากไปน้อยตามคะแนนที่ได้</ListItem>
+          <ListItem>รางวัลมีอย่างน้อยสามรางวัล</ListItem>
+          <ListItem>คณะผู้จัดงานจะประกาศรายชื่อของผู้ได้รับรางวัล ณ Grand Auditorium ชั้น 4 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล ประมาณ 12.00 น.</ListItem>
+          <ListItem>จำนวนผู้ได้รับรางวัลและจำนวนของรางวัลอาจเปลี่ยนแปลงโดยไม่ได้แจ้งให้ทราบล่วงหน้า</ListItem>
+          <ListItem>การตัดสินของคณะกรรมการถือเป็นที่สิ้นสุด</ListItem>
+       </OrderedList>
 
-        <h2 className="font-bold text-2xl my-6">การแก้ไขเปลี่ยนแปลงนโยบายความเป็นส่วนตัว</h2>
-        <p>เราอาจแก้ไขเปลี่ยนแปลงนโยบายนี้เป็นครั้งคราว โดยคุณสามารถทราบข้อกำหนดและเงื่อนไขนโยบายที่มีการแก้ไขเปลี่ยนแปลงนี้ได้ผ่านทางเว็บไซต์ของเรา</p>
-        <p>นโยบายนี้แก้ไขล่าสุดและมีผลใช้บังคับตั้งแต่วันที่ 29 มิถุนายน 2566</p>
+       <h2 className="font-bold text-2xl  my-6">รายละเอียดเกม</h2>
+       <OrderedList className='p-6'>
+          <ListItem>การเข้าร่วมเกมไม่มีค่าใช้จ่ายใด ๆ </ListItem>
+          <ListItem>คณะผู้จัดงานอาจเปลี่ยนแปลงข้อกําหนด เงื่อนไข และรายละเอียดของกิจกรรมซึ่งขึ้นอยู่กับการพิจารณาของคณะผู้จัดงานโดยอาจไม่มีการแจ้งให้ทราบล่วงหน้า</ListItem>
+       </OrderedList>
+     
 
-        <h2 className="font-bold text-2xl my-6">นโยบายความเป็นส่วนตัวของเว็บไซต์อื่น</h2>
-        <p>นโยบายความเป็นส่วนตัวฉบับนี้ใช้สำหรับการเสนอสินค้า บริการ และการใช้งานบนเว็บไซต์สำหรับลูกค้าของเราเท่านั้น หากคุณเข้าชมเว็บไซต์อื่นแม้จะผ่านช่องทางเว็บไซต์ของเรา การคุ้มครองข้อมูลส่วนบุคคลต่าง ๆ จะเป็นไปตามนโยบายความเป็นส่วนตัวของเว็บไซต์นั้น ซึ่งเราไม่มีส่วนเกี่ยวข้องด้วย</p>
-
-        <h2 className="font-bold text-2xl my-6">รายละเอียดการติดต่อ</h2>
-        <p>หากคุณต้องการสอบถามข้อมูลเกี่ยวกับนโยบายความเป็นส่วนตัวฉบับนี้ รวมถึงการขอใช้สิทธิต่าง ๆ คุณสามารถติดต่อเราหรือเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคลของเราได้ ดังนี้</p>
-
-        <p className='pt-6'><b>ผู้ควบคุมข้อมูลส่วนบุคคล</b></p>
-        <p>ทีมนักพัฒนาในทีมประธานรุ่น 20 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล</p>
-
-        <p>
-        คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล 999 ถนนพุทธมณฑลสาย 4 ศาลายา พุทธมณฑล นครปฐม 73170
-        </p>
-
-        <p>อีเมล poonyawatt.klu@student.mahidol.ac.th</p>
-        <p>เว็บไซต์ https://ict21.ict.mahidol.ac.th</p>
-        <p>หมายเลขโทรศัพท์ 0881060571</p>
-
-        <p className='pt-6'><b>เจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคล</b></p>
-        <p>ทีมนักพัฒนาในทีมประธานรุ่น 20 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล</p>
-
-        <p>
-        คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล 999 ถนนพุทธมณฑลสาย 4 ศาลายา พุทธมณฑล นครปฐม 73170
-        </p>
-
-        <p>อีเมล poonyawatt.klu@student.mahidol.ac.th</p>
-        <p>หมายเลขโทรศัพท์ 0881060571</p>
-
+      </div>
       </div>
       </div>
     </>
-  )
-  
-  }
+    )}

@@ -45,14 +45,14 @@ export default function CaptionCarousel() {
       pos: 'Vice President ICT#20',
       text: '"Everything comes at a cost. And if you aspire to things that most could never dream of, then naturally, there will be an unimaginable price to pay." - Genshin Impact',
       image:
-      '/msgcard/kung.webp'    
+      '/msgcard/kung1.webp'    
     },
     {
       name: "Thanachot Onlamoon",
       pos: 'ICT#20',
       text: "อย่าลืมไปลอง Shindo Ramen หน้าประตู 5 นะครับ",
       image:
-      '/msgcard/bb2.webp'    
+      '/msgcard/bb1.webp'    
     },
     {
       name: "Arus Thienmee",
@@ -60,56 +60,56 @@ export default function CaptionCarousel() {
       text: "Ok juniors, if you manage to face a subject called `Discrete Structure`, do not dare to lose your concentration while studying. Another thing, I highly recommend you to take the English class exemption and study Technical English  3 instead of 1 since it will save your time. p.s. kao mok kai todd at faculty of social science canteen is POG"
       ,
       image:
-      '/msgcard/arus.webp'
+      '/msgcard/arus1.webp'
     },
     {
       name: "Natchapol Mingmahaphan",
       pos: 'President ICT#20',
       text: "หนีไปลูกผึ้ง หนีไป ผึ้งงง หนีไปปปปปป",
       image:
-      '/msgcard/golf.webp'    
+      '/msgcard/golf1.webp'    
     },
     {
       name: "Jarukit Buntheangjai",
       pos: 'ICT#20',
       text: "อยากทำไรแล้วไม่เดือดร้อนใครก็ทำเลย ใช้ชีวิตมหาลัยให้ตัวเองจบไปแล้วไม่เสียดาย",
       image:
-      '/msgcard/tata2.webp'    
+      '/msgcard/tata1.webp'    
     },
     {
       name: "Ornjira Korsakpaisarn",
       pos: 'Secretary ICT#20',
       text: "Welcome to ICT 21 ขอให้น้องๆทุกคนเรียนอย่างมีความสุข ไม่เจ็บไม่ป่วยแข็งแรง อย่าปวดหลัง!",
       image:
-      '/msgcard/aj.webp'    
+      '/msgcard/aj1.webp'    
     },
     {
       name: "Eakbodin Kanjanamuengthong",
       pos: 'ICT#20',
       text: "ชีวิตที่มีปิดเทอมของคุณเหลืออีกแค่ 4 ปี ดังนั้น อยากทำอะไรก็ทำ",
       image:
-      '/msgcard/tang.webp'    
+      '/msgcard/tang1.webp'    
     },
     {
       name: "Jakkaphat Jumratboonsom",
       pos: 'ICT#20',
       text: "การนอนเป็นเรื่องสำคัญมีโอกาสเมื่อไหร่ก็นอนเถอะก่อนจะไม่ได้นอน",
       image:
-      '/msgcard/mt.webp'    
+      '/msgcard/mt1.webp'    
     },
     {
       name: "Kritin Chitchobtham",
       pos: 'ICT#20',
       text: "ที่คณะมีเต่าบิน หลอดชอบหมด แอร์ก็โคตรหนาว แต่อย่างน้อยก็มีโต๊ะปิงปอง",
       image:
-      '/msgcard/tetee.webp'    
+      '/msgcard/tetee1.webp'    
     },
     {
       name: "Jakguy Boriboon",
       pos: 'ICT#20',
       text: "อย่าลืม gcc 6688XXX_qx.c -o main && ./main",
       image:
-      '/msgcard/jakguy.webp'    
+      '/msgcard/jakguy1.webp'    
     },
     {
       name: "Announcement",

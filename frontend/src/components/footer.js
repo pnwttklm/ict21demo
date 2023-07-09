@@ -33,9 +33,7 @@ export default function () {
   return (
     <div className="bg-[#1D1D1D] pt-6">
 
-      <div className='flex flex-row rounded-3xl justify-center items-center p-3 md:p-6 my-8 md:my-16'>
-          <p className=' font-medium md:font-medium text-[#EDEDED] text-xs md:text-xl text-center'>Proudly crafted from ❤️ for Nong ๆ ICT#21 by P ๆ ICT#20</p>
-      </div>
+      
       <div className="flex flex-col pt-6 justify-center items-center gap-10
       md:pb-09
       ">
@@ -206,11 +204,16 @@ export default function () {
 
         {/* Feedback goes here. */}
         <FeedbackPopover />
+        
         <div className="text-[#00FF66] font-medium hover:text-[#F5F5F7]">
           <a href='/acknowledgement'>
            <h1>Acknowledgement</h1>
          </a>
+         
         </div>
+        <div className='flex flex-row rounded-3xl justify-center items-center p-3 md:p-6 my-8 md:my-16'>
+          <p className=' font-medium md:font-medium text-[#EDEDED] text-xs md:text-xl text-center'>Proudly crafted from ❤️ for Nong ๆ ICT#21 by P ๆ ICT#20</p>
+      </div>
 
 
 
@@ -233,7 +236,7 @@ export default function () {
             
           </div>
           <div className="flex items-end justify-between text-white text-[8px] md:text-xs">
-            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.<br/>Pre-release Version 2.0</h1>
+            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.<br/>Version 2.0</h1>
             <h1 >Apple® and Apple logo® are trademarks of Apple Inc.</h1>
           </div>
         </div>
