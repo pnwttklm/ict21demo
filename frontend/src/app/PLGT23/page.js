@@ -29,10 +29,12 @@ export default function plgt23() {
       }, {
         delink: '/PLGT23#location',
         name: 'Location'
-      }, {
-        delink: '/PLGT23#agenda',
-        name: 'Agenda'
-      }, {
+      }, 
+      // {
+      //   delink: '/PLGT23#agenda',
+      //   name: 'Agenda'
+      // }, 
+      {
         delink: '/PLGT23#sum-up',
         name: 'Sum Up'
       }, {
@@ -90,7 +92,7 @@ export default function plgt23() {
         </div>
       </div>
 
-      <div id='agenda'><Agenda whichEvent='PLGT23'/></div>
+      {/* <div id='agenda'><Agenda whichEvent='PLGT23'/></div> */}
 
       <div  id='sum-up'><Sumup theText={
         <>

@@ -8,7 +8,7 @@ export default function TopElement() {
             <h1 className='text-[#8D8D8D] text-base md:text-3xl -mt-12 md:-mt-36'>Powerful team drives powerful works</h1>
             <div className='flex flex-row gap-4 justify-center pt-6 md:pt-12'>
             {bar.map((element) =>
-                <div className='rounded-3xl md:rounded-full text-sm md:text-lg border-2 border-black w-fit md:w-24 text-center p-2'>
+                <div className='rounded-3xl md:rounded-full text-sm md:text-lg border-2 border-black w-fit md:w-24 text-center px-2'>
                         <a href={`/meet-our-team#${element.theLink}`}>{element.name}</a>    
                 </div> 
                 )}

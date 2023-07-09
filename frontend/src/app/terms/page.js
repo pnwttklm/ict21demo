@@ -32,7 +32,7 @@ export default function() {
        
         <h2 className="font-bold text-2xl my-6">Agreement to Terms and Conditions of Use</h2>
         <p>
-        BY USING THE SITE, YOU AGREE TO THESE TERMS AND CONDITIONS OF USE AND THE PRIVACY POLICY; IF YOU DO NOT AGREE, DO NOT USE THE SITE.
+        BY USING THE WEBSITE, YOU AGREE TO THESE TERMS AND CONDITIONS OF USE AND THE PRIVACY POLICY; IF YOU DO NOT AGREE, DO NOT USE THE WEBSITE.
         </p>
         <h2 className="font-bold text-2xl my-6">Ownership of Website</h2>
         <p>
@@ -113,9 +113,9 @@ export default function() {
 
         <h2 className="font-bold text-2xl  my-6">Selection of Winners</h2>
         <OrderedList className='p-6'>
-           <ListItem>The winners are judged by sorting ascending by score, the prizes will be given from the highest.</ListItem>
+           <ListItem>The winners are judged by sorting descending by score, the prizes will be given from the highest.</ListItem>
            <ListItem>There are at least three prizes.</ListItem>
-           <ListItem>Organizing committee will announce the list of the winners at Grand Auditorium Hall, 4th Floor Faculty of ICT, Mahidol University, around 12pm.</ListItem>
+           <ListItem>Organizing committee will announce the list of the winners at Grand Auditorium Hall, 4th Floor Faculty of ICT, Mahidol University, around 12pm of August 6th, 2023.</ListItem>
            <ListItem>Number of winners and number of prizes may differed without any informing in advance.</ListItem>
            <ListItem>Any decision and judgement reached by the organizing committee is deemed final.</ListItem>
         </OrderedList>
@@ -127,7 +127,7 @@ export default function() {
         </OrderedList>
       </div>
 
-
+      <Divider/>
 
       <div id='THA' className="text-black bg-white p-12 md:p-32 md:mx-64 text-2xl">
       <h1 className="font-bold text-5xl my-8 md:my-16 text-center">ข้อกำหนดและเงื่อนไขการใช้งานของเว็บไซต์ ICT21</h1>
@@ -230,7 +230,7 @@ export default function() {
        <OrderedList className='p-6'>
           <ListItem>ผู้ได้รับรางวัลจะถูกตัดสินจากการเรียงลำดับจากมากไปน้อยตามคะแนนที่ได้</ListItem>
           <ListItem>รางวัลมีอย่างน้อยสามรางวัล</ListItem>
-          <ListItem>คณะผู้จัดงานจะประกาศรายชื่อของผู้ได้รับรางวัล ณ Grand Auditorium ชั้น 4 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล ประมาณ 12.00 น.</ListItem>
+          <ListItem>คณะผู้จัดงานจะประกาศรายชื่อของผู้ได้รับรางวัล ณ Grand Auditorium ชั้น 4 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล ประมาณ 12.00 น. ของวันที่ 6 สิงหาคม 2566.</ListItem>
           <ListItem>จำนวนผู้ได้รับรางวัลและจำนวนของรางวัลอาจเปลี่ยนแปลงโดยไม่ได้แจ้งให้ทราบล่วงหน้า</ListItem>
           <ListItem>การตัดสินของคณะกรรมการถือเป็นที่สิ้นสุด</ListItem>
        </OrderedList>
