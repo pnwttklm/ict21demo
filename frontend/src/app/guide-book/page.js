@@ -11,8 +11,8 @@ export default function guideBook() {
         
         <div className='flex flex-col w-screen justify-center items-center bg-[#FFFFFF]'>
             <Image width={1728} height={1101} className='w-full md:w-4/6' src='/asset/forGuideBook/headFigure.svg' alt='head figure'></Image>
-            {/* <p className='text-4xl font-bold pb-64'>Coming Soon</p>  */}
-            <h1 className='text-[#00FF66] font-semibold text-4xl w-5/6 text-left'>Accessible by foot</h1>
+            <p className='text-4xl font-bold pb-64'>Coming Soon</p> 
+            {/* <h1 className='text-[#00FF66] font-semibold text-4xl w-5/6 text-left'>Accessible by foot</h1>
             <h1 className='m-16 text-black font-medium text-3xl'>IN UNI</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8'>
                 <Card
@@ -184,7 +184,7 @@ export default function guideBook() {
             </div>
             <div className='bg-black w-screen'>
                 <h1 className='text-white font-medium text-3xl text-center'>THE TANGSIN</h1>
-            </div>
+            </div> */}
         </div>
 
         <Footer/>
