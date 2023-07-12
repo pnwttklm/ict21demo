@@ -43,6 +43,7 @@ export default function CaptionCarousel() {
     {
       name: "Napatkrit Asavarojpanich",
       pos: 'Vice President ICT#20',
+      ig: 'napatkrit',
       text: '"Everything comes at a cost. And if you aspire to things that most could never dream of, then naturally, there will be an unimaginable price to pay." - Genshin Impact',
       image:
       '/msgcard/kung1.webp'    
@@ -50,6 +51,7 @@ export default function CaptionCarousel() {
     {
       name: "Thanachot Onlamoon",
       pos: 'Vice Technology Director, ICT#20',
+      ig: '__abbc',
       text: "อย่าลืมไปลอง Shindo Ramen หน้าประตู 5 นะครับ",
       image:
       '/msgcard/bb1.webp'    
@@ -57,6 +59,7 @@ export default function CaptionCarousel() {
     {
       name: "Arus Thienmee",
       pos: 'Website Copy Writer, ICT#20',
+      ig: 'arus_candlrhav',
       text: "Ok juniors, if you manage to face a subject called `Discrete Structure`, do not dare to lose your concentration while studying. Another thing, I highly recommend you to take the English class exemption and study Technical English  3 instead of 1 since it will save your time. p.s. kao mok kai todd at faculty of social science canteen is POG"
       ,
       image:
@@ -65,6 +68,7 @@ export default function CaptionCarousel() {
     {
       name: "Natchapol Mingmahaphan",
       pos: 'President, ICT#20',
+      ig: 'nnatcha.g',
       text: "หนีไปลูกผึ้ง หนีไป ผึ้งงง หนีไปปปปปป",
       image:
       '/msgcard/golf1.webp'    
@@ -72,6 +76,7 @@ export default function CaptionCarousel() {
     {
       name: "Jarukit Buntheangjai",
       pos: 'ICT#20',
+      ig: 'tatajarukit',
       text: "อยากทำไรแล้วไม่เดือดร้อนใครก็ทำเลย ใช้ชีวิตมหาลัยให้ตัวเองจบไปแล้วไม่เสียดาย",
       image:
       '/msgcard/tata1.webp'    
@@ -79,6 +84,7 @@ export default function CaptionCarousel() {
     {
       name: "Poonyawatt Klumnaim",
       pos: 'Technology Director, ICT#20',
+      ig: '_pnwttklm',
       text: "Studying in university has taught me one unforgettable lesson: Opportunity doesn't come easily, so grab it before you lose it.",
       image:
       '/msgcard/poon.webp'    
@@ -86,6 +92,7 @@ export default function CaptionCarousel() {
     {
       name: "Ornjira Korsakpaisarn",
       pos: 'Secretary, ICT#20',
+      ig: 'ornjiriiii_',
       text: "Welcome to ICT 21 ขอให้น้องๆทุกคนเรียนอย่างมีความสุข ไม่เจ็บไม่ป่วยแข็งแรง อย่าปวดหลัง!",
       image:
       '/msgcard/aj1.webp'    
@@ -93,6 +100,7 @@ export default function CaptionCarousel() {
     {
       name: "Eakbodin Kanjanamuengthong",
       pos: 'Website Content, ICT#20',
+      ig: 'sunshinw_tang',
       text: "ชีวิตที่มีปิดเทอมของคุณเหลืออีกแค่ 4 ปี ดังนั้น อยากทำอะไรก็ทำ",
       image:
       '/msgcard/tang1.webp'    
@@ -100,6 +108,7 @@ export default function CaptionCarousel() {
     {
       name: "Jakkaphat Jumratboonsom",
       pos: 'ICT#20',
+      ig: 'mingtar_',
       text: "การนอนเป็นเรื่องสำคัญมีโอกาสเมื่อไหร่ก็นอนเถอะก่อนจะไม่ได้นอน",
       image:
       '/msgcard/mt1.webp'    
@@ -107,6 +116,7 @@ export default function CaptionCarousel() {
     {
       name: "Kritin Chitchobtham",
       pos: 'ICT#20',
+      ig: 'tetee_kritin',
       text: "ที่คณะมีเต่าบิน หลอดชอบหมด แอร์ก็โคตรหนาว แต่อย่างน้อยก็มีโต๊ะปิงปอง",
       image:
       '/msgcard/tetee1.webp'    
@@ -114,6 +124,7 @@ export default function CaptionCarousel() {
     {
       name: "Jakguy Boriboon",
       pos: 'ICT#20',
+      ig: 'jakguyboribye',
       text: "อย่าลืม gcc 6688XXX_qx.c -o main && ./main",
       image:
       '/msgcard/jakguy1.webp'    
@@ -121,6 +132,7 @@ export default function CaptionCarousel() {
     {
       name: "Raweerot Bhasidhchirapiroch ",
       pos: 'ICT#20',
+      ig: 'hoylordzbaby',
       text: "Respect your decision. Do the best you can. And let your potential be exploited as possible.",
       image:
       '/msgcard/sunny.webp'    
@@ -128,6 +140,7 @@ export default function CaptionCarousel() {
     {
       name: "Announcement",
       pos: 'Dev Team',
+      ig: 'muict_studentactivities',
       text: <>
       <p>ใครอยากบอกอะไรกับน้อง ๆ คลิกปุ่มด้านล่างหรือสแกน QR Code เลย</p>
       <Button
@@ -208,6 +221,11 @@ export default function CaptionCarousel() {
               <div className="flex items-center justify-center text-sm md:text-xl">
                 <h1 className="text-left text-sm font-semibold">{card.name}</h1>
                 <h1 className="text-[#FFFFFF80] text-sm">—{card.pos}</h1>
+              </div>
+              <div>
+              {/* <a href={`https://www.instagram.com/${card.ig}`}> */}
+                  <h1 className="rounded-full px-2 bg-white outline-white text-black text-md">ig: {card.ig}</h1>
+                {/* </a> */}
               </div>
               <p className="font-regular text-center mt-4 lg:text-3xl md:text-xl sm:text-base">{card.text}</p>
               <div className="flex justify-end w-full m-4 md:m-16">
