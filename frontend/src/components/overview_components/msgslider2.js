@@ -49,14 +49,14 @@ export default function CaptionCarousel() {
     },
     {
       name: "Thanachot Onlamoon",
-      pos: 'ICT#20',
+      pos: 'Vice Technology Director, ICT#20',
       text: "อย่าลืมไปลอง Shindo Ramen หน้าประตู 5 นะครับ",
       image:
       '/msgcard/bb1.webp'    
     },
     {
       name: "Arus Thienmee",
-      pos: 'ICT#20',
+      pos: 'Website Copy Writer, ICT#20',
       text: "Ok juniors, if you manage to face a subject called `Discrete Structure`, do not dare to lose your concentration while studying. Another thing, I highly recommend you to take the English class exemption and study Technical English  3 instead of 1 since it will save your time. p.s. kao mok kai todd at faculty of social science canteen is POG"
       ,
       image:
@@ -64,7 +64,7 @@ export default function CaptionCarousel() {
     },
     {
       name: "Natchapol Mingmahaphan",
-      pos: 'President ICT#20',
+      pos: 'President, ICT#20',
       text: "หนีไปลูกผึ้ง หนีไป ผึ้งงง หนีไปปปปปป",
       image:
       '/msgcard/golf1.webp'    
@@ -77,15 +77,22 @@ export default function CaptionCarousel() {
       '/msgcard/tata1.webp'    
     },
     {
+      name: "Poonyawatt Klumnaim",
+      pos: 'Technology Director, ICT#20',
+      text: "Studying in university has taught me one unforgettable lesson: Opportunity doesn't come easily, so grab it before you lose it.",
+      image:
+      '/msgcard/poon.webp'    
+    },
+    {
       name: "Ornjira Korsakpaisarn",
-      pos: 'Secretary ICT#20',
+      pos: 'Secretary, ICT#20',
       text: "Welcome to ICT 21 ขอให้น้องๆทุกคนเรียนอย่างมีความสุข ไม่เจ็บไม่ป่วยแข็งแรง อย่าปวดหลัง!",
       image:
       '/msgcard/aj1.webp'    
     },
     {
       name: "Eakbodin Kanjanamuengthong",
-      pos: 'ICT#20',
+      pos: 'Website Content, ICT#20',
       text: "ชีวิตที่มีปิดเทอมของคุณเหลืออีกแค่ 4 ปี ดังนั้น อยากทำอะไรก็ทำ",
       image:
       '/msgcard/tang1.webp'    
@@ -110,6 +117,13 @@ export default function CaptionCarousel() {
       text: "อย่าลืม gcc 6688XXX_qx.c -o main && ./main",
       image:
       '/msgcard/jakguy1.webp'    
+    },
+    {
+      name: "Raweerot Bhasidhchirapiroch ",
+      pos: 'ICT#20',
+      text: "Respect your decision. Do the best you can. And let your potential be exploited as possible.",
+      image:
+      '/msgcard/sunny.webp'    
     },
     {
       name: "Announcement",
