@@ -120,7 +120,7 @@ export default function() {
       calendarLink: 'Preparatory Program.ics',
     },
     {
-      img_url:'/asset/For_Timeline/InfoSS.svg',
+      img_url:'/asset/For_Timeline/information ss.svg',
       event_name: 'Information Session',
       day: 'Jul 3',
       dateTime: 'July 3, 2023 10.30 a.m.-12 p.m.',
@@ -165,7 +165,7 @@ export default function() {
       calendarLink: 'PDPA Training.ics',
     },
     {
-      img_url:'/asset/For_Timeline/TOEFL_ITP1.svg',
+      img_url:'/asset/For_Timeline/toefl-1 1.svg',
       event_name: 'TOEFL ITP (Round 1)',
       day: 'Jul 7',
       dateTime: 'July 7, 2023 1 p.m.-4 p.m.',
@@ -174,7 +174,7 @@ export default function() {
       calendarLink: 'TOEFL ITP (Round 1).ics',
     },
     {
-      img_url:'/asset/For_Timeline/Exempt.svg',
+      img_url:'/asset/For_Timeline/exempt.svg',
       event_name: 'Exemption Exam',
       day: 'Jul 18',
       dateTime: 'July 18, 2023 9 a.m.-12 p.m.',
@@ -183,7 +183,7 @@ export default function() {
       calendarLink: 'Exemption Exam.ics',
     },
     {
-      img_url:'/asset/For_Timeline/EthicsSS.svg',
+      img_url:'/asset/For_Timeline/session 1.svg',
       event_name: 'Ethics Sessions',
       day: 'Jul 21',
       dateTime: 'July 21, 2023 1 p.m.-3 p.m.',
@@ -201,7 +201,7 @@ export default function() {
       calendarLink: 'English Proficiency Test (MU-ELT).ics',
     },
     {
-      img_url:'/asset/For_Timeline/RN.svg',
+      img_url:'/asset/For_Timeline/rakNong.svg',
       event_name: 'Rak Nong',
       day: 'Jul 24 - 26',
       dateTime: 'July 24 - 26, 2023',
@@ -210,7 +210,7 @@ export default function() {
       calendarLink: 'Rak Nong.ics',
     },
     {
-      img_url:'/asset/For_Timeline/TOEFL_ITP2.svg',
+      img_url:'/asset/For_Timeline/toefl-1 2.svg',
       event_name: 'TOEFL ITP (Round 2)',
       day: 'Jul 25',
       dateTime: 'July 25, 2023 9 a.m. - 12 p.m.',

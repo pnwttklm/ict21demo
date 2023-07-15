@@ -26,7 +26,7 @@ export default function welcomeFreshy() {
   return (
     <>
     <title>Welcome Freshy - ICT21</title>
-    <Individual_nav event_name='Welcome Freshy' eventlink='welcome-freshy' hasImg='' img='/gamelogo.webp' imgLink='/welcome-freshy/game' links={[{
+    <Individual_nav event_name='Welcome Freshy' eventlink='welcome-freshy' hasImg='hidden' img='/gamelogo.webp' imgLink='/welcome-freshy/game' links={[{
         delink: '/welcome-freshy#about',
         name: 'About'
       }, {
@@ -58,7 +58,7 @@ export default function welcomeFreshy() {
           <Countdown targetDate={dateTimeAfterThreeDays} />
         </div>
         
-        <Game/>
+        {/* <Game/> */}
 
         <div id='location' className="flex flex-col content-center items-center w-full h-fit bg-[#1D1D1F] mt-16 p-8 md:p-16  gap-7 md:gap-14">
           <h1 className=' text-2xl font-bold text-[#F5F5F7] items-center 
@@ -79,13 +79,13 @@ export default function welcomeFreshy() {
         </div>
       </div>
 
-      <div id='agenda'><Agenda whichEvent='Welcome Freshy'/> </div>
+      <div id='agenda'><Agenda whichEvent='welcomeFreshy'/> </div>
 
       <div id='sum-up' ><Sumup theText={
         <>
-        <p><b>Welcome Freshy </b>Sun 6th August, around 9.00-12.30 at Faculty of ICT</p>
+        <p><b>Welcome Freshy </b>Sun 6th August, around 8.30-12.00 at Faculty of ICT</p>
         <p><b>Before the day </b>you have to register online once (button is on the top)</p>
-        <p><b>Registration </b>at 2nd Floor, Faculty of ICT, 8.00-9.00</p>
+        <p><b>Registration </b>at 2nd Floor, Faculty of ICT, 7.30-8.30</p>
         <p><b>Dress Code </b>proper or Harry Potter theme</p>
         </>
       }/></div>
