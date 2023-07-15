@@ -26,7 +26,7 @@ export default function welcomeFreshy() {
   return (
     <>
     <title>Welcome Freshy - ICT21</title>
-    <Individual_nav event_name='Welcome Freshy' eventlink='welcome-freshy' hasImg='hidden' img='/gamelogo.webp' imgLink='/welcome-freshy/game' links={[{
+    <Individual_nav event_name='Welcome Freshy' eventlink='welcome-freshy' hasImg='' img='/gamelogo.webp' imgLink='/welcome-freshy/game' links={[{
         delink: '/welcome-freshy#about',
         name: 'About'
       }, {
@@ -58,7 +58,7 @@ export default function welcomeFreshy() {
           <Countdown targetDate={dateTimeAfterThreeDays} />
         </div>
         
-        {/* <Game/> */}
+        <Game/>
 
         <div id='location' className="flex flex-col content-center items-center w-full h-fit bg-[#1D1D1F] mt-16 p-8 md:p-16  gap-7 md:gap-14">
           <h1 className=' text-2xl font-bold text-[#F5F5F7] items-center 
@@ -136,7 +136,7 @@ const questionElement = [
       <p>Welcome Freshy is a yearly activity for new freshmen. Letting know each other between year 1 ICT and DST.</p>
       {/* <div className="p-4 flex flex-col items-center"><Image className='w-96' width={478} height={692} alt='English Exemption documents' src='/asset/English_exemption_doc.png' loading="lazy"/></div> */}
     </div>,
-    allowFile: 'hidden',//if allow '', if not 'hidden'
+    allowFile: 'hidden',//if allow '', if not 'hidden' 
     fileRoot: 'downloads/project1_leak.pdf',
     filename: 'project1_leak.pdf',
     fileName: 'Exemption Policy for Basic and Prerequisite English Classes',
