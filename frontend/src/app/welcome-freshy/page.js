@@ -72,7 +72,7 @@ export default function welcomeFreshy() {
           <Place  
             firsthalfName='Faculty of ICT,'
             secondhalfName='Mahidol University'
-            link='/'
+            link='https://goo.gl/maps/ug6xrjcSav17RaEa8'
             image='ICTBuilding.webp'
             description='Unleashing Technology Horizons on San Sattaya Road: Faculty of ICT, Mahidol University, Where Innovation Converges with Academic Brilliance amidst a Tapestry of Knowledge, Enveloped by the Library, Lecture Theater I, Office of the President, and the Faculty of Engineering'
           />
