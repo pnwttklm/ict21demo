@@ -21,7 +21,7 @@ const QCard = dynamic(() => import('../../components/questionCard'))
 
 
 export default function welcomeFreshy() {
-  const dateTimeAfterThreeDays = new Date("August 6, 2023 09:00:00"); //customize date here
+  const dateTimeAfterThreeDays = new Date("August 6, 2023 08:30:00"); //customize date here
 
   return (
     <>
@@ -79,13 +79,13 @@ export default function welcomeFreshy() {
         </div>
       </div>
 
-      <div id='agenda'><Agenda whichEvent='welcomeFreshy'/> </div>
+      <div id='agenda'><Agenda whichEvent='wfa'/> </div>
 
       <div id='sum-up' ><Sumup theText={
         <>
         <p><b>Welcome Freshy </b>Sun 6th August, around 8.30-12.00 at Faculty of ICT</p>
         <p><b>Before the day </b>you have to register online once (button is on the top)</p>
-        <p><b>Registration </b>at 2nd Floor, Faculty of ICT, 7.30-8.30</p>
+        <p><b>Registration </b>at 1st Floor, Faculty of ICT, 7.30-8.30</p>
         <p><b>Dress Code </b>proper or Harry Potter theme</p>
         </>
       }/></div>
