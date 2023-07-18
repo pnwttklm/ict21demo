@@ -174,7 +174,7 @@ export default function() {
       calendarLink: 'TOEFL ITP (Round 1).ics',
     },
     {
-      img_url:'/asset/For_Timeline/exempt.svg',
+      img_url:'/asset/For_Timeline/xx.svg',
       event_name: 'Exemption Exam',
       day: 'Jul 18',
       dateTime: 'July 18, 2023 9 a.m.-12 p.m.',
