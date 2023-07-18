@@ -236,7 +236,7 @@ export default function () {
             
           </div>
           <div className="flex items-end justify-between text-white text-[8px] md:text-xs">
-            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.<br/>Version 2.4.3</h1>
+            <h1 >Copyright © {year}. Developer Team, ICT20 President Team,<br/>in association with Faculty of Information and Communication Technology, Mahidol University. All rights reserved.<br/>Version 2.4.4</h1>
             <h1 >Apple® and Apple logo® are trademarks of Apple Inc.</h1>
           </div>
         </div>

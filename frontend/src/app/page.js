@@ -75,7 +75,7 @@ export default function Home() {
         <E_card 
           topic={'Welcome Freshy'} 
           info={'Say hi to senpais, Ajarns, and staffs. Start your own legendary journey at Faculty of ICT.'} 
-          date1={'Aug 6, 9 a.m.'}
+          date1={'Aug 6, 8.30 a.m.'}
           link={'/welcome-freshy'}
           img={'/asset/foroverviewbadge/sairahusbadge.svg'} 
           type={1}

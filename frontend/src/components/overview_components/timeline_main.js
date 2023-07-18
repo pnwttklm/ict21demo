@@ -240,7 +240,7 @@ export default function() {
       img_url:'/asset/For_Timeline/WF.svg',
       event_name: 'Welcome Freshy',
       day: 'Aug 6',
-      dateTime: 'August 6, 2023 9 a.m. - 1 p.m.',
+      dateTime: 'August 6, 2023 8.30 a.m. - 12 p.m.',
       location: 'Faculty of ICT',
       dressCode: 'Proper or Harry Potter Theme',
       calendarLink: 'Welcome Freshy.ics',
