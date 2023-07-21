@@ -130,12 +130,20 @@ export default function CaptionCarousel() {
       '/msgcard/jakguy1.webp'    
     },
     {
-      name: "Raweerot Bhasidhchirapiroch ",
+      name: "Raweerot Bhasidhchirapiroch",
       pos: 'ICT#20',
       ig: 'hoylordzbaby',
       text: "Respect your decision. Do the best you can. And let your potential be exploited as possible.",
       image:
       '/msgcard/sunny.webp'    
+    },
+    {
+      name: "Nithimeth Mandee",
+      pos: 'ICT#20',
+      ig: 'sea.ntxm.c',
+      text: "ปี1เทอม1สบายสุดแล้ว ใช้ชีวิตซะ และอย่าลืมหาเพื่อนที่แบกได้ เมื่อเหนื่อยเมื่อท้อ พี่จะรออยู่ตั้งสิน",
+      image:
+      '/msgcard/c.webp'
     },
     {
       name: "Announcement",
