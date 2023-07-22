@@ -146,6 +146,14 @@ export default function CaptionCarousel() {
       '/msgcard/c.webp'
     },
     {
+      name: "Pathompum Jirakarnpaisan",
+      pos: 'ICT#20',
+      ig: '_ppoom.jr',
+      text: "เรียนมาก็ปีกว่า รู้แค่ท่าสาวบางโพ แต่แดดแต๊ดแด๊ดแต่ดแต้แดแด่ด~",
+      image:
+      '/msgcard/poom.webp'
+    },
+    {
       name: "Announcement",
       pos: 'Dev Team',
       ig: 'muict_studentactivities',
