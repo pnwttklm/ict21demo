@@ -36,7 +36,7 @@ export default function() {
         </p>
         <h2 className="font-bold text-2xl my-6">Ownership of Website</h2>
         <p>
-        These Terms and Conditions of Use ("Terms of Use") apply to the ICT21 Website located at ict21.ict.mahidol.ac.th, and all associated sites linked to ict21.ict.mahidol.ac.th by Developer Team in ICT20 President Team, its subsidiaries and affiliates, including ICT21 websites around the world (collectively, the "Website"). The Website is the property of Developer Team in ICT20 President Team and Faculty of ICT, Mahidol University (collectively, “We” or “Us” or “Our”).
+        These Terms and Conditions of Use ("Terms of Use") apply to the ICT21 Website located at freshy.ict.mahidol.ac.th, and all associated sites linked to freshy.ict.mahidol.ac.th by Developer Team in ICT20 President Team, its subsidiaries and affiliates, including ICT21 websites around the world (collectively, the "Website"). The Website is the property of Developer Team in ICT20 President Team and Faculty of ICT, Mahidol University (collectively, “We” or “Us” or “Our”).
         </p>
         <p>
         We reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. Your continued use of the Site following the posting of changes will mean that you accept and agree to the changes. As long as you comply with these Terms of Use, We grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use the Site.
@@ -79,7 +79,7 @@ export default function() {
 
         <h2 className="font-bold text-2xl  my-6">Ownership of Game</h2>
         <p>
-        These Terms and Conditions of Use (the "Terms of Use") apply to the ICT21 Website Welcome Freshy Game located at ict21.ict.mahidol.ac.th/welcome-freshy/game (collectively, the “Game") by Game Team of Developer Team in ICT20 President Team. The Game is the property of Developer Team in ICT20 President Team (collectively, “We” or “Us” or “Our”).
+        These Terms and Conditions of Use (the "Terms of Use") apply to the ICT21 Website Welcome Freshy Game located at freshy.ict.mahidol.ac.th/welcome-freshy/game (collectively, the “Game") by Game Team of Developer Team in ICT20 President Team. The Game is the property of Developer Team in ICT20 President Team (collectively, “We” or “Us” or “Our”).
         </p>
         <p>
         We reserves the right, all rights made by Us or relatively to Us will be reserved including all text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, artwork and computer code (collectively, “Game Content”), including but not limited to the font, third-party tools, third-party photographs, music, sound, design, structure, selection, coordination, expression, "look and feel" and arrangement of such Content, contained on the Game is owned, controlled or licensed by or to We at anywhere and anytime.
@@ -138,7 +138,7 @@ export default function() {
        </p>
        <h2 className="font-bold text-2xl my-6">กรรมสิทธิ์ในเว็บไซต์</h2>
        <p>
-       ข้อกำหนดและเงื่อนไขการใช้งาน(“<b>ข้อกำหนดการใช้งาน</b>”) ใช้กับเว็บไซต์ ICT21 ที่ตั้งอยู่ ณ ict21.ict.mahidol.ac.th และเว็บไซต์ที่เกี่ยวข้องที่เป็นของ ict21.ict.mahidol.ac.th ที่ถูกพัฒนาโดยทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 เว็บไซต์ลูกและเว็บไซต์หลักทั้งในประเทศและต่างประเทศที่อยู่ภายใต้เว็บไซต์ ICT21("<b>เว็บไซต์</b>") เว็บไซต์นั้นเป็นกรรมสิทธิ์ของทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 และคณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล (“<b>เรา</b>”)       
+       ข้อกำหนดและเงื่อนไขการใช้งาน(“<b>ข้อกำหนดการใช้งาน</b>”) ใช้กับเว็บไซต์ ICT21 ที่ตั้งอยู่ ณ freshy.ict.mahidol.ac.th และเว็บไซต์ที่เกี่ยวข้องที่เป็นของ freshy.ict.mahidol.ac.th ที่ถูกพัฒนาโดยทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 เว็บไซต์ลูกและเว็บไซต์หลักทั้งในประเทศและต่างประเทศที่อยู่ภายใต้เว็บไซต์ ICT21("<b>เว็บไซต์</b>") เว็บไซต์นั้นเป็นกรรมสิทธิ์ของทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 และคณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล (“<b>เรา</b>”)       
        </p>
        <p><br></br></p>
        <p>
@@ -194,7 +194,7 @@ export default function() {
 
        <h2 className="font-bold text-2xl  my-6">กรรมสิทธิ์ในเกม</h2>
        <p>
-       ข้อกำหนดและเงื่อนไขการใช้งาน("<b>ข้อกำหนดการใช้งาน</b>") ใช้กับเกม Welcome Freshy ในเว็บไซต์ ICT21 ที่ตั้งอยู่ ณ ict21.ict.mahidol.ac.th/welcome-freshy/game ("<b>เกม</b>") เกมนั้นเป็นกรรมสิทธิ์ของทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 ("<b>เรา</b>")</p>
+       ข้อกำหนดและเงื่อนไขการใช้งาน("<b>ข้อกำหนดการใช้งาน</b>") ใช้กับเกม Welcome Freshy ในเว็บไซต์ ICT21 ที่ตั้งอยู่ ณ freshy.ict.mahidol.ac.th/welcome-freshy/game ("<b>เกม</b>") เกมนั้นเป็นกรรมสิทธิ์ของทีมนักพัฒนาในทีมประธานนักศึกษาคณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยมหิดล รุ่นที่ 20 ("<b>เรา</b>")</p>
        <p><br></br></p>
        <p>
        เราสงวนสิทธิ์ ตามดุลยพินิจของเราที่จะเปลี่ยนแปลง แก้ไข เพิ่ม ลด บางส่วนของข้อกำหนดการใช้งานเหล่านี้ได้ตลอดเวลา ซึ่งเป็นความรับผิดชอบของตัวคุณที่จะต้องตรวจสอบความเปลี่ยนแปลงของข้อกำหนดการใช้งานอยู่เป็นนิจ การดำเนินการใช้งานเว็บไซต์ต่อหลังจารการเปลี่ยนแปลงของข้อกำหนดการใช้งานนั้นให้ถือว่าคุณได้ให้การยอมรับและเห็นด้วยกับข้อกำหนดการใช้งานที่เปลี่ยนแปลงนั้น ตราบเท่าที่คุณปฏิบัติตามข้อกำหนดการใช้งานเราให้เอกสิทธิ์ ไม่ผูกขาด ไม่สามารถโอนย้ายได้ และสิทธิที่มีการจำกัดในการเข้าถึงและใช้งานเกม
@@ -245,5 +245,6 @@ export default function() {
       </div>
       </div>
       </div>
+      <p>Last updated July 25, 2023. 10:10 AM Indochina Time.</p>
     </>
     )}
