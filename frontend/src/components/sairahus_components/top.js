@@ -62,6 +62,12 @@ export default function TopElement({ event_name , date, description}) {
             > */}
                <a href='/asset/timeline_ics/Sairahus.ics' download='Sairahus.ics' className='font-semibold text-[#00FF66] hover:text-[#F5F5F7]'>Add to your calendar<Icon className='ml-2' as={BsCalendarPlus}/></a>
             {/* </Button> */}
+            <Button
+              className="mt-4 rounded-full text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
+              size={{ base: "sm", md: "lg" }}
+            >
+               <a href='/forms/SRHR' target='_blank'>Register</a>
+            </Button>
           </div>
         </motion.div>
       </>
