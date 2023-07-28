@@ -62,7 +62,7 @@ export default function TopElement({ event_name , date, description}) {
               className="mt-4 rounded-full text-[#1D1D1F] bg-[#00ff66] hover:text-[#1D1D1F] hover:bg-[#FFFFFF]"
               size={{ base: "sm", md: "lg" }}
             >
-               <a href='/forms/SRHF' target='_blank'>Register</a>
+               <a href='/forms/SRHR' target='_blank'>Register</a>
             </Button>
           </div>
         </motion.div>
