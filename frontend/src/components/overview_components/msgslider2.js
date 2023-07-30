@@ -133,7 +133,7 @@ export default function CaptionCarousel() {
       name: "Raweerot Bhasidhchirapiroch",
       pos: 'ICT#20',
       ig: 'hoylordzbaby',
-      text: "Respect your decision. Do the best you can. And let your potential be exploited as possible.",
+      text: "Respect your decision. Do the best you can. And let your potential be exploded as possible.",
       image:
       '/msgcard/sunny.webp'    
     },
